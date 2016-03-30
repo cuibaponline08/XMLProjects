@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<categories xmlns="http://xml.netbeans.org/schema/categories">
+    <category categoryId="1">
+        <categoryName>Quận 1</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-1/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="2">
+        <categoryName>Quận 2</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-2/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="3">
+        <categoryName>Quận 3</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-3/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="4">
+        <categoryName>Quận 4</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-4/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="5">
+        <categoryName>Quận 5</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-5/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="6">
+        <categoryName>Quận 6</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-6/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="7">
+        <categoryName>Quận 7</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-7/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="8">
+        <categoryName>Quận 8</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-8/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="9">
+        <categoryName>Quận 9</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-9/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="10">
+        <categoryName>Quận 10</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-10/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="11">
+        <categoryName>Quận 11</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-11/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="12">
+        <categoryName>Quận 12</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-12/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="13">
+        <categoryName>Quận Bình Tân</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-binh-tan/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="14">
+        <categoryName>Quận Bình Thạnh</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-binh-thanh/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="15">
+        <categoryName>Quận Gò Vấp</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-go-vap/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="16">
+        <categoryName>Quận Phú Nhuận</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-phu-nhuan/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="17">
+        <categoryName>Quận Tân Bình</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-tan-binh/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="18">
+        <categoryName>Quận Tân Phú</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-tan-phu/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="19">
+        <categoryName>Quận Thủ Đức</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-thu-duc/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="20">
+        <categoryName>Huyện Bình Chánh</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/huyen-binh-chanh/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="21">
+        <categoryName>Huyện Củ Chi</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/huyen-cu-chi/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="22">
+        <categoryName>Huyện Hóc Môn</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/huyen-hoc-mon/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="23">
+        <categoryName>Huyện Nhà Bè</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/huyen-nha-be/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="24">
+        <categoryName>Quận huyện khác</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/quan-huyen-khac/mua-ban-xe-may</categorySourcePath>
+    </category>
+    <category categoryId="25">
+        <categoryName>Huyện Cần Giờ</categoryName>
+        <categorySourcePath>http://www.chotot.vn/tp-ho-chi-minh/huyen-can-gio/mua-ban-xe-may</categorySourcePath>
+    </category>
+</categories>
