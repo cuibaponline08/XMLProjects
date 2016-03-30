@@ -6,11 +6,42 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>This is Duy's World</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function ajaxRead(file) {
+                var xmlObj = null;
+                if (window.XMLHttpRequest) {
+                    xmlObj = new XMLHttpRequest();
+                } else if (window.ActiveXObject) {
+                    xmlObj = new ActiveXObject("Microsoft.XMLHTTP");
+                } else {
+                    return;
+                }
+
+                xmlObj.onreadystatechange = function () {
+                    if (xmlObj.readyState == 4) {
+                        updateObj('xmlObj', xmlObj.responseXML.getElementsByTagName('data')[0].firstChild.data);
+                    }
+                }
+                
+                xmlObj.open('GET', file, true);
+                xmlObj.send('');
+            }
+            
+            function updateObj(obj, data){
+                document.getElementById(obj).firstChild.data = data;
+            }
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Say hello!</h1>
+        <div id='xmlObj'>
+            <a href="data.xml"
+               title="View the XML data." onclick="ajaxRead('data.xml');
+                       this.style.display = 'none';
+                       return false">View XML     data.</a>
+        </div>
     </body>
 </html>
