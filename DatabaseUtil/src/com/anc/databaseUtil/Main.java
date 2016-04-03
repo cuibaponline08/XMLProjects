@@ -23,11 +23,20 @@ public class Main {
         DatabaseUtil dbUtil = new DatabaseUtil();
         dbUtil.createConnection(databaseServer, databaseInstance, databaseName, username, password);
         String[] columnNames = {"Code", "ProductName", "Price"};
-        dbUtil.selectFromTable("Product", columnNames, "Price > 40000");
+//        dbUtil.selectFromTable("Product", columnNames, "Price > 40000");
         
-        String[] newValues = {"Price = 40000"};
-        dbUtil.updateTable("Product", newValues, "Price > 45000");
-        dbUtil.selectFromTable("Product", columnNames, "Price >= 40000");
-        dbUtil.selectFromTable("Account");
+//        String[] newValues = {"Price = 40000"};
+//        dbUtil.updateTable("Product", newValues, "Price > 45000");
+//        dbUtil.selectFromTable("Product", columnNames, "Price >= 40000");
+//        dbUtil.selectFromTable("Account");
+//        
+        ResultSetDTO rs = dbUtil.selectFromTable("Product", columnNames);
+        
+        for (ResultDTO result : rs.getResultSet()) {
+            for (String columnValue : result.getResult()) {
+                System.out.println(columnValue);
+            }
+            System.out.println("=====================");
+        }
     }
 }

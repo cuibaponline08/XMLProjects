@@ -33,16 +33,26 @@ public class DatabaseUtil {
                 + ";user=" + username + ";password=" + password;
     }
 
-    public void selectFromTable(String tableName, String[] columnNames) {
+    public ResultSetDTO selectFromTable(String tableName, String[] columnNames) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
             stm = conn.createStatement();
-            rs = stm.executeQuery("SELECT * FROM " + tableName);
+
+            String select = getSelectColumnQuery(columnNames);
+
+            rs = stm.executeQuery("SELECT " + select + " FROM " + tableName);
+
+            ResultSetMetaData rsmd = rs.getMetaData();
+
             while (rs.next()) {
-                for (String columnName : columnNames) {
-                    System.out.println(columnName + ": " + rs.getString(columnName));
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
                 }
+                resultSetDTO.addResult(resultDTO);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -55,19 +65,27 @@ public class DatabaseUtil {
                 ex.printStackTrace();
             }
         }
+        return resultSetDTO;
     }
 
-    public void selectFromTable(String tableName, String[] columnNames, String condition) {
+    public ResultSetDTO selectFromTable(String tableName, String[] columnNames, String condition) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
             stm = conn.createStatement();
 
-            rs = stm.executeQuery("SELECT * FROM " + tableName + " WHERE " + condition);
+            String select = getSelectColumnQuery(columnNames);
+
+            rs = stm.executeQuery("SELECT " + select + " FROM " + tableName + " WHERE " + condition);
+            ResultSetMetaData rsmd = rs.getMetaData();
             while (rs.next()) {
-                for (String columnName : columnNames) {
-                    System.out.println(columnName + ": " + rs.getString(columnName));
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
                 }
+                resultSetDTO.addResult(resultDTO);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -80,9 +98,12 @@ public class DatabaseUtil {
                 ex.printStackTrace();
             }
         }
+        return resultSetDTO;
     }
 
-    public void selectFromTable(String tableName) {
+    public ResultSetDTO selectFromTable(String tableName) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -90,12 +111,13 @@ public class DatabaseUtil {
 
             rs = stm.executeQuery("SELECT * FROM " + tableName);
             ResultSetMetaData rsmd = rs.getMetaData();
-            
+
             while (rs.next()) {
-                for (int i = 1; i < rsmd.getColumnCount(); i++) {
-                    System.out.println(rsmd.getColumnName(i) + ": " + rs.getString(i));
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
                 }
-                System.out.println("=========================================");
+                resultSetDTO.addResult(resultDTO);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -108,6 +130,8 @@ public class DatabaseUtil {
                 ex.printStackTrace();
             }
         }
+
+        return resultSetDTO;
     }
 
     public int updateTable(String tableName, String[] newValues, String condition) {
@@ -141,7 +165,7 @@ public class DatabaseUtil {
 
         return records;
     }
-    
+
     public int updateTable(String tableName, String[] newValues) {
         int records = 0;
         try {
@@ -174,4 +198,15 @@ public class DatabaseUtil {
         return records;
     }
 
+    private String getSelectColumnQuery(String[] columnNames) {
+        String select = "*";
+        for (int i = 0; i < columnNames.length; i++) {
+            if (i == 0) {
+                select = columnNames[i];
+            } else {
+                select += ", " + columnNames[i];
+            }
+        }
+        return select;
+    }
 }
