@@ -19,9 +19,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.netbeans.xml.schema.categories.Categories;
 import org.netbeans.xml.schema.categories.Category;
 import org.netbeans.xml.schema.products.Product;
@@ -55,32 +52,32 @@ public class XProjectPageCollector {
     }
 
     private static void getCategories() {
-        Elements categoryElements = XMLUtil.getElements(sourceUrl, selectCategoryPath);
-
-        if (categoryElements != null) {
-            Categories categories = new Categories();
-            List<Category> categoryList = categories.getCategory();
-
-            String categorySelectPath = "li > span.nohistory > a";
-            BigInteger count = BigInteger.ONE;
-            for (Element categoryNode : categoryElements.first().children()) {
-                String categoryName = categoryNode.select(categorySelectPath).text();
-                String categorySourcePath = categoryNode.select(categorySelectPath).attr("href");
-
-                if (categoryName.equals("")) {
-                    continue;
-                } else {
-                    Category category = new Category();
-                    category.setCategoryId(count);
-                    category.setCategoryName(categoryName);
-                    category.setCategorySourcePath(categorySourcePath);
-
-                    categoryList.add(category);
-                    count = count.add(BigInteger.ONE);
-                }
-            }
-            XMLUtil.xmlWriter(categories, categoryDestinationPath);
-        }
+//        Elements categoryElements = XMLUtil.getElements(sourceUrl, selectCategoryPath);
+//
+//        if (categoryElements != null) {
+//            Categories categories = new Categories();
+//            List<Category> categoryList = categories.getCategory();
+//
+//            String categorySelectPath = "li > span.nohistory > a";
+//            BigInteger count = BigInteger.ONE;
+//            for (Element categoryNode : categoryElements.first().children()) {
+//                String categoryName = categoryNode.select(categorySelectPath).text();
+//                String categorySourcePath = categoryNode.select(categorySelectPath).attr("href");
+//
+//                if (categoryName.equals("")) {
+//                    continue;
+//                } else {
+//                    Category category = new Category();
+//                    category.setCategoryId(count);
+//                    category.setCategoryName(categoryName);
+//                    category.setCategorySourcePath(categorySourcePath);
+//
+//                    categoryList.add(category);
+//                    count = count.add(BigInteger.ONE);
+//                }
+//            }
+//            XMLUtil.xmlWriter(categories, categoryDestinationPath);
+//        }
     }
 
     private static void getProducts() {
@@ -90,32 +87,32 @@ public class XProjectPageCollector {
 
         List<Category> categoryList = categories.getCategory();
         BigInteger count = BigInteger.ONE;
-        for (Category category : categoryList) {
-            Elements productElements = XMLUtil.getElements(category.getCategorySourcePath(), selectProductPath);
-            if (productElements != null) {
-                for (Element productElement : productElements) {
-                    BigDecimal productPrice = BigDecimal.ZERO;
-                    String priceWithoutCurrency = productElement.select("div.thumbs_subject > div.ad-price").text().
-                            replace("đ", "").replace(".", "").trim();
-                    
-                    if (priceWithoutCurrency != null && !priceWithoutCurrency.equals("")) {
-                        productPrice = new BigDecimal(priceWithoutCurrency);
-                    }
-
-                    Product product = new Product();
-                    product.setCategoryId(category.getCategoryId());
-                    product.setImageSourceUrl(productElement.select("img.thumbnail").text());
-                    product.setProductId(count);
-                    product.setProductName(productElement.select("div.thumbs_subject a").text());
-                    product.setProductDetailUrl(productElement.select("div.thumbs_subject a").attr("href"));
-                    product.setProductPrice(productPrice);
-                    product.setShortDescription(productElement.select("div.extra_img-b a img").attr("title"));
-                    
-                    productList.add(product);
-                    count = count.add(BigInteger.ONE);
-                }
-            }
-        }
+//        for (Category category : categoryList) {
+//            Elements productElements = XMLUtil.getElements(category.getCategorySourcePath(), selectProductPath);
+//            if (productElements != null) {
+//                for (Element productElement : productElements) {
+//                    BigDecimal productPrice = BigDecimal.ZERO;
+//                    String priceWithoutCurrency = productElement.select("div.thumbs_subject > div.ad-price").text().
+//                            replace("đ", "").replace(".", "").trim();
+//                    
+//                    if (priceWithoutCurrency != null && !priceWithoutCurrency.equals("")) {
+//                        productPrice = new BigDecimal(priceWithoutCurrency);
+//                    }
+//
+//                    Product product = new Product();
+//                    product.setCategoryId(category.getCategoryId());
+//                    product.setImageSourceUrl(productElement.select("img.thumbnail").text());
+//                    product.setProductId(count);
+//                    product.setProductName(productElement.select("div.thumbs_subject a").text());
+//                    product.setProductDetailUrl(productElement.select("div.thumbs_subject a").attr("href"));
+//                    product.setProductPrice(productPrice);
+//                    product.setShortDescription(productElement.select("div.extra_img-b a img").attr("title"));
+//                    
+//                    productList.add(product);
+//                    count = count.add(BigInteger.ONE);
+//                }
+//            }
+//        }
         XMLUtil.xmlWriter(products, productDestinationPath);
     }
 }
