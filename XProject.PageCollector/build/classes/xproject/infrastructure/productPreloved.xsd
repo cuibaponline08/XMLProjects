@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://xml.netbeans.org/schema/products"
+    xmlns="http://xml.netbeans.org/schema/products"
+    elementFormDefault="qualified">
+    <xsd:element name="products">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="product" type="Product" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Product">
+        <xsd:sequence>
+            <xsd:element name="productName" type="xsd:string"/>
+            <xsd:element name="imageSourceUrl" type="xsd:string"/>
+            <xsd:element name="productPrice" type="xsd:float"/>
+            <xsd:element name="currency" type="xsd:string"/>
+            <xsd:element name="customerAddress" type="xsd:string"/>
+            <xsd:element name="productDetailUrl" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="productId" type="xsd:int" use="required"/>
+        <xsd:attribute name="categoryId" type="xsd:int" use="required"/>
+    </xsd:complexType>
+</xsd:schema>

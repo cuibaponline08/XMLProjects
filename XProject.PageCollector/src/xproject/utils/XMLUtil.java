@@ -5,7 +5,16 @@
  */
 package xproject.utils;
 
-
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import org.jsoup.Jsoup;
+import org.jsoup.select.Elements;
 
 /**
  *
@@ -20,7 +29,6 @@ public class XMLUtil {
 
             return resultSet;
         } catch (IOException ex) {
-            Logger.getLogger(XProjectPageCollector.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
     }
@@ -34,7 +42,6 @@ public class XMLUtil {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(entity, destinationFile);
         } catch (JAXBException ex) {
-            Logger.getLogger(XProjectPageCollector.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -48,7 +55,6 @@ public class XMLUtil {
 
             return result;
         } catch (JAXBException ex) {
-            Logger.getLogger(XProjectPageCollector.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         return null;
