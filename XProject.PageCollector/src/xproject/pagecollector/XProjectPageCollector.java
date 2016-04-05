@@ -7,8 +7,6 @@ package xproject.pagecollector;
 
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,8 +17,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import org.netbeans.xml.schema.categories.Categories;
-import org.netbeans.xml.schema.categories.Category;
 import org.netbeans.xml.schema.products.Product;
 import org.netbeans.xml.schema.products.Products;
 import xproject.utils.XMLUtil;
@@ -81,12 +77,12 @@ public class XProjectPageCollector {
     }
 
     private static void getProducts() {
-        Products products = new Products();
-        List<Product> productList = products.getProduct();
-        Categories categories = XMLUtil.xmlReader(Categories.class, categoryDestinationPath);
-
-        List<Category> categoryList = categories.getCategory();
-        BigInteger count = BigInteger.ONE;
+//        Products products = new Products();
+//        List<Product> productList = products.getProduct();
+//        Categories categories = XMLUtil.xmlReader(Categories.class, categoryDestinationPath);
+//
+//        List<Category> categoryList = categories.getCategory();
+//        BigInteger count = BigInteger.ONE;
 //        for (Category category : categoryList) {
 //            Elements productElements = XMLUtil.getElements(category.getCategorySourcePath(), selectProductPath);
 //            if (productElements != null) {
@@ -113,6 +109,6 @@ public class XProjectPageCollector {
 //                }
 //            }
 //        }
-        XMLUtil.xmlWriter(products, productDestinationPath);
+//        XMLUtil.xmlWriter(products, productDestinationPath);
     }
 }

@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='XProject.PageCollector' version='1.0'>
-	<schema type='-xmlschema' package='' name='PrelovedProduct'>
+	<schema type='-xmlschema' package='' name='Product'>
 		<xjc-options>
 		</xjc-options>
 		<schema-sources>
-			<schema-source location='xml-resources/jaxb/PrelovedProduct/productPreloved.xsd' origLocation='src/xproject/infrastructure/productPreloved.xsd'/>
+			<schema-source location='xml-resources/jaxb/Product/productPreloved.xsd' origLocation='src/xproject/infrastructure/productPreloved.xsd'/>
 		</schema-sources>
 		<bindings>
 		</bindings>

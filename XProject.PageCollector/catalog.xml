@@ -2,4 +2,5 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/infrastructure/product.xsd" uri="xml-resources/jaxb/Product/product.xsd"/>
     <system systemId="file:/E:/Programming/Code/XML/XProject.PageCollector/src/xproject/infrastructure/productPreloved.xsd" uri="xml-resources/jaxb/PrelovedProduct/productPreloved.xsd"/>
+    <system systemId="file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/infrastructure/productPreloved.xsd" uri="xml-resources/jaxb/Product/productPreloved.xsd"/>
 </catalog>

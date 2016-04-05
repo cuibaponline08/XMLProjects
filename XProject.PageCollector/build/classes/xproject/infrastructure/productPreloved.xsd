@@ -24,6 +24,9 @@ and open the template in the editor.
             <xsd:element name="currency" type="xsd:string"/>
             <xsd:element name="customerAddress" type="xsd:string"/>
             <xsd:element name="productDetailUrl" type="xsd:string"/>
+            <xsd:element name="description" type="xsd:string"/>
+            <xsd:element name="addingInformation" type="xsd:string"/>
+            <xsd:element name="productType" type="xsd:string"/>
         </xsd:sequence>
         <xsd:attribute name="productId" type="xsd:int" use="required"/>
         <xsd:attribute name="categoryId" type="xsd:int" use="required"/>

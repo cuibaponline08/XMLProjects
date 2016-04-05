@@ -11,19 +11,19 @@
     <target name="jaxb-code-generation" depends="xjc-typedef-target,-do-init,-init-macrodef-javac">
         <mkdir dir="${build.generated.sources.dir}/jaxb" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig"/>
         <mkdir dir="build/generated/jaxbCache" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig"/>
-        <mkdir dir="build/generated/jaxbCache/PrelovedProduct"/>
-        <xjc destdir="build/generated/jaxbCache/PrelovedProduct" catalog="catalog.xml">
+        <mkdir dir="build/generated/jaxbCache/Product"/>
+        <xjc destdir="build/generated/jaxbCache/Product" catalog="catalog.xml">
             <classpath>
                 <pathelement location="${src.dir}"/>
                 <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
             </classpath>
             <arg value="-xmlschema"/>
-            <schema file="xml-resources/jaxb/PrelovedProduct/productPreloved.xsd"/>
-            <depends file="xml-resources/jaxb/PrelovedProduct/productPreloved.xsd"/>
-            <produces dir="build/generated/jaxbCache/PrelovedProduct"/>
+            <schema file="xml-resources/jaxb/Product/productPreloved.xsd"/>
+            <depends file="xml-resources/jaxb/Product/productPreloved.xsd"/>
+            <produces dir="build/generated/jaxbCache/Product"/>
         </xjc>
         <copy todir="${build.generated.sources.dir}/jaxb">
-            <fileset dir="build/generated/jaxbCache/PrelovedProduct"/>
+            <fileset dir="build/generated/jaxbCache/Product"/>
         </copy>
     </target>
 </project>

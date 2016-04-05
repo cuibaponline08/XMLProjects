@@ -31,8 +31,8 @@ public class PrelovedPageCollector {
 
     private static String gotoPageUrl = "?page=";
 
-    private static String productDetailDescriptionPath = 
-            "span.u-display--b.classified__description.classified__meta.js-toggle-content";
+    private static String productDetailDescriptionPath
+            = "span.u-display--b.classified__description.classified__meta.js-toggle-content";
 //    private static String `
 
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class PrelovedPageCollector {
     private static void getProducts() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 87;
+        int totalPage = 2;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
@@ -91,15 +91,29 @@ public class PrelovedPageCollector {
                             detailUrl = productElement.select("a.search-result__media-link").attr("href");
                         }
                         if (!detailUrl.trim().equals("")) {
-                            Elements productDetailElements = XMLUtil.
-                                    getElements(detailUrl,
-                                            "");
-
+                            Elements productDetailElements = XMLUtil.getElements(preloved + detailUrl,
+                                    "div#classified-p-content");
+                            String productDescription = "";
                             for (Element productDetailElement : productDetailElements) {
-                                if (!productDetailElement.equals("")) {
+                                if (productDetailElement != null && !productDetailElement.equals("")) {
+                                    productDescription = productDetailElement.
+                                            select("#classified-description").text();
 
                                 }
                             }
+                            Elements imgElements = XMLUtil.getElements(preloved + detailUrl, "li.js-media-carousel-item.classified__media__item");
+                            String imgUrl = "";
+                            int a = imgElements.size();
+                            if (imgElements != null && !imgElements.equals("")) {
+                                for (Element imgElement : imgElements) {
+                                    imgUrl += imgElement.
+                                            select("img").
+                                            attr("data-src") + "|";
+                                }
+                            }
+                            
+                            product.setImageSourceUrl(imgUrl);
+                            product.setDescription(productDescription);
                         }
                         product.setProductDetailUrl(preloved + detailUrl);
 
