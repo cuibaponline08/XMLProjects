@@ -34,7 +34,17 @@ public class ProductRepository implements IRepository<ProductDTO> {
 
     @Override
     public boolean add(ProductDTO entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            String[] values = getNewValues(entity);
+            int records = dbUtil.insertToTable("Product", values);
+            
+            if (records == 0) {
+                return false;
+            }
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
     }
 
     @Override
@@ -96,5 +106,15 @@ public class ProductRepository implements IRepository<ProductDTO> {
         }
 
         return list;
+    }
+    
+    private String[] getNewValues(ProductDTO entity){
+        String[] result = {entity.productName, String.valueOf(entity.productType),
+            String.valueOf(entity.price), entity.picUrl, String.valueOf(entity.categoryId),
+            String.valueOf(entity.isFixedPrice), entity.description, entity.addingInformation,
+            entity.location, String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
+        };
+        
+        return result;
     }
 }
