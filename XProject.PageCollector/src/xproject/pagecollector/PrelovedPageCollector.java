@@ -5,8 +5,6 @@
  */
 package xproject.pagecollector;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import org.jsoup.nodes.Element;
@@ -90,6 +88,7 @@ public class PrelovedPageCollector {
                         if (detailUrl.trim().equals("")) {
                             detailUrl = productElement.select("a.search-result__media-link").attr("href");
                         }
+                        
                         if (!detailUrl.trim().equals("")) {
                             Elements productDetailElements = XMLUtil.getElements(preloved + detailUrl,
                                     "div#classified-p-content");

@@ -37,7 +37,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
         try {
             String[] values = getNewValues(entity);
             int records = dbUtil.insertToTable("Product", values);
-            
+
             if (records == 0) {
                 return false;
             }
@@ -49,7 +49,11 @@ public class ProductRepository implements IRepository<ProductDTO> {
 
     @Override
     public boolean update(ProductDTO entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String[] newValues = getNewValues(entity);
+        String condition = "ProductId = " + entity.getProductId();
+        int record = dbUtil.updateTable("Product", newValues, condition);
+        
+        return record != 0;
     }
 
     @Override
@@ -80,13 +84,13 @@ public class ProductRepository implements IRepository<ProductDTO> {
 
     /*
         return list product from ResultSetDTO
-    */
-    private List<ProductDTO> getProductList(ResultSetDTO rs){
+     */
+    private List<ProductDTO> getProductList(ResultSetDTO rs) {
         List<ProductDTO> list = new ArrayList<ProductDTO>();
 
         for (ResultDTO result : rs.getResultSet()) {
             ProductDTO newProduct = new ProductDTO();
-            
+
             //<editor-fold defaultstate="collapsed" desc="Map data from ResultDTO to ProductDTO">
             newProduct.setProductId(ANCParser.parseInt(result.getValueFromColumn(0)));
             newProduct.setProductName(result.getValueFromColumn(1));
@@ -101,20 +105,20 @@ public class ProductRepository implements IRepository<ProductDTO> {
             newProduct.setProductStatus(ANCParser.parseInt(result.getValueFromColumn(10)));
             newProduct.setCustomerId(ANCParser.parseInt(result.getValueFromColumn(11)));
 //</editor-fold>
-            
+
             list.add(newProduct);
         }
 
         return list;
     }
-    
-    private String[] getNewValues(ProductDTO entity){
+
+    private String[] getNewValues(ProductDTO entity) {
         String[] result = {entity.productName, String.valueOf(entity.productType),
             String.valueOf(entity.price), entity.picUrl, String.valueOf(entity.categoryId),
             String.valueOf(entity.isFixedPrice), entity.description, entity.addingInformation,
             entity.location, String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
         };
-        
+
         return result;
     }
 }
