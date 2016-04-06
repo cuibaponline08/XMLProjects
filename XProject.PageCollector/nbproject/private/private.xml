@@ -2,6 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
+        <group>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/pagecollector/PrelovedPageCollector.java</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/infrastructure/product.xsd</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/nbproject/build-impl.xml</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/xml/productPreloved.xml</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/utils/XMLUtil.java</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/build/generated-sources/jaxb/org/netbeans/xml/schema/products/Product.java</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/pagecollector/XProjectPageCollector.java</file>
+            <file>file:/D:/Programming/Workspace/Code/XML/XProject.PageCollector/src/xproject/infrastructure/productPreloved.xsd</file>
+        </group>
+=======
         <group/>
+>>>>>>> d608b64736ba9a5f9598aad7c160b07778be6f41
     </open-files>
 </project-private>
