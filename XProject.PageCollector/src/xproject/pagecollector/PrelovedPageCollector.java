@@ -5,6 +5,8 @@
  */
 package xproject.pagecollector;
 
+import com.anc.databaseUtil.DatabaseUtil;
+import com.xproject.dto.ProductDTO;
 import java.util.ArrayList;
 import java.util.List;
 import org.jsoup.nodes.Element;
@@ -34,7 +36,8 @@ public class PrelovedPageCollector {
 //    private static String `
 
     public static void main(String[] args) {
-        getProducts();
+//        getProducts();
+        insertProductsToDB();
     }
 
     private static void getProducts() {
@@ -88,7 +91,7 @@ public class PrelovedPageCollector {
                         if (detailUrl.trim().equals("")) {
                             detailUrl = productElement.select("a.search-result__media-link").attr("href");
                         }
-                        
+
                         if (!detailUrl.trim().equals("")) {
                             Elements productDetailElements = XMLUtil.getElements(preloved + detailUrl,
                                     "div#classified-p-content");
@@ -110,7 +113,7 @@ public class PrelovedPageCollector {
                                             attr("data-src") + "|";
                                 }
                             }
-                            
+
                             product.setImageSourceUrl(imgUrl);
                             product.setDescription(productDescription);
                         }
@@ -129,5 +132,53 @@ public class PrelovedPageCollector {
             }
             XMLUtil.xmlWriter(products, productDestinationPath);
         }
+    }
+
+    private static void insertProductsToDB() {
+        String databaseServer = "CUIBAP";
+        String databaseInstance = "DUYDT";
+        String databaseName = "XProject";
+        String username = "sa";
+        String password = "123456";
+
+        DatabaseUtil dbUtil = new DatabaseUtil();
+        dbUtil.createConnection(databaseServer, databaseInstance, databaseName, username, password);
+
+        Products products = XMLUtil.xmlReader(Products.class, productDestinationPath);
+        int count = 0;
+        for (Product product : products.getProduct()) {
+            ProductDTO productDTO = new ProductDTO();
+
+            productDTO.setAddingInformation("");
+            productDTO.setCategoryId(product.getCategoryId());
+            productDTO.setCustomerId(1);
+            productDTO.setDescription(product.getDescription());
+            productDTO.setIsFixedPrice(true);
+            productDTO.setLocation(product.getCustomerAddress());
+            productDTO.setPicUrl(product.getImageSourceUrl());
+            productDTO.setPrice(product.getProductPrice());
+            productDTO.setProductId(product.getProductId());
+            productDTO.setProductName(product.getProductName());
+            productDTO.setProductStatus(1);
+            productDTO.setProductType(1);
+
+            int insertToTable = dbUtil.insertToTable("Product", getNewValues(productDTO));
+            count++;
+            if (count == 10) {
+                break;
+            }
+        }
+    }
+
+    private static String[] getNewValues(ProductDTO entity) {
+        int a = entity.getProductType();
+        String aa = String.valueOf(a);
+        String[] result = {"'" + entity.productName + "'", String.valueOf(entity.productType),
+            String.valueOf(entity.price), "'" + entity.picUrl + "'", String.valueOf(entity.categoryId),
+            "1", "'" + entity.description + "'", "'" + entity.addingInformation + "'",
+            "'" + entity.location + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
+        };
+
+        return result;
     }
 }

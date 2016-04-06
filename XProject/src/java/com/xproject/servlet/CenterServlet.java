@@ -5,8 +5,12 @@
  */
 package com.xproject.servlet;
 
+import com.xproject.dto.ProductDTO;
+import com.xproject.service.ProductService;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author cuiba
  */
 public class CenterServlet extends HttpServlet {
+
+    private ProductService productService = new ProductService();
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,7 +38,11 @@ public class CenterServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            
+            List<ProductDTO> list = productService.getAllProducts();
+
+            request.setAttribute("LIST", list);
+            RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+            rd.forward(request, response);
         } finally {
             out.close();
         }

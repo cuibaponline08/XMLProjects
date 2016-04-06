@@ -2,7 +2,7 @@
 <products xmlns="http://xml.netbeans.org/schema/products">
     <product productId="1" categoryId="1">
         <productName>MOTORCYCLE WANTED</productName>
-        <imageSourceUrl>http://mp.thcdn.com/70/48/70483b9b363044b08089b81e589efe59.jpg?r=0&amp;w=342|</imageSourceUrl>
+        <imageSourceUrl>http://mp.thcdn.com/70/48/70483b9b363044b08089b81e589efe59.jpg?r=0&amp;h=450|</imageSourceUrl>
         <productPrice>0.0</productPrice>
         <currency></currency>
         <customerAddress>Newcastle, Newcastle Upon Tyne</customerAddress>
@@ -29,7 +29,7 @@
     </product>
     <product productId="4" categoryId="1">
         <productName>Honda CBR125R</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159620-163-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159620-163-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159631-596-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159644-922-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159659-708-640x360.jpg|</imageSourceUrl>
         <productPrice>1900.0</productPrice>
         <currency>£</currency>
         <customerAddress>Bookham, Surrey</customerAddress>
@@ -38,7 +38,7 @@
     </product>
     <product productId="5" categoryId="1">
         <productName>Harley Davidson 1200 Sportster</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061443-178-857x640.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061443-178-857x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061449-210-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061452-796-640x478.jpg|</imageSourceUrl>
         <productPrice>4250.0</productPrice>
         <currency>£</currency>
         <customerAddress>Ventnor, Isle Of Wight</customerAddress>
@@ -47,7 +47,7 @@
     </product>
     <product productId="6" categoryId="1">
         <productName>1951 TRIUMPH INSTRUCTION MANUAL</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043671-738-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043671-738-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043676-865-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043682-196-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043690-711-640x480.jpg|</imageSourceUrl>
         <productPrice>22.0</productPrice>
         <currency>£</currency>
         <customerAddress>North West Wigan Area, Lancashire</customerAddress>
@@ -56,7 +56,7 @@
     </product>
     <product productId="7" categoryId="1">
         <productName>1997 HONDA XR 70RV ONE OWNER RARE ORIGINAL</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036814-683-640x640.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036814-683-640x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036812-683-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036813-683-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036927-499-640x961.jpg|</imageSourceUrl>
         <productPrice>500.0</productPrice>
         <currency>£</currency>
         <customerAddress>Heswall, Wirral</customerAddress>
@@ -65,7 +65,7 @@
     </product>
     <product productId="8" categoryId="1">
         <productName>Classic Honda cb200</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053515-830-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053515-830-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053516-830-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053518-830-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053522-781-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053534-116-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053536-116-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053537-116-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053538-116-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053561-137-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053562-137-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053563-137-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053564-137-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053565-137-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053580-521-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053581-521-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053582-521-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053583-521-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25053584-521-640x480.jpg|</imageSourceUrl>
         <productPrice>0.0</productPrice>
         <currency>£</currency>
         <customerAddress>Manchester.</customerAddress>
@@ -74,7 +74,7 @@
     </product>
     <product productId="9" categoryId="1">
         <productName>Honda VFR 800</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031835-328-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031835-328-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031836-328-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031837-328-640x480.jpg|</imageSourceUrl>
         <productPrice>2230.0</productPrice>
         <currency>£</currency>
         <customerAddress>High Wycombe, Bucks</customerAddress>
@@ -83,7 +83,7 @@
     </product>
     <product productId="10" categoryId="1">
         <productName>Hyabusa 2003</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25112656-572-640x853.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25112656-572-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25112657-572-640x853.jpg|</imageSourceUrl>
         <productPrice>3995.0</productPrice>
         <currency>£</currency>
         <customerAddress>Stockbury Sittingbourne, Kent</customerAddress>
@@ -92,7 +92,7 @@
     </product>
     <product productId="11" categoryId="1">
         <productName>Honda xr250/280cc</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25115552-159-640x478.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25115552-159-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25115540-661-857x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25115545-214-640x478.jpg|</imageSourceUrl>
         <productPrice>1450.0</productPrice>
         <currency>£</currency>
         <customerAddress>Manchester, Lancs</customerAddress>
@@ -101,7 +101,7 @@
     </product>
     <product productId="12" categoryId="1">
         <productName>Honda Transalp</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116360-231-640x478.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116360-231-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116361-231-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116362-231-640x478.jpg|</imageSourceUrl>
         <productPrice>1250.0</productPrice>
         <currency>£</currency>
         <customerAddress>Manchester, Lancs</customerAddress>
@@ -110,7 +110,7 @@
     </product>
     <product productId="13" categoryId="1">
         <productName>Ninja 600</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25214217-365-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25214217-365-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25214236-841-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25214238-297-640x1138.jpg|</imageSourceUrl>
         <productPrice>1700.0</productPrice>
         <currency>£</currency>
         <customerAddress>Immingham, Ne Lincs</customerAddress>
@@ -119,7 +119,7 @@
     </product>
     <product productId="14" categoryId="1">
         <productName>Cagiva mito Evo, 2008</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25215092-473-640x404.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25215092-473-640x404.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25215093-473-640x487.jpg|</imageSourceUrl>
         <productPrice>1750.0</productPrice>
         <currency>£</currency>
         <customerAddress>Halesowen, West Midlands</customerAddress>
@@ -137,7 +137,7 @@
     </product>
     <product productId="16" categoryId="1">
         <productName>YAMAHA XJ 900 F CAFE RACER</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217656-325-640x358.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217656-325-640x358.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217658-325-640x358.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217660-325-640x358.jpg|</imageSourceUrl>
         <productPrice>1000.0</productPrice>
         <currency>£</currency>
         <customerAddress>Liskeard, Cornwall</customerAddress>
@@ -146,7 +146,7 @@
     </product>
     <product productId="17" categoryId="1">
         <productName>Yamaha YBR125 Custom</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218059-369-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218059-369-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218060-369-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218061-369-640x360.jpg|</imageSourceUrl>
         <productPrice>2150.0</productPrice>
         <currency>£</currency>
         <customerAddress>Southend On Sea, Essex</customerAddress>
@@ -155,7 +155,7 @@
     </product>
     <product productId="18" categoryId="1">
         <productName>2004 SUZUKI SV 1000 ONLY 12000 MILES</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218078-780-639x359.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218078-780-639x359.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218079-780-639x359.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25218080-780-639x359.jpg|</imageSourceUrl>
         <productPrice>2750.0</productPrice>
         <currency>£</currency>
         <customerAddress>Hullbridge, Essex</customerAddress>
@@ -164,7 +164,7 @@
     </product>
     <product productId="19" categoryId="1">
         <productName>sinnis harrier 125cc</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25219311-792-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25219311-792-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25219342-555-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25219343-555-640x480.jpg|</imageSourceUrl>
         <productPrice>850.0</productPrice>
         <currency>£</currency>
         <customerAddress>Chatham, Kent</customerAddress>
@@ -182,7 +182,7 @@
     </product>
     <product productId="21" categoryId="1">
         <productName>Suzuki DRZ 400 S Street Scrambler</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25220368-846-640x853.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25220368-846-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25220369-846-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25220370-846-640x480.jpg|</imageSourceUrl>
         <productPrice>1650.0</productPrice>
         <currency>£</currency>
         <customerAddress>Manchester, Greater Manchester</customerAddress>
@@ -191,7 +191,7 @@
     </product>
     <product productId="22" categoryId="1">
         <productName>Kawasaki ER5, Good runner, reliable and beautiful.</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25221551-146-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25221551-146-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25221550-146-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25221552-146-640x398.jpg|</imageSourceUrl>
         <productPrice>600.0</productPrice>
         <currency>£</currency>
         <customerAddress>Liverpool, Mersyside</customerAddress>
@@ -200,7 +200,7 @@
     </product>
     <product productId="23" categoryId="1">
         <productName>CBR1000RR 2006</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25223108-811-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25223108-811-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25223109-811-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25223110-811-640x360.jpg|</imageSourceUrl>
         <productPrice>4500.0</productPrice>
         <currency>£</currency>
         <customerAddress>Widnes, Cheshire</customerAddress>
@@ -209,7 +209,7 @@
     </product>
     <product productId="24" categoryId="1">
         <productName>Honda XL125R Spares or Repair</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198723-920-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198723-920-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198724-920-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198725-920-640x360.jpg|</imageSourceUrl>
         <productPrice>300.0</productPrice>
         <currency>£</currency>
         <customerAddress>Grantham, Lincolnshire</customerAddress>
@@ -218,7 +218,7 @@
     </product>
     <product productId="25" categoryId="1">
         <productName>Honda XL200R</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198746-481-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198746-481-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198747-481-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198748-481-640x360.jpg|</imageSourceUrl>
         <productPrice>300.0</productPrice>
         <currency>£</currency>
         <customerAddress>Grantham, Lincolnshire</customerAddress>
@@ -227,7 +227,7 @@
     </product>
     <product productId="26" categoryId="1">
         <productName>Hyosung GV650 Motorcycle for sale</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25214082-825-640x360.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25214082-825-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25202503-399-640x1158.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25202504-399-640x1137.jpg|</imageSourceUrl>
         <productPrice>2750.0</productPrice>
         <currency>£</currency>
         <customerAddress>Rowley Regis, West Midlands</customerAddress>
@@ -245,7 +245,7 @@
     </product>
     <product productId="28" categoryId="1">
         <productName>Triumph Bonneville America, special, only 3,000 miles, FSH,</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25193221-207-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25193221-207-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25193222-207-639x479.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25193223-207-640x854.jpg|</imageSourceUrl>
         <productPrice>4749.0</productPrice>
         <currency>£</currency>
         <customerAddress>Kirkby-in Ashfield, Nottinghamshire</customerAddress>
@@ -263,7 +263,7 @@
     </product>
     <product productId="30" categoryId="1">
         <productName>Kawasaki kmx 125 frame and logbook 1990 g reg</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198613-975-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198613-975-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198614-975-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25198615-975-640x480.jpg|</imageSourceUrl>
         <productPrice>200.0</productPrice>
         <currency>£</currency>
         <customerAddress>Sheffield . Uk, Southyorkshire</customerAddress>
@@ -272,7 +272,7 @@
     </product>
     <product productId="31" categoryId="1">
         <productName>Kawasaki EN 500 Cruiser</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199112-249-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199112-249-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199130-735-640x429.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199131-735-640x409.jpg|</imageSourceUrl>
         <productPrice>950.0</productPrice>
         <currency>£</currency>
         <customerAddress>Bury St Edmunds, Suffolk</customerAddress>
@@ -281,7 +281,7 @@
     </product>
     <product productId="32" categoryId="1">
         <productName>suzuki vitara 1.6 se 4x4</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199489-743-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199489-743-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199490-743-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25199491-743-640x853.jpg|</imageSourceUrl>
         <productPrice>1299.0</productPrice>
         <currency>£</currency>
         <customerAddress>Pontefract, West Yorkshire</customerAddress>
@@ -308,7 +308,7 @@
     </product>
     <product productId="35" categoryId="1">
         <productName>TRIUMPH SPRINT 900 (1995) WITH NEW MOT +LOTS MORE</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25201520-581-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25201520-581-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25201519-581-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25201521-581-640x480.jpg|</imageSourceUrl>
         <productPrice>950.0</productPrice>
         <currency>£</currency>
         <customerAddress>Edgware, Middlesex</customerAddress>
@@ -317,7 +317,7 @@
     </product>
     <product productId="36" categoryId="1">
         <productName>sv1000</productName>
-        <imageSourceUrl>http://mp.thcdn.com/21/bd/21bdc91278a040139a16392ecd306e1d.jpg?r=0&amp;w=342|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://mp.thcdn.com/21/bd/21bdc91278a040139a16392ecd306e1d.jpg?r=0&amp;h=450|http://mp.thcdn.com/bc/08/bc084dff22c446e4bf389ba33727d6d0.jpg?r=0&amp;h=450|http://mp.thcdn.com/70/1a/701a909c8ad649d9a1867558dd3ad58e.jpg?r=0&amp;h=450|</imageSourceUrl>
         <productPrice>2600.0</productPrice>
         <currency>£</currency>
         <customerAddress>Pontefract, W Yorkshire</customerAddress>
@@ -326,7 +326,7 @@
     </product>
     <product productId="37" categoryId="1">
         <productName>suzuki 125cc marauder</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25202686-830-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25202686-830-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25202687-830-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25202688-830-640x853.jpg|</imageSourceUrl>
         <productPrice>550.0</productPrice>
         <currency>£</currency>
         <customerAddress>Dyserth, Denbigahshire</customerAddress>
@@ -335,7 +335,7 @@
     </product>
     <product productId="38" categoryId="1">
         <productName>2005 yzf 250</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203418-323-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203418-323-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203419-323-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203420-323-640x480.jpg|</imageSourceUrl>
         <productPrice>1300.0</productPrice>
         <currency>£</currency>
         <customerAddress>St Helens, Merseyside</customerAddress>
@@ -344,7 +344,7 @@
     </product>
     <product productId="39" categoryId="1">
         <productName>CBR 600</productName>
-        <imageSourceUrl>http://mp.thcdn.com/96/a0/96a0ca66112949579c5be2e8fd49e90e.jpg?r=0&amp;w=342|</imageSourceUrl>
+        <imageSourceUrl>http://mp.thcdn.com/96/a0/96a0ca66112949579c5be2e8fd49e90e.jpg?r=0&amp;h=450|</imageSourceUrl>
         <productPrice>450.0</productPrice>
         <currency>£</currency>
         <customerAddress>Retford, Notts</customerAddress>
@@ -353,7 +353,7 @@
     </product>
     <product productId="40" categoryId="1">
         <productName>Squire st.1 circa mid 1970s</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203530-394-640x480.jpg|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203530-394-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203531-394-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0404/25203532-394-640x480.jpg|</imageSourceUrl>
         <productPrice>375.0</productPrice>
         <currency>£</currency>
         <customerAddress>Carlisle, Cumbria</customerAddress>
