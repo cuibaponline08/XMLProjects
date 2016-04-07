@@ -38,7 +38,7 @@ public class CenterServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            List<ProductDTO> list = productService.getAllProducts();
+            List<ProductDTO> list = productService.getAllProductsWithOnePic();
 
             request.setAttribute("LIST", list);
             RequestDispatcher rd = request.getRequestDispatcher("index.jsp");

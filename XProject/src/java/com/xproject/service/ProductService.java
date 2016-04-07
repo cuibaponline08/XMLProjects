@@ -8,6 +8,7 @@ package com.xproject.service;
 import com.xproject.dto.ProductDTO;
 import com.xproject.repository.ProductRepository;
 import java.util.List;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -16,14 +17,13 @@ import java.util.List;
 public class ProductService {
     private ProductRepository productRepository = new ProductRepository();
     
-    public List<ProductDTO> getAllProducts(){
+    public List<ProductDTO> getAllProductsWithOnePic(){
         List<ProductDTO> list = productRepository.getAll();
-        for (ProductDTO productDTO : list) {
-            if (productDTO.getPicUrl() != null && !productDTO.getPicUrl().equals("")) {
-                
-                productDTO.setPicUrl(productDTO.getPicUrl().replace("|", ""));
-            }
-        }
+//        for (ProductDTO productDTO : list) {
+//            if (productDTO.getPicUrl() != null && !productDTO.getPicUrl().equals("")) {
+//                productDTO.setPicUrl(p);
+//            }
+//        }
         
         return list;
     }

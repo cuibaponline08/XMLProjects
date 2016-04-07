@@ -81,7 +81,7 @@ public class DatabaseUtil {
                 for (int i = 1; i <= rsmd.getColumnCount(); i++) {
                     resultDTO.addValue(rs.getString(i));
                 }
-                
+
                 resultSetDTO.addResult(resultDTO);
             }
         } catch (Exception ex) {
@@ -97,7 +97,7 @@ public class DatabaseUtil {
         }
         return resultSetDTO;
     }
-    
+
     public ResultSetDTO selectFromTable(String tableName) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
 
@@ -130,7 +130,7 @@ public class DatabaseUtil {
 
         return resultSetDTO;
     }
-    
+
     public ResultSetDTO selectFromTable(String tableName, String condition) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
 
@@ -239,9 +239,10 @@ public class DatabaseUtil {
         }
         return select;
     }
-    
+
     public int insertToTable(String tableName, String[] newValues) {
         int records = 0;
+        String DUYTEST = "";
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -254,11 +255,13 @@ public class DatabaseUtil {
                     setter += ", " + newValues[i];
                 }
             }
-            records = stm.executeUpdate("INSERT INTO [" + tableName + "] VALUES (" + setter + ")");
+            DUYTEST = setter;
 
-            System.out.println("Insert (" + records + ") success(s).");
+            records = stm.executeUpdate("INSERT INTO [" + tableName + "] VALUES (" + setter + ")");
         } catch (Exception ex) {
-//            ex.printStackTrace();
+            ex.printStackTrace();
+            System.out.println("FFF" + ex);
+            System.out.println("FFF" + DUYTEST);
         } finally {
             try {
                 rs.close();

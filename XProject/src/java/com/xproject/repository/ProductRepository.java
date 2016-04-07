@@ -23,7 +23,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
     private DatabaseUtil dbUtil;
 
     public ProductRepository() {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -96,7 +96,12 @@ public class ProductRepository implements IRepository<ProductDTO> {
             newProduct.setProductName(result.getValueFromColumn(1));
             newProduct.setProductType(ANCParser.parseInt(result.getValueFromColumn(2)));
             newProduct.setPrice(ANCParser.parseFloat(result.getValueFromColumn(3)));
-            newProduct.setPicUrl(result.getValueFromColumn(4));
+            
+            String stringPicJoined = result.getValueFromColumn(4);
+            String[] picUrl = stringPicJoined.split("\\|");
+            newProduct.setDefaultPic(picUrl[0]);
+            newProduct.setPicUrlList(picUrl);
+            
             newProduct.setCategoryId(ANCParser.parseInt(result.getValueFromColumn(5)));
             newProduct.setIsFixedPrice(ANCParser.parseBoolean(result.getValueFromColumn(6)));
             newProduct.setDescription(result.getValueFromColumn(7));
@@ -113,8 +118,10 @@ public class ProductRepository implements IRepository<ProductDTO> {
     }
 
     private String[] getNewValues(ProductDTO entity) {
+        String picUrl = String.join("|", entity.picUrlList);
+        
         String[] result = {entity.productName, String.valueOf(entity.productType),
-            String.valueOf(entity.price), entity.picUrl, String.valueOf(entity.categoryId),
+            String.valueOf(entity.price), picUrl, String.valueOf(entity.categoryId),
             String.valueOf(entity.isFixedPrice), entity.description, entity.addingInformation,
             entity.location, String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
         };

@@ -36,14 +36,14 @@ public class PrelovedPageCollector {
 //    private static String `
 
     public static void main(String[] args) {
-//        getProducts();
+        //getProducts();
         insertProductsToDB();
     }
 
     private static void getProducts() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 2;
+        int totalPage = 3;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
@@ -135,7 +135,7 @@ public class PrelovedPageCollector {
     }
 
     private static void insertProductsToDB() {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -163,19 +163,15 @@ public class PrelovedPageCollector {
             productDTO.setProductType(1);
 
             int insertToTable = dbUtil.insertToTable("Product", getNewValues(productDTO));
-            count++;
-            if (count == 10) {
-                break;
-            }
         }
     }
 
     private static String[] getNewValues(ProductDTO entity) {
         int a = entity.getProductType();
         String aa = String.valueOf(a);
-        String[] result = {"'" + entity.productName + "'", String.valueOf(entity.productType),
+        String[] result = {"N'" + entity.productName + "'", String.valueOf(entity.productType),
             String.valueOf(entity.price), "'" + entity.picUrl + "'", String.valueOf(entity.categoryId),
-            "1", "'" + entity.description + "'", "'" + entity.addingInformation + "'",
+            "1", "'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "'" + entity.addingInformation + "'",
             "'" + entity.location + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
         };
 

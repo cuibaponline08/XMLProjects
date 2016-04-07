@@ -12,6 +12,20 @@ window.onload = function () {
     el.style.color = "red";
 }
 
+function validate(){
+    var regexPatern = "/[\w%_.]+@[\w-.]+\.[\w]{2,n}/";
+    var email = document.getElementById('email').value;
+    
+    var regex = new RegExp(regexPatern);
+    var isValid = regex.test(email);
+    if (isValid) {
+        alert("Right");
+    }
+    else{
+        alert("Wrong");
+    }
+}
+
 function demo() {
     'use strict';
 //    document.appendChild("<h2>ahihi đồ ngốk</h2>");
@@ -39,4 +53,10 @@ function demo() {
     if (true) {
         textArea.value = newValue["A"];
     }
+    
+    validate();
+//    
+//    if (validate()) {
+//        input.value = "Hello this is right";
+//    }
 }

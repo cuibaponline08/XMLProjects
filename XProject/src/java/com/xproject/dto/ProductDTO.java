@@ -5,16 +5,20 @@
  */
 package com.xproject.dto;
 
+import java.util.List;
+
 /**
  *
  * @author cuiba
  */
 public class ProductDTO {
+
     public int productId;
     public String productName;
     public int productType;
     public float price;
-    public String picUrl;
+    public String defaultPic;
+    public String[] picUrlList;
     public int categoryId;
     public boolean isFixedPrice;
     public String description;
@@ -26,12 +30,13 @@ public class ProductDTO {
     public ProductDTO() {
     }
 
-    public ProductDTO(int productId, String productName, int productType, float price, String picUrl, int categoryId, boolean isFixedPrice, String description, String addingInformation, String location, int productStatus, int customerId) {
+    public ProductDTO(int productId, String productName, int productType, float price, String defaultPic, String[] picUrlList, int categoryId, boolean isFixedPrice, String description, String addingInformation, String location, int productStatus, int customerId) {
         this.productId = productId;
         this.productName = productName;
         this.productType = productType;
         this.price = price;
-        this.picUrl = picUrl;
+        this.defaultPic = defaultPic;
+        this.picUrlList = picUrlList;
         this.categoryId = categoryId;
         this.isFixedPrice = isFixedPrice;
         this.description = description;
@@ -39,6 +44,14 @@ public class ProductDTO {
         this.location = location;
         this.productStatus = productStatus;
         this.customerId = customerId;
+    }
+    
+    public String[] getPicUrlList() {
+        return picUrlList;
+    }
+
+    public void setPicUrlList(String[] picUrlList) {
+        this.picUrlList = picUrlList;
     }
 
     public int getProductId() {
@@ -73,12 +86,12 @@ public class ProductDTO {
         this.price = price;
     }
 
-    public String getPicUrl() {
-        return picUrl;
+    public String getDefaultPic() {
+        return defaultPic;
     }
 
-    public void setPicUrl(String picUrl) {
-        this.picUrl = picUrl;
+    public void setDefaultPic(String defaultPic) {
+        this.defaultPic = defaultPic;
     }
 
     public int getCategoryId() {
@@ -136,6 +149,4 @@ public class ProductDTO {
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
     }
-            
-    
 }

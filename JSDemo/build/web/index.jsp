@@ -22,6 +22,12 @@
                 </td>
             </tr>
             <tr>
+                <td>Email </td>
+                <td>
+                    <input id="email" type="text" />
+                </td>
+            </tr>
+            <tr>
                 <td>Address: </td>
                 <td>
                     <textarea></textarea>
