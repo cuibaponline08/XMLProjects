@@ -36,14 +36,14 @@ public class PrelovedPageCollector {
 //    private static String `
 
     public static void main(String[] args) {
-        //getProducts();
-        insertProductsToDB();
+        getProducts();
+//        insertProductsToDB();
     }
 
     private static void getProducts() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 3;
+        int totalPage = 88;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
@@ -96,26 +96,62 @@ public class PrelovedPageCollector {
                             Elements productDetailElements = XMLUtil.getElements(preloved + detailUrl,
                                     "div#classified-p-content");
                             String productDescription = "";
+                            String addingInformation = "";
+                            if (productDetailElements == null) {
+                                continue;
+                            }
+                            String imgUrl = "";
+                            System.out.println("Size:   " + productDetailElements.size());
                             for (Element productDetailElement : productDetailElements) {
                                 if (productDetailElement != null && !productDetailElement.equals("")) {
                                     productDescription = productDetailElement.
                                             select("#classified-description").text();
 
-                                }
-                            }
-                            Elements imgElements = XMLUtil.getElements(preloved + detailUrl, "li.js-media-carousel-item.classified__media__item");
-                            String imgUrl = "";
-                            int a = imgElements.size();
-                            if (imgElements != null && !imgElements.equals("")) {
-                                for (Element imgElement : imgElements) {
-                                    imgUrl += imgElement.
-                                            select("img").
-                                            attr("data-src") + "|";
+                                    Elements imgElements = productDetailElement.getElementsByTag("li");
+                                    if (imgElements != null && !imgElements.equals("")) {
+                                        int tmpIndex = 0;
+                                        for (Element imgElement : imgElements) {
+                                            String imgText = imgElement.
+                                                        select("img").
+                                                        attr("data-src");
+                                            if (imgText == "") {
+                                                continue;
+                                            }
+                                            
+                                            if (tmpIndex == 0) {
+                                                imgUrl += imgText;
+                                            } else {
+                                                imgUrl += "|" + imgText;
+                                            }
+                                            tmpIndex++;
+                                        }
+                                    }
+                                    
+                                    Elements addingInfoElements = productDetailElement.getElementsByTag(
+                                            "dl");
+                                    if (addingInfoElements != null && !addingInfoElements.equals("")) {
+                                        int tmpIndex = 0;
+                                        for (Element addingInfoElement : addingInfoElements) {
+                                            String addingInfoText = addingInfoElement.
+                                                        select("span.ellipsis").text();
+                                            if (addingInfoText == "") {
+                                                continue;
+                                            }
+                                            
+                                            if (tmpIndex == 0) {
+                                                addingInformation += addingInfoText;
+                                            } else {
+                                                addingInformation += "|" + addingInfoText;
+                                            }
+                                            tmpIndex++;
+                                        }
+                                    }
                                 }
                             }
 
                             product.setImageSourceUrl(imgUrl);
                             product.setDescription(productDescription);
+                            product.setAddingInformation(addingInformation);
                         }
                         product.setProductDetailUrl(preloved + detailUrl);
 
@@ -125,6 +161,7 @@ public class PrelovedPageCollector {
 
                         productList.add(product);
                         count++;
+                        System.out.println(count);
                     } else {
                         continue;
                     }
