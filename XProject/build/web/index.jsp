@@ -8,73 +8,66 @@
         <link rel="stylesheet" href="css/xproject.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-        <!--[if gte IE 9]>
-          <style type="text/css">
-            .gradient {
-               filter: none;
-            }
-          </style>
-        <![endif]-->
     </head>
     <body id="body" class="preload">
-        <div class="wrapper">
-            <section class="row">
-                <div class="container-item" style="top: 200px">
-                    <ul>
-                        <c:forEach items="${requestScope.LIST}" var="product" >
-                            <li>
-                                <div class="item">
-                                    <img src="${product.defaultPic}" style="width: 367px; height: 260px;"/>
-                                    <div class="item-overlay">
-                                        <!--                                    <a href="#" class="item-button play"><i class="play"></i></a>
-                                                                            <a href="#" class="item-button share share-btn"><i class="play"></i></a>-->
-                                        <div class="sale-tag"><span>SALE</span></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <div class="item-top-content">
-                                            <div class="item-top-content-inner">
-                                                <div class="item-product">
-                                                    <div class="item-top-title">
-                                                        <h2>${product.productName}</h2>
-                                                        <p class="subdescription panel-heading">
-                                                            ${product.description}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="item-product-price">
-                                                    <span class="price-num">${product.price}</span>
-                                                    <!--<p class="subdescription">$36</p>-->
-                                                    <!--<div class="old-price"></div>-->
-                                                </div>
-                                            </div>	
-                                        </div>
-                                        <div class="item-add-content">
-                                            <div class="item-add-content-inner">
-                                                <!-- <div class="section">
-                                                        <h4>Sizes</h4>
-                                                        <p>40,41,42,43,44,45</p>
-                                                </div> -->
-                                                <div class="section">
-                                                    <a href="#" class="btn buy expand">Chi tiết</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </c:forEach>
-                    </ul>
-                </div>
-            </section>
+        <div class="body-main">
+            <div class="wrapper">
+                <section class="row">
+                    <input type="text" class="textbox-search"/>
+                    <input type="button" class="submit-button" value="Search"/>
+                </section>
+            <!--</div>-->
+            <!--<div class="wrapper">-->
+                <section class="row">
+                    <div class="container-item">
+                        <div class="product" id="productList">
+                            <!-- item will load by AJAX -->
+                        </div> <!-- end div product -->
+                    </div>
+                </section>
+            <!--</div>-->
+            <!--<div class="wrapper-paging">-->
+                <section class="row">
+                    <div id="pageItems">
+                        <!-- item will load by AJAX -->
+                    </div>
+                </section>
+            </div>
         </div>
     </body>
 </html>
 
 <script>
     $(document).ready(function () {
-        
+        loadProduct(1);
+        loadPages();
     });
+
+    function loadPages() {
+        $.ajax({
+            type: "POST",
+            url: "PagingServlet",
+            data: "",
+            contentType: "application/json",
+            async: false,
+            success: function (result) {
+                document.getElementById('pageItems').innerHTML = result.toString();
+            }
+        });
+    }
+
+    function loadProduct(currentPage) {
+        $.ajax({
+            type: "POST",
+            url: "CenterServlet?currentPage=" + currentPage,
+            data: "",
+            contentType: "application/json",
+            async: false,
+            success: function (result) {
+                document.getElementById('productList').innerHTML = result.toString();
+            }
+        });
+    }
 
     $("window").load(function () {
         $("#body").removeClass("preload");
@@ -103,5 +96,6 @@
             $(".container-item").css("z-index", "1000")
         }, 500);
     });
+
 
 </script>

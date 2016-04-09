@@ -36,8 +36,8 @@ public class PrelovedPageCollector {
 //    private static String `
 
     public static void main(String[] args) {
-        getProducts();
-//        insertProductsToDB();
+//        getProducts();
+        insertProductsToDB();
     }
 
     private static void getProducts() {
@@ -73,6 +73,7 @@ public class PrelovedPageCollector {
                         }
 
                         Product product = new Product();
+                        //TODO: HardCode
                         product.setCategoryId(1);
                         product.setCustomerAddress(productElement.select(
                                 "span.is-location").text());
@@ -100,8 +101,8 @@ public class PrelovedPageCollector {
                             if (productDetailElements == null) {
                                 continue;
                             }
+                            
                             String imgUrl = "";
-                            System.out.println("Size:   " + productDetailElements.size());
                             for (Element productDetailElement : productDetailElements) {
                                 if (productDetailElement != null && !productDetailElement.equals("")) {
                                     productDescription = productDetailElement.
@@ -112,12 +113,12 @@ public class PrelovedPageCollector {
                                         int tmpIndex = 0;
                                         for (Element imgElement : imgElements) {
                                             String imgText = imgElement.
-                                                        select("img").
-                                                        attr("data-src");
-                                            if (imgText == "") {
+                                                    select("img").
+                                                    attr("data-src");
+                                            if (imgText.equals("")) {
                                                 continue;
                                             }
-                                            
+
                                             if (tmpIndex == 0) {
                                                 imgUrl += imgText;
                                             } else {
@@ -126,18 +127,18 @@ public class PrelovedPageCollector {
                                             tmpIndex++;
                                         }
                                     }
-                                    
+
                                     Elements addingInfoElements = productDetailElement.getElementsByTag(
                                             "dl");
                                     if (addingInfoElements != null && !addingInfoElements.equals("")) {
                                         int tmpIndex = 0;
                                         for (Element addingInfoElement : addingInfoElements) {
                                             String addingInfoText = addingInfoElement.
-                                                        select("span.ellipsis").text();
-                                            if (addingInfoText == "") {
+                                                    select("span.ellipsis").text();
+                                            if (addingInfoText.equals("")) {
                                                 continue;
                                             }
-                                            
+
                                             if (tmpIndex == 0) {
                                                 addingInformation += addingInfoText;
                                             } else {
@@ -172,7 +173,7 @@ public class PrelovedPageCollector {
     }
 
     private static void insertProductsToDB() {
-        String databaseServer = "DUYDTSE61187";
+        String databaseServer = "CUIBAP";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -186,18 +187,20 @@ public class PrelovedPageCollector {
         for (Product product : products.getProduct()) {
             ProductDTO productDTO = new ProductDTO();
 
-            productDTO.setAddingInformation("");
+            productDTO.setAddingInformation(product.getAddingInformation());
             productDTO.setCategoryId(product.getCategoryId());
-            productDTO.setCustomerId(1);
             productDTO.setDescription(product.getDescription());
-            productDTO.setIsFixedPrice(true);
             productDTO.setLocation(product.getCustomerAddress());
             productDTO.setPicUrl(product.getImageSourceUrl());
             productDTO.setPrice(product.getProductPrice());
             productDTO.setProductId(product.getProductId());
             productDTO.setProductName(product.getProductName());
+            
+            //TODO: Hard code
             productDTO.setProductStatus(1);
             productDTO.setProductType(1);
+            productDTO.setCustomerId(1);
+            productDTO.setIsFixedPrice(true);
 
             int insertToTable = dbUtil.insertToTable("Product", getNewValues(productDTO));
         }
@@ -206,10 +209,14 @@ public class PrelovedPageCollector {
     private static String[] getNewValues(ProductDTO entity) {
         int a = entity.getProductType();
         String aa = String.valueOf(a);
-        String[] result = {"N'" + entity.productName + "'", String.valueOf(entity.productType),
-            String.valueOf(entity.price), "'" + entity.picUrl + "'", String.valueOf(entity.categoryId),
-            "1", "'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "'" + entity.addingInformation + "'",
-            "'" + entity.location + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
+        String[] result = {"N'" + entity.productName.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.productType),
+            String.valueOf(entity.price), "'" + entity.picUrl.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.categoryId),
+            "1", "'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "'"
+            + entity.addingInformation.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
+            "'" + entity.location.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
         };
 
         return result;

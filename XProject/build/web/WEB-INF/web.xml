@@ -4,9 +4,25 @@
         <servlet-name>CenterServlet</servlet-name>
         <servlet-class>com.xproject.servlet.CenterServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.ProductDetailServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PagingServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.PagingServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CenterServlet</servlet-name>
         <url-pattern>/CenterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <url-pattern>/ProductDetailServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PagingServlet</servlet-name>
+        <url-pattern>/PagingServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

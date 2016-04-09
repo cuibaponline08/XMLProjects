@@ -23,7 +23,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
     private DatabaseUtil dbUtil;
 
     public ProductRepository() {
-        String databaseServer = "DUYDTSE61187";
+        String databaseServer = "CUIBAP";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -74,6 +74,12 @@ public class ProductRepository implements IRepository<ProductDTO> {
         List<ProductDTO> list = getProductList(rs);
         return list;
     }
+    
+    public List<ProductDTO> getProductSkipTake() {
+        ResultSetDTO rs = dbUtil.selectFromTable("Product");
+        List<ProductDTO> list = getProductList(rs);
+        return list;
+    }
 
     @Override
     public List<ProductDTO> search(String condition) {
@@ -105,7 +111,12 @@ public class ProductRepository implements IRepository<ProductDTO> {
             newProduct.setCategoryId(ANCParser.parseInt(result.getValueFromColumn(5)));
             newProduct.setIsFixedPrice(ANCParser.parseBoolean(result.getValueFromColumn(6)));
             newProduct.setDescription(result.getValueFromColumn(7));
-            newProduct.setAddingInformation(result.getValueFromColumn(8));
+            
+            String infoJoined = result.getValueFromColumn(8);
+            String[] infoArray = infoJoined.split("\\|");
+            newProduct.setAddingInformation(infoJoined);
+            newProduct.setAddingInformationList(infoArray);
+            
             newProduct.setLocation(result.getValueFromColumn(9));
             newProduct.setProductStatus(ANCParser.parseInt(result.getValueFromColumn(10)));
             newProduct.setCustomerId(ANCParser.parseInt(result.getValueFromColumn(11)));
