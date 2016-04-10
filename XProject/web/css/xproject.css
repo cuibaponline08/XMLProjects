@@ -506,32 +506,34 @@ h2{
 /* Image slider area */
 
 .slider{
+    /*display: block;*/
     width: 100%; /*Same as width of the large image*/
     height: 100%;
     position: relative;
     /*Instead of height we will use padding*/
     padding-top: 370px; /*That helps bring the labels down*/
-
-    margin: 100px auto;
-
+    /*margin: auto;*/
     /*Lets add a shadow*/
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    /*align-items: center;*/
 }
 
 
 /*Last thing remaining is to add transitions*/
 .slider>img{
     position: absolute;
-    left: 0;
-    margin-left: 28%;    
+    /*left: 25%;*/
     top: 0;
     transition: all 0.5s;
-    height: 100%;
-    width: 100%;
+/*    height: 100%;
+    width: 100%;*/
     max-height: 370px;
     max-width: 640px;
-    min-width: 360px;
+    /*min-width: 360px;*/
     min-height: 370px;
+    left: 25%;
+    margin-right: -75%;
+    transform: translate(-75%, -75%) 
 }
 
 .slider input[name='slide_switch'] {
@@ -572,4 +574,20 @@ On click the images will be displayed at normal size to complete the effect
 .slider input[name='slide_switch']:checked+label+img {
     opacity: 1;
     transform: scale(1);
+}
+
+#watch-header {
+    min-height: 70px;
+    padding-bottom: 5px;
+}
+.yt-card.yt-card-has-padding {
+    padding: 15px;
+}
+.yt-card {
+    margin: 0 0 10px;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }

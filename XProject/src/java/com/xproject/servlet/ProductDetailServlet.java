@@ -66,12 +66,15 @@ public class ProductDetailServlet extends HttpServlet {
             //<editor-fold defaultstate="collapsed" desc="Generate Header">
             response.getWriter().println("<section class=\"row\">");
 
-            response.getWriter().println("<div class=\"section-product-name\">"
-                    + product.getProductName() + "</div>"
-                    + "<div class=\"section-product-price\">" + product.getCurrency()
-                    + ANCParser.moneyFormat(product.getPrice()) + "</div>");
-
-            response.getWriter().println("<div class=\"section-location\">" + product.getLocation() + "</div>");
+            response.getWriter().println("<div id=\"watch-header\" class=\"yt-card yt-card-has-padding\">"
+                    + "     <div>"
+                    + "            <h1>"
+                    + product.getProductName()
+                    + "           </h1>"
+                    + "     </div>"
+                    + "<div><h3>" + product.getCurrency()
+                    + ANCParser.moneyFormat(product.getPrice()) + "</h3></div>"
+                    + "</div>");
 
             response.getWriter().println("</section>");
             //</editor-fold>
@@ -87,14 +90,14 @@ public class ProductDetailServlet extends HttpServlet {
                     response.getWriter().println("<input type=\"radio\" name=\"slide_switch\" "
                             + "checked=\"checked\" id=\"pic" + i + "\"/>"
                             + "                        <label for=\"pic" + i + "\">"
-                            + "                            <img src=\"" + productImages[i] + "\" width=\"100\"/>"
+                            + "<img src=\"" + productImages[i] + "\" width=\"100\"/>"
                             + "                        </label>"
                             + "                        <img src=\"" + productImages[i] + "\"/>");
                 } else {
                     response.getWriter().println("<input type=\"radio\" name=\"slide_switch\" "
                             + "id=\"pic" + i + "\"/>"
                             + "                        <label for=\"pic" + i + "\">"
-                            + "                            <img src=\"" + productImages[i] + "\" width=\"100\"/>"
+                            + "<img src=\"" + productImages[i] + "\" width=\"100\"/>"
                             + "                        </label>"
                             + "                        <img src=\"" + productImages[i] + "\"/>");
                 }
@@ -104,12 +107,7 @@ public class ProductDetailServlet extends HttpServlet {
                     + "</section>");
 //</editor-fold>
 
-            //<editor-fold defaultstate="collapsed" desc="Generate Info">
-            response.getWriter().println("<section class=\"row\">");
-
-            response.getWriter().println("<div class=\"section-title\">Description</div>"
-                    + "<div class=\"section-content\">" + product.getDescription() + "</div>");
-
+            //<editor-fold defaultstate="collapsed" desc="Generate Description">
             String addingInfomation = "<table>";
 
             for (String info : product.getAddingInformationList()) {
@@ -119,15 +117,21 @@ public class ProductDetailServlet extends HttpServlet {
                         + "</td>"
                         + "</tr>";
             }
-
             addingInfomation += "</table>";
-            response.getWriter().println("<div class=\"section-title\">Adding Information</div>"
-                    + "<div class=\"section-content\">" + addingInfomation + "</div>");
+            response.getWriter().println("<section class=\"row\">");
 
+            response.getWriter().println("<div id=\"watch-content\" class=\"yt-card yt-card-has-padding\">"
+                    + "     <div>"
+                    + "            <h3>Description</h3>"
+                    + "     </div>"
+                    + "     <div><p>" + product.getDescription() + "</p></div>"
+                    + "     <div><h3>Adding Information</h3></div>"
+                    + "     <div>" + addingInfomation + "</div>"
+                    + "</div>");
             response.getWriter().println("</section>");
 //</editor-fold>
 
-            //<editor-fold defaultstate="collapsed" desc="Generate Info">
+            //<editor-fold defaultstate="collapsed" desc="Generate Adding Info">
             response.getWriter().println("<section class=\"row\">");
 
             response.getWriter().println(

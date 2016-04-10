@@ -21,7 +21,7 @@
 
             </div>
             <div class="wrapper" id="footer">
-                
+
             </div>
         </div>
     </body>
@@ -34,3 +34,5 @@
     });
 
 </script>
+
+<!-- USING XML data from GOOGLE API combine with JSP -->
