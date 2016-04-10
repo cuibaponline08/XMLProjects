@@ -9,8 +9,8 @@
         <servlet-class>com.xproject.servlet.ProductDetailServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>PagingServlet</servlet-name>
-        <servlet-class>com.xproject.servlet.PagingServlet</servlet-class>
+        <servlet-name>ShowAllProductServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.ShowAllProductServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CenterServlet</servlet-name>
@@ -21,8 +21,8 @@
         <url-pattern>/ProductDetailServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>PagingServlet</servlet-name>
-        <url-pattern>/PagingServlet</url-pattern>
+        <servlet-name>ShowAllProductServlet</servlet-name>
+        <url-pattern>/ShowAllProductServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -30,6 +30,6 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>CenterServlet</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

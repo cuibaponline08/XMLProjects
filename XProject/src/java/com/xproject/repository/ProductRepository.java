@@ -52,7 +52,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
         String[] newValues = getNewValues(entity);
         String condition = "ProductId = " + entity.getProductId();
         int record = dbUtil.updateTable("Product", newValues, condition);
-        
+
         return record != 0;
     }
 
@@ -65,7 +65,12 @@ public class ProductRepository implements IRepository<ProductDTO> {
     public ProductDTO getById(int id) {
         ResultSetDTO rs = dbUtil.selectFromTable("Product", "ProductId = " + id);
         List<ProductDTO> list = getProductList(rs);
-        return list.get(0);
+        if (list.size() > 0) {
+            return list.get(0);
+        }
+        else {
+            return null;
+        }
     }
 
     @Override
@@ -74,7 +79,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
         List<ProductDTO> list = getProductList(rs);
         return list;
     }
-    
+
     public List<ProductDTO> getProductSkipTake() {
         ResultSetDTO rs = dbUtil.selectFromTable("Product");
         List<ProductDTO> list = getProductList(rs);
@@ -102,24 +107,26 @@ public class ProductRepository implements IRepository<ProductDTO> {
             newProduct.setProductName(result.getValueFromColumn(1));
             newProduct.setProductType(ANCParser.parseInt(result.getValueFromColumn(2)));
             newProduct.setPrice(ANCParser.parseFloat(result.getValueFromColumn(3)));
-            
+
             String stringPicJoined = result.getValueFromColumn(4);
             String[] picUrl = stringPicJoined.split("\\|");
             newProduct.setDefaultPic(picUrl[0]);
             newProduct.setPicUrlList(picUrl);
-            
+
             newProduct.setCategoryId(ANCParser.parseInt(result.getValueFromColumn(5)));
             newProduct.setIsFixedPrice(ANCParser.parseBoolean(result.getValueFromColumn(6)));
             newProduct.setDescription(result.getValueFromColumn(7));
-            
+
             String infoJoined = result.getValueFromColumn(8);
             String[] infoArray = infoJoined.split("\\|");
             newProduct.setAddingInformation(infoJoined);
             newProduct.setAddingInformationList(infoArray);
-            
+
             newProduct.setLocation(result.getValueFromColumn(9));
             newProduct.setProductStatus(ANCParser.parseInt(result.getValueFromColumn(10)));
             newProduct.setCustomerId(ANCParser.parseInt(result.getValueFromColumn(11)));
+            newProduct.setProductSourceUrl(result.getValueFromColumn(12));
+            newProduct.setCurrency(result.getValueFromColumn(13));
 //</editor-fold>
 
             list.add(newProduct);
@@ -130,11 +137,12 @@ public class ProductRepository implements IRepository<ProductDTO> {
 
     private String[] getNewValues(ProductDTO entity) {
         String picUrl = String.join("|", entity.picUrlList);
-        
+
         String[] result = {entity.productName, String.valueOf(entity.productType),
             String.valueOf(entity.price), picUrl, String.valueOf(entity.categoryId),
             String.valueOf(entity.isFixedPrice), entity.description, entity.addingInformation,
-            entity.location, String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
+            entity.location, String.valueOf(entity.productStatus), String.valueOf(entity.customerId),
+            String.valueOf(entity.productSourceUrl), entity.currency
         };
 
         return result;

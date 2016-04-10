@@ -329,17 +329,17 @@ public class DatabaseUtil {
                 if (i == 0 && newValues[0] != null && !newValues[0].isEmpty()) {
                     setter = newValues[0];
                 } else {
-                    setter += ", " + newValues;
+                    setter += ", " + newValues[i];
                 }
             }
-            records = stm.executeUpdate("INSERT INTO [" + tableName + "] SET " + setter);
+            records = stm.executeUpdate("INSERT INTO [" + tableName + "] VALUES (" + setter + ")");
 
             System.out.println("Insert (" + records + ") success(s).");
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {
             try {
-                rs.close();
+//                rs.close();
                 stm.close();
                 conn.close();;
             } catch (Exception ex) {

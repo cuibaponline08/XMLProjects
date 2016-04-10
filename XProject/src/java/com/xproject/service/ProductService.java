@@ -26,4 +26,8 @@ public class ProductService {
         List<ProductDTO> list = productRepository.getProductSkipTake();
         return list;
     }
+    
+    public ProductDTO getProductById(int productId){
+        return productRepository.getById(productId);
+    }
 }

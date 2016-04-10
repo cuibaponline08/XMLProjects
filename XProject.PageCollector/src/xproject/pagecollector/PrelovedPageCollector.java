@@ -6,6 +6,7 @@
 package xproject.pagecollector;
 
 import com.anc.databaseUtil.DatabaseUtil;
+import com.xproject.data.Enum.ProductTypeEnum;
 import com.xproject.dto.ProductDTO;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +44,7 @@ public class PrelovedPageCollector {
     private static void getProducts() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 88;
+        int totalPage = 2;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
@@ -72,13 +73,25 @@ public class PrelovedPageCollector {
                             productPrice = Float.valueOf(priceWithoutCurrency);
                         }
 
+                        String productType = productElement.getElementsByAttributeValue(
+                                "data-test-element", "advert-type").text().trim();
+
+                        String availability = productElement.getElementsByAttributeValue(
+                                "itemprop", "availability").text().trim();
+                        boolean isFixedPrice = false;
+                        if ("No Offers".equals(availability)) {
+                            isFixedPrice = true;
+                        }
+
                         Product product = new Product();
                         //TODO: HardCode
                         product.setCategoryId(1);
+
                         product.setCustomerAddress(productElement.select(
                                 "span.is-location").text());
                         product.setImageSourceUrl(productElement.select(
                                 "img.js-defer.media-item.is-media.js-loaded").attr("src"));
+                        product.setProductType(productType);
 
                         product.setProductId(count);
                         String productName = productElement.select(
@@ -101,7 +114,7 @@ public class PrelovedPageCollector {
                             if (productDetailElements == null) {
                                 continue;
                             }
-                            
+
                             String imgUrl = "";
                             for (Element productDetailElement : productDetailElements) {
                                 if (productDetailElement != null && !productDetailElement.equals("")) {
@@ -153,6 +166,7 @@ public class PrelovedPageCollector {
                             product.setImageSourceUrl(imgUrl);
                             product.setDescription(productDescription);
                             product.setAddingInformation(addingInformation);
+                            product.setIsFixedPrice(isFixedPrice);
                         }
                         product.setProductDetailUrl(preloved + detailUrl);
 
@@ -185,8 +199,9 @@ public class PrelovedPageCollector {
         Products products = XMLUtil.xmlReader(Products.class, productDestinationPath);
         int count = 0;
         for (Product product : products.getProduct()) {
-            ProductDTO productDTO = new ProductDTO();
+            int productType = getProductTypeInt(product.getProductType());
 
+            ProductDTO productDTO = new ProductDTO();
             productDTO.setAddingInformation(product.getAddingInformation());
             productDTO.setCategoryId(product.getCategoryId());
             productDTO.setDescription(product.getDescription());
@@ -195,12 +210,14 @@ public class PrelovedPageCollector {
             productDTO.setPrice(product.getProductPrice());
             productDTO.setProductId(product.getProductId());
             productDTO.setProductName(product.getProductName());
-            
+            productDTO.setProductSourceUrl(product.getProductDetailUrl());
+            productDTO.setCurrency(product.getCurrency());
+            productDTO.setProductType(productType);
+            productDTO.setIsFixedPrice(product.isIsFixedPrice());
+
             //TODO: Hard code
             productDTO.setProductStatus(1);
-            productDTO.setProductType(1);
             productDTO.setCustomerId(1);
-            productDTO.setIsFixedPrice(true);
 
             int insertToTable = dbUtil.insertToTable("Product", getNewValues(productDTO));
         }
@@ -208,17 +225,61 @@ public class PrelovedPageCollector {
 
     private static String[] getNewValues(ProductDTO entity) {
         int a = entity.getProductType();
-        String aa = String.valueOf(a);
         String[] result = {"N'" + entity.productName.replaceAll("\"", "\"").replaceAll("'", "''")
             + "'", String.valueOf(entity.productType),
-            String.valueOf(entity.price), "'" + entity.picUrl.replaceAll("\"", "\"").replaceAll("'", "''")
+            String.valueOf(entity.price), "N'" + entity.picUrl.replaceAll("\"", "\"").replaceAll("'", "''")
             + "'", String.valueOf(entity.categoryId),
-            "1", "'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "'"
+            parseBooleanToString(entity.isFixedPrice), "N'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "N'"
             + entity.addingInformation.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
-            "'" + entity.location.replaceAll("\"", "\"").replaceAll("'", "''")
-            + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
+            "N'" + entity.location.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId), "N'"
+            + entity.productSourceUrl.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
+            "N'" + entity.currency.replaceAll("\"", "\"").replaceAll("'", "''") + "'"
         };
 
+        return result;
+    }
+    
+    private static String parseBooleanToString(boolean bool){
+        return bool ? "1" : "0";
+    }
+
+    private static int getProductTypeInt(String productType) {
+        int result = ProductTypeEnum.Other.ordinal();
+        switch (productType) {
+            case "For Sale":
+                result = ProductTypeEnum.ForSale.ordinal();
+                break;
+            case "Wanted":
+                result = ProductTypeEnum.Wanted.ordinal();
+                break;
+            case "To Rent":
+                result = ProductTypeEnum.ToRent.ordinal();
+                break;
+            case "For Loan":
+                result = ProductTypeEnum.ForLoan.ordinal();
+                break;
+            case "Swap":
+                result = ProductTypeEnum.Swap.ordinal();
+                break;
+            case "Event":
+                result = ProductTypeEnum.Event.ordinal();
+                break;
+            case "Service":
+                result = ProductTypeEnum.Service.ordinal();
+                break;
+            case "Lost":
+                result = ProductTypeEnum.Lost.ordinal();
+                break;
+            case "Found":
+                result = ProductTypeEnum.Found.ordinal();
+                break;
+            case "For Stud":
+                result = ProductTypeEnum.ForStud.ordinal();
+                break;
+            default:
+                result = ProductTypeEnum.Other.ordinal();
+        }
         return result;
     }
 }

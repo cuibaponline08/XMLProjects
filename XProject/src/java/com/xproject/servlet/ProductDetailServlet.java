@@ -5,8 +5,12 @@
  */
 package com.xproject.servlet;
 
+import com.xproject.dto.ProductDTO;
+import com.xproject.infrastructure.ANCParser;
+import com.xproject.service.ProductService;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author Admin
  */
 public class ProductDetailServlet extends HttpServlet {
+
+    private ProductService productService = new ProductService();
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,13 +35,7 @@ public class ProductDetailServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            
-        } finally {
-            out.close();
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -50,6 +50,94 @@ public class ProductDetailServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        String sId = request.getParameter("productId");
+        int productId = ANCParser.parseInt(sId);
+        ProductDTO product = productService.getProductById(productId);
+
+        if (product == null) {
+//            // Cannot find product match the productId requested
+//            // ==> return homepages
+//            RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+//            rd.forward(request, response);
+        } else {
+            response.setContentType("text/html");
+            response.setCharacterEncoding("UTF-8");
+            //<editor-fold defaultstate="collapsed" desc="Generate Header">
+            response.getWriter().println("<section class=\"row\">");
+
+            response.getWriter().println("<div class=\"section-product-name\">"
+                    + product.getProductName() + "</div>"
+                    + "<div class=\"section-product-price\">" + product.getCurrency()
+                    + ANCParser.moneyFormat(product.getPrice()) + "</div>");
+
+            response.getWriter().println("<div class=\"section-location\">" + product.getLocation() + "</div>");
+
+            response.getWriter().println("</section>");
+            //</editor-fold>
+
+            //<editor-fold defaultstate="collapsed" desc="Generate Images">
+            response.getWriter().println("<section class=\"row\">"
+                    + "<div class=\"slider\">");
+
+            String[] productImages = product.getPicUrlList();
+// render list images
+            for (int i = 0; i < productImages.length; i++) {
+                if (i == 0) {
+                    response.getWriter().println("<input type=\"radio\" name=\"slide_switch\" "
+                            + "checked=\"checked\" id=\"pic" + i + "\"/>"
+                            + "                        <label for=\"pic" + i + "\">"
+                            + "                            <img src=\"" + productImages[i] + "\" width=\"100\"/>"
+                            + "                        </label>"
+                            + "                        <img src=\"" + productImages[i] + "\"/>");
+                } else {
+                    response.getWriter().println("<input type=\"radio\" name=\"slide_switch\" "
+                            + "id=\"pic" + i + "\"/>"
+                            + "                        <label for=\"pic" + i + "\">"
+                            + "                            <img src=\"" + productImages[i] + "\" width=\"100\"/>"
+                            + "                        </label>"
+                            + "                        <img src=\"" + productImages[i] + "\"/>");
+                }
+            }
+
+            response.getWriter().println("</div>"
+                    + "</section>");
+//</editor-fold>
+
+            //<editor-fold defaultstate="collapsed" desc="Generate Info">
+            response.getWriter().println("<section class=\"row\">");
+
+            response.getWriter().println("<div class=\"section-title\">Description</div>"
+                    + "<div class=\"section-content\">" + product.getDescription() + "</div>");
+
+            String addingInfomation = "<table>";
+
+            for (String info : product.getAddingInformationList()) {
+                addingInfomation += "<tr>"
+                        + "<td>"
+                        + info
+                        + "</td>"
+                        + "</tr>";
+            }
+
+            addingInfomation += "</table>";
+            response.getWriter().println("<div class=\"section-title\">Adding Information</div>"
+                    + "<div class=\"section-content\">" + addingInfomation + "</div>");
+
+            response.getWriter().println("</section>");
+//</editor-fold>
+
+            //<editor-fold defaultstate="collapsed" desc="Generate Info">
+            response.getWriter().println("<section class=\"row\">");
+
+            response.getWriter().println(
+                    "<input type=\"button\" value='hello' class=\"button_active\" onclick=\"location.href='"
+                    + product.getProductSourceUrl() + "';\" />");
+
+            response.getWriter().println("</section>");
+//</editor-fold>
+        }
+
         processRequest(request, response);
     }
 
@@ -64,6 +152,7 @@ public class ProductDetailServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         processRequest(request, response);
     }
 

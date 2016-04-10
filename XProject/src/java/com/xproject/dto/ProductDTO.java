@@ -27,11 +27,13 @@ public class ProductDTO {
     public String location;
     public int productStatus;
     public int customerId;
+    public String productSourceUrl;
+    public String currency;
 
     public ProductDTO() {
     }
 
-    public ProductDTO(int productId, String productName, int productType, float price, String defaultPic, String[] picUrlList, int categoryId, boolean isFixedPrice, String description, String addingInformation, String[] addingInformationList, String location, int productStatus, int customerId) {
+    public ProductDTO(int productId, String productName, int productType, float price, String defaultPic, String[] picUrlList, int categoryId, boolean isFixedPrice, String description, String addingInformation, String[] addingInformationList, String location, int productStatus, int customerId, String productSourceUrl, String currency) {
         this.productId = productId;
         this.productName = productName;
         this.productType = productType;
@@ -46,6 +48,16 @@ public class ProductDTO {
         this.location = location;
         this.productStatus = productStatus;
         this.customerId = customerId;
+        this.productSourceUrl = productSourceUrl;
+        this.currency = currency;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 
     public int getProductId() {
@@ -160,5 +172,12 @@ public class ProductDTO {
         this.customerId = customerId;
     }
 
-    
+    public String getProductSourceUrl() {
+        return productSourceUrl;
+    }
+
+    public void setProductSourceUrl(String productSourceUrl) {
+        this.productSourceUrl = productSourceUrl;
+    }
+
 }
