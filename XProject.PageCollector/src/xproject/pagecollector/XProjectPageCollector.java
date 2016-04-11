@@ -17,8 +17,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import org.netbeans.xml.schema.products.Product;
-import org.netbeans.xml.schema.products.Products;
 import xproject.utils.XMLUtil;
 
 /**

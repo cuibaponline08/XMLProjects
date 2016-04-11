@@ -6,6 +6,7 @@
 package com.xproject.servlet;
 
 import com.xproject.dto.ProductDTO;
+import com.xproject.infrastructure.ANCParser;
 import com.xproject.service.ProductService;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -22,7 +23,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class CenterServlet extends HttpServlet {
 
-    private ProductService productService = new ProductService();
+    private static String ProductDetailServlet = "ProductDetailServlet";
+    private static String ShowAllProductServlet = "ShowAllProductServlet";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,16 +37,20 @@ public class CenterServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
         try {
-            List<ProductDTO> list = productService.getAllProductsWithOnePic();
+            String action = request.getParameter("action");
 
-            request.setAttribute("LIST", list);
-            RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-            rd.forward(request, response);
-        } finally {
-            out.close();
+            if (action.equals("ProductDetailServlet")) {
+                RequestDispatcher rd = request.getRequestDispatcher(ProductDetailServlet);
+                rd.forward(request, response);
+            } else if (action.equals("ShowAllProductServlet")) {
+                RequestDispatcher rd = request.getRequestDispatcher(ShowAllProductServlet);
+                rd.forward(request, response);
+            } else {
+                RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+                rd.forward(request, response);
+            }
+        } catch (Exception e) {
         }
     }
 
@@ -60,6 +66,7 @@ public class CenterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         processRequest(request, response);
     }
 
@@ -74,6 +81,7 @@ public class CenterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         processRequest(request, response);
     }
 

@@ -131,6 +131,45 @@ public class DatabaseUtil {
         return resultSetDTO;
     }
 
+    public ResultSetDTO selectFromTableSkipTake(String tableName, String orderBy, int skip, int take) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            conn = DriverManager.getConnection(connectionString);
+            stm = conn.createStatement();
+
+            rs = stm.executeQuery("SELECT * "
+                    + "FROM"
+                    + "("
+                    + "SELECT tbl.*, ROW_NUMBER() OVER (ORDER BY "+ orderBy +") rownum"
+                    + "FROM [" + tableName + "] as tbl"
+                    + ") seq"
+                    + " WHERE seq.rownum BETWEEN " + skip + " AND " + take);
+            ResultSetMetaData rsmd = rs.getMetaData();
+
+            while (rs.next()) {
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
+                }
+                resultSetDTO.addResult(resultDTO);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                rs.close();
+                stm.close();
+                conn.close();;
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        return resultSetDTO;
+    }
+
     public ResultSetDTO selectFromTable(String tableName, String condition) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
 
@@ -140,6 +179,45 @@ public class DatabaseUtil {
             stm = conn.createStatement();
 
             rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE " + condition);
+            ResultSetMetaData rsmd = rs.getMetaData();
+
+            while (rs.next()) {
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
+                }
+                resultSetDTO.addResult(resultDTO);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                rs.close();
+                stm.close();
+                conn.close();;
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        return resultSetDTO;
+    }
+
+    public ResultSetDTO selectFromTableSkipTake(String tableName, String condition, String orderBy, int skip, int take) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            conn = DriverManager.getConnection(connectionString);
+            stm = conn.createStatement();
+
+            rs = stm.executeQuery("SELECT * "
+                    + "FROM"
+                    + "("
+                    + "SELECT tbl.*, ROW_NUMBER() OVER (ORDER BY "+ orderBy +") rownum"
+                    + "FROM [" + tableName + "] as tbl WHERE " + condition
+                    + ") seq"
+                    + " WHERE seq.rownum BETWEEN " + skip + " AND " + take);
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next()) {
@@ -242,7 +320,6 @@ public class DatabaseUtil {
 
     public int insertToTable(String tableName, String[] newValues) {
         int records = 0;
-        String DUYTEST = "";
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -255,20 +332,18 @@ public class DatabaseUtil {
                     setter += ", " + newValues[i];
                 }
             }
-            DUYTEST = setter;
-
             records = stm.executeUpdate("INSERT INTO [" + tableName + "] VALUES (" + setter + ")");
+
+            System.out.println("Insert (" + records + ") success(s).");
         } catch (Exception ex) {
             ex.printStackTrace();
-            System.out.println("FFF" + ex);
-            System.out.println("FFF" + DUYTEST);
         } finally {
             try {
-                rs.close();
+//                rs.close();
                 stm.close();
                 conn.close();;
             } catch (Exception ex) {
-//                ex.printStackTrace();
+                ex.printStackTrace();
             }
         }
 

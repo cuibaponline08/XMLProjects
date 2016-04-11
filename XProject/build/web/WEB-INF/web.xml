@@ -4,9 +4,25 @@
         <servlet-name>CenterServlet</servlet-name>
         <servlet-class>com.xproject.servlet.CenterServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.ProductDetailServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowAllProductServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.ShowAllProductServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CenterServlet</servlet-name>
         <url-pattern>/CenterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <url-pattern>/ProductDetailServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowAllProductServlet</servlet-name>
+        <url-pattern>/ShowAllProductServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -14,6 +30,6 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>CenterServlet</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

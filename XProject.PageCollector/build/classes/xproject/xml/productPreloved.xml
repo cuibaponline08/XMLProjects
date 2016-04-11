@@ -1,543 +1,443 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <products xmlns="http://xml.netbeans.org/schema/products">
     <product productId="1" categoryId="1">
+        <productName>125 CC MOTORCYCLE</productName>
+        <imageSourceUrl></imageSourceUrl>
+        <productPrice>1950.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Birmingham, West Midlands</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/612785337/125-cc-motorcycle.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Yamaha YBR custom 2014 Red - 800 miles As new with helmet box Call for more information. TM Ref: 900505160-01</description>
+        <addingInformation></addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="2" categoryId="1">
+        <productName>MOTORCYCLES AND SCOOTERS - WANTED</productName>
+        <imageSourceUrl>http://mp.thcdn.com/25/51/2551ea4ec86b4dba9cd1381afe11f961.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>0.0</productPrice>
+        <currency></currency>
+        <customerAddress>Stockport, Cheshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/612790691/motorcycles-and-scooters-wanted.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Est 30 years. * Motorcycles and scooters * Any make, model * Age or condition, prompt friendly service * Collection * Best prices paid Phone Nigel for more information. TM Category: Motor Cycles &amp; Scooters TM Ref: 224894403-01</description>
+        <addingInformation></addingInformation>
+        <productType>Wanted</productType>
+    </product>
+    <product productId="3" categoryId="1">
+        <productName>2005 KAWASAKI ZX 600 E13H SILVER</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25125255-864-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25125256-864-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25125257-864-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284656-490-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284657-490-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284658-490-640x853.jpg</imageSourceUrl>
+        <productPrice>1250.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Bolton, Lancashire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114742442/2005-kawasaki-zx-600-e13h-silver.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Here we have my ZZR600 up for auction, its a 2005 model (E13),nice tidy condition,a few marks here and there for the age.They are as follows---a small couple of scratches by back light,a scratch on front mudguard also some hairline cracks on inner fairing, but hardly noticeable. There is also a dent &amp; scratch on the right silencer(there when I bought it) . I comes with 12 month MOT with no advisories. Overall the bike is in really nice condition, and I believe the new owner would not be disappointed. I have tried to be as honest as i can with the description. Dealers still selling these E13's from £2000 to £2500. New battery fitted - New front tyre &amp; brake pads CASH on COLLECTION – No Space Cadets &amp; Tyre Kickers please UK buyers only, thank you. Please contact to have a look or ask for more photos which I really think you should. reason for sale is I need Space in Garage for New Business Venture---- this must go so go on &amp; Make an offer. Kenny</description>
+        <addingInformation>Era 2005|Engine Size 600 cc|Type Sports Tourer|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="4" categoryId="1">
+        <productName>Honda xr250/280cc</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0408/25262583-971-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25115540-661-857x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25115545-214-640x478.jpg</imageSourceUrl>
+        <productPrice>1199.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Manchester, Lancs</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114738109/honda-xr250280cc.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Good sound bike with MOT until a Jan 2917 New rear tyre , new wheel bearings front &amp; back, new cam chain , new rear disc , new pads front &amp; back , new fork gators, oil and filters done , comes with 2 new oil filters and new bar grips. When I got the bike I was told it had a 280 conversion kit fitted I can't vouch for that but it's got plenty of power . I CAN DELIVER ANYWHERE (UK) AT YOUR COST</description>
+        <addingInformation>Era 1997|Engine Size 250 cc|Type Dual Purpose (On/Off Road)|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="5" categoryId="1">
+        <productName>Honda Transalp</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116360-231-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116361-231-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0329/25116362-231-640x478.jpg</imageSourceUrl>
+        <productPrice>950.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Manchester, Lancs</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114739297/honda-transalp.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Honda transalp XL600V 1994 brilliant touring bike I have had it since 2013 never let me down, good tyres chain and sprocket, mount for sat nav and power point MOT till 24 August 2016 front and rear wheel bearings done 2015 DELIVER ANY WHERE (UK) AT YOUR COST cheers</description>
+        <addingInformation>Era 1994|Engine Size 600 cc|Type Tourer|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="6" categoryId="1">
         <productName>MOTORCYCLE WANTED</productName>
-        <imageSourceUrl>http://mp.thcdn.com/70/48/70483b9b363044b08089b81e589efe59.jpg?r=0&amp;h=450|</imageSourceUrl>
+        <imageSourceUrl>http://mp.thcdn.com/70/48/70483b9b363044b08089b81e589efe59.jpg?r=0&amp;h=450</imageSourceUrl>
         <productPrice>0.0</productPrice>
         <currency></currency>
         <customerAddress>Newcastle, Newcastle Upon Tyne</customerAddress>
         <productDetailUrl>http://www.preloved.co.uk/adverts/show/612754328/motorcycle-wanted.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
         <description>500cc to 600cc, age or MOT not important but must be running order. Call for more information. TM Ref: 900502835-01</description>
+        <addingInformation></addingInformation>
+        <productType>Wanted</productType>
     </product>
-    <product productId="2" categoryId="1">
-        <productName>Triumph Thunderbird 1600</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241666-130-853x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241577-432-853x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241584-167-853x640.jpg|</imageSourceUrl>
-        <productPrice>7500.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Wolverhampton, Staffordshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114712067/triumph-thunderbird-1600.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Triumph Thunderbird 1600cc Reg Dec 2009 Miles 4489 MOT till August. Front and rear dresser bars,running lights,teardrop mirrors,leather tank cover with pocket ,lockable fuel cap,recently fitted 2 new tyres,short silencers ,Gel drivers seat,backrest and rear carrier,chrome front calliper covers ,Twin large handle bars,summer screen,It is immaculate condition and a great bike. But I must get a smaller bike.</description>
-    </product>
-    <product productId="3" categoryId="1">
+    <product productId="7" categoryId="1">
         <productName>1997 HONDA XR 70RV ONE OWNER RARE ORIGINAL</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036814-683-640x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036812-683-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036813-683-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036927-499-640x961.jpg|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036814-683-640x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036812-683-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036813-683-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25036927-499-640x961.jpg</imageSourceUrl>
         <productPrice>500.0</productPrice>
         <currency>£</currency>
         <customerAddress>Heswall, Wirral</customerAddress>
         <productDetailUrl>http://www.preloved.co.uk/adverts/show/114710064/1997-honda-xr-70rv-one-owner-rare-original.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
         <description>HONDA. XR 70RV. RARE 1997 ONLY MODEL. ONE OWNER. LIGHT USE. ALWAYS STORED INDOORS, SAFE AND DRY. STARTS VERY EASILY FROM COLD, JUST A FEW KICKS. STARTS EVERY KICK WHEN WARMED UP. IDLES SMOOTHLY WITH NICE DEEP/LOW FREQUENCY TONE FROM THE ORIGINAL EXHAUST. REVS SMOOTHLY AND STRONGLY. RIDES GREAT, PLENTY OF TORQUE. STOPS GREAT. HANDLES GREAT. VERY COMFORTABLE. RECENT RENTHAL 7 INCH BAR PAD. COLUR - WHITE. ENGINE - HONDA, FLAT, 72CC 4-STROKE, SINGLE CYLINDER, 2 VALVES. GEARBOX - 3 SPEED SEMI-AUTOMATIC, CENTRIFUGAL CLUTCH. FRAME NUMBER: JH2DE02A0VK000978. ENGINE NUMBER: DE02E - 5006856. FRONT SPROCKET - STANDARD 16 TOOTH. REAR SPROCKET - STANDARD 36 TOOTH. MOTORCYCLE STYLE - OFF ROAD. FRONT TYRE = CHENG SHIN, 14" VGCC. REAR TYRE = CHENG SHIN, 12" VGCC. FRONT WHEEL = POLISHED CHROME, SPOKED, 14" VGCC. REAR WHEEL = POLISHED CHROME, SPOKED, 12" VGCC. IT WILL SUIT AGES 6 TO ADULT UP TO 15 STONE NO PROBLEM APPROX. THE ORIGINAL HAND GRIPS HAVE SEEN BETTER DAYS BUT WORK FINE AND SHOULD LAST A LONG TIME. THE SWINGARM HAS A FEW LIGHT SPECS OF RUST BUT NOTHING TO BE CONCERNED ABOUT. THE PLASTICS HAVE A FEW LIGHT SCUFFS HERE AND THERE. ALL OF THE GRAPHICS, DECALS AND STICKERS ARE ORIGINAL. IT EVEN STILL HAS THE TINY SQUARE CLEAR STICKER WITH A HONDA LOGO ON IT ON THE FUEL TANK, WHICH ARE A RARE SIGHTING THESE DAYS. I HAVE CHANGED THE SPARK PLUG, OIL AND AIR FILTER EVERY YEAR WITHOUT FAIL. MANY PEOPLE I KNOW HAVE SHOWED GREAT INTEREST IN THIS XR OVER THE YEARS. IT BRINGS A SMILE TO EVERYONES FACE. MANY HAVE EVEN ASKED TO BUY IT. BUT ONLY A FEW LUCKY ONES HAVE TOUCHED IT OR HAD A LITTLE GO ON IT. DON'T WASTE YOUR TIME AND MONEY ON A CHEAP CHINESE MOTORBIKE. THEY ARE LIKE DISPOSABLE LIGHTERS. MANY MODERN CLASSIC OFFROAD MOTORBIKES LIKE THE YAMAHA PW80 OR KAWASAKI KX60 AND XR'S FOR EXAMPLE HAVE BEEN OWNED OR STOLEN BY MORONS WHO ABSOLUTELY ABUSE THEM IN EVERY WAY. THIS HONEST HONDA OF MINE, ISN'T IN SHOWROOM CONDITION BUT HAS BEEN STORED CAREFULL AND USED SENSIBLY NOW AND AGAIN. IF LOOKED AFTER CORRECTLY, IT WILL LAST FOR A VERY LONG TIME. OEM AND AFTERMARKET PARTS ARE WIDELY AVAILABLE. ACTUAL PICTURES OF MY XR. TO VIEWERS HOPING FOR SOME SPARE PARTS - SORRY BUT I WILL NOT STRIP IT. I WILL BE VERY SAD TO SEE THIS GO. WHAT A GREAT LITTLE MOTORCYCLE. THE CASH AND SPACE WILL HELP ME TO FINSH AN IMPORTANT PROJECT. SENSIBLE OFFERS ONLY PLEASE, I OWN, WORK ON AND DRIVE MANY VEHICLES FOR WORK AND MY HOBBY. YOU ONLY SEE AN XR70R FOR SALE NOW AND AGAIN. MOST SEEM TO BE 1998 OR 1999 MODELS WHICH ARE GREAT TOO BUT NOT AS RARE OR AS SOUGHT AFTER ETC AS THIS 1997 MODEL. A MORE COMMON 1998 OR 1999 MODEL HAS JUST SOLD ON EBAY FOR £411.00. IT LOOKED OLD, TIRED AND ABUSED. THE DESCRIPTION WAS POOR. THE SELLER WAS ARROGANT. THERE WAS NO INFORMATION FROM SELLER AT ALL. MY XR IS WORTH THE EXTRA. FREE WIRRAL DELIVERY ONLY OR COLLECTION. WILL FIT IN ALMOST ANY CAR IF DONE RIGHT. CASH ONLY. BE QUICK. IT WON'T BE AVAILABLE FOR LONG. I AM A TRUSTWORTHY PRELOVED AND EBAY MEMBER OF MANY YEARS. I HAVE 100% POSITIVE FEEDBACK. THANKS.</description>
-    </product>
-    <product productId="4" categoryId="1">
-        <productName>Honda VFR 800</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031835-328-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031836-328-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0323/25031837-328-640x480.jpg|</imageSourceUrl>
-        <productPrice>2230.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>High Wycombe, Bucks</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114708410/honda-vfr-800.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Excellent condition, new battery November 2015, MOT 6/6/16 FSH with documents. Recent full service 10/06/15 and no advisories. Tax June 2016. Linked brakes. Owned since 29/03/10 and mileage now only 39551. Immobiliser and smartwater certificate. Not alarmed. Givi top box included. Side bars for panners fitted. Surely one of the best sports touring bikes ever built. Does everything.. Reason for sale recent purchase of BMW .</description>
-    </product>
-    <product productId="5" categoryId="1">
-        <productName>suzuki gt 125/185/250/350/500/750</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159329-638-640x480.jpg|</imageSourceUrl>
-        <productPrice>0.0</productPrice>
-        <currency></currency>
-        <customerAddress>Runcorn, Cheshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114754426/suzuki-gt-125185250350500750.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>wants Suzuki gt or Yamaha rd must be running cash waiting</description>
-    </product>
-    <product productId="6" categoryId="1">
-        <productName>PULSE 50CC MOPED</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>330.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Cumnock, Ayrshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/612641624/pulse-50cc-moped.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Pulse 50CC Moped, 2014, 1,346 miles, Good condition. Call for more information. TM Ref: 900500279-01</description>
-    </product>
-    <product productId="7" categoryId="1">
-        <productName>Harley Davidson 1200 Sportster</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061443-178-857x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061449-210-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0325/25061452-796-640x478.jpg|</imageSourceUrl>
-        <productPrice>4250.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Ventnor, Isle Of Wight</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114718700/harley-davidson-1200-sportster.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>1200 cc Sportster in Lava red &amp; cream. Nov 2003. Stage 1 exhaust &amp; air filter. 4500 dry miles.</description>
+        <addingInformation>Era 1997|Engine Size 72 cc|Type Motocross|Condition Second Hand|Road Legal No|V5 Registration Document Not Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
     <product productId="8" categoryId="1">
-        <productName>Honda CBR125R</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159620-163-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159631-596-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159644-922-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0401/25159659-708-640x360.jpg|</imageSourceUrl>
-        <productPrice>1900.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Bookham, Surrey</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114745106/honda-cbr125r.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Only 2700 miles !!! Fantastic condition. Only 2 Lady owners from new . Looks and rides like a new bike. Ideal 1st bike, or commuter. Easy 100MPG. Orange and Black. Tinted Screen. MOT. You will not be disappointed with this much loved and cherished bike.</description>
-    </product>
-    <product productId="9" categoryId="1">
         <productName>1951 TRIUMPH INSTRUCTION MANUAL</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043671-738-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043676-865-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043682-196-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043690-711-640x480.jpg|</imageSourceUrl>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043671-738-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043676-865-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043682-196-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0324/25043690-711-640x480.jpg</imageSourceUrl>
         <productPrice>22.0</productPrice>
         <currency>£</currency>
         <customerAddress>North West Wigan Area, Lancashire</customerAddress>
         <productDetailUrl>http://www.preloved.co.uk/adverts/show/114712223/1951-triumph-instruction-manual.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
         <description>In over sixty years I accumulated a vast library of classic motorcycle literature, but now, approaching 80, I must downsize and offer my treasures to those noble souls dedicated to rebuilding and riding our splendid older machines. This original Triumph publication, with its dark orange cover, has over 100 pages of gen for post-war rigid and sprung hub models 5T, T100, TR5 &amp; 6T. It contains 35 detailed line drawings, including exploded views, fault finding charts, instructions for fitting a sidecar, conversion to racing trim &amp; a two-page technical data chart. Come and see the original item, you will not be disappointed. . It will be a prized asset to accompany your rebuilt, or possibly, original Speed Twin, Thunderbird or their sporty derivatives. . What is more, the manual is in really splendid, almost mint, condition, with no oily fingermarks, the only blemish being a small ink stain on the spine. Not bad for a 65 year-old. Price includes First Class post.</description>
+        <addingInformation>Era 1950s|Type Classic|Condition Second Hand</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="10" categoryId="1">
-        <productName>Wanted old Motorcycle.</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955867-397-640x436.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955868-397-640x495.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955869-397-640x599.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955954-977-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955955-977-500x375.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955957-977-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955958-977-640x482.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955959-977-640x562.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955979-524-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955980-524-640x393.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0318/24955981-524-600x450.jpg|</imageSourceUrl>
-        <productPrice>0.0</productPrice>
-        <currency></currency>
-        <customerAddress>Hull, East Yorkshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114680590/wanted-old-motorcycle.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Wanted old Motorcycle. anything considered, please email Price, Photos, Info and Location.</description>
-    </product>
-    <product productId="11" categoryId="1">
-        <productName>Bike lock with numbers</productName>
-        <imageSourceUrl>http://mp.thcdn.com/71/2e/712edda29eca4be3ad57b6a8ae09e53c.jpg?r=0&amp;h=450|</imageSourceUrl>
-        <productPrice>10.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Dewsbury, West Yorkshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785575/bike-lock-with-numbers.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Very strong beautiful, stylish lock for your bikes or bicycles. Keep them secured and locked Number locking system BRAND NEW Payment via PayPal or can be posted with extra cost £2.50</description>
-    </product>
-    <product productId="12" categoryId="1">
-        <productName>Highway Bars</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>0.0</productPrice>
-        <currency></currency>
-        <customerAddress>Sale, Cheshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785719/highway-bars.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Wanted crash bars to fit Yamaha virago 250cc.</description>
-    </product>
-    <product productId="13" categoryId="1">
-        <productName>Suzuki gsx 1255fa</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25244327-851-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25244328-851-640x360.jpg|</imageSourceUrl>
-        <productPrice>5800.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Billingham, Cleveland</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785851/suzuki-gsx-1255fa.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>2015 suzuki gsx 1255fa. Only covered 400 mile. From new. Still under warranty. Sports exhaust fitted. This bike is in outstanding condition. Full sports luggage. All documents present. Any inspection welcome. Selling due to work commitments. ..</description>
-    </product>
-    <product productId="14" categoryId="1">
-        <productName>Honda ntv 650 Duaville</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25244862-737-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25244863-737-640x360.jpg|</imageSourceUrl>
-        <productPrice>650.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>St Albans, Hertfordshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786007/honda-ntv-650-duaville.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Honda ntv 650. 2000 W reg 10 months MOT New clutch and oil change recently Shaft driven Heated grips Lockable top box Side panniers Hi viser Perfect entry level courier bike to get you started or a daily run around.</description>
-    </product>
-    <product productId="15" categoryId="1">
-        <productName>Aprilia 125 Rs tuono UNRESTRICTED (30bhp)</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25245476-876-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25245477-876-640x480.jpg|</imageSourceUrl>
-        <productPrice>1495.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Hyde, Cheshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786205/aprilia-125-rs-tuono-unrestricted-30bhp.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Mint condition hardly been used only been used in dry and has been kept in garage rare model,will go long way to find one in this condition</description>
-    </product>
-    <product productId="16" categoryId="1">
-        <productName>YAMAHA LC (Elsie) 250cc. 1982.</productName>
-        <imageSourceUrl>http://mp.thcdn.com/12/95/1295f27bea704db394d5503addea4ff2.jpg?r=0&amp;h=450|http://mp.thcdn.com/44/fa/44fac165af4c4d88aeca39d153fd71b6.jpg?r=0&amp;h=450|</imageSourceUrl>
-        <productPrice>3750.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Ireby, Cumbria</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786230/yamaha-lc-elsie-250cc-1982.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Refurbished by qualified mechanic. New tyres,chain,battery,wheel bearings.fitted allspeed exhaust,and serviced. In Mars bar colours ,must be seen. Mot. Open to offers.</description>
-    </product>
-    <product productId="17" categoryId="1">
-        <productName>YAMAHA LC (Elsie) 250cc. 1982.</productName>
-        <imageSourceUrl>http://mp.thcdn.com/12/95/1295f27bea704db394d5503addea4ff2.jpg?r=0&amp;h=450|http://mp.thcdn.com/44/fa/44fac165af4c4d88aeca39d153fd71b6.jpg?r=0&amp;h=450|</imageSourceUrl>
-        <productPrice>3750.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Ireby, Cumbria</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786237/yamaha-lc-elsie-250cc-1982.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Refurbished by qualified mechanic. New tyres,chain,battery,wheel bearings.fitted allspeed exhaust,and serviced. In Mars bar colours ,must be seen. Mot. Open to offers.</description>
-    </product>
-    <product productId="18" categoryId="1">
-        <productName>Yamaha XV950 Bobber/Cruiser Motorcycle</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25246316-586-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25246314-586-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25246315-586-640x480.jpg|</imageSourceUrl>
-        <productPrice>4999.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Eastleigh, Hampshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786497/yamaha-xv950-bobbercruiser-motorcycle.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>I am grudgingly selling my Yamaha XV950 bobber/cruiser due to changes in circumstance. She was fitted with £1400 of new parts including whitewall tyres, front and rear shocks, front forks, muffler and horn under the warranty less than 10 miles ago. There is a little dink on the tank but apart from that, bike is in perfect condition. 4917 miles, please see photos. Good weather is coming and she is so much fun to ride :) Fully serviced in December and not ridden since. Full service history, 2 keys plus master key for programming new keys. Viewings welcome!</description>
-    </product>
-    <product productId="19" categoryId="1">
-        <productName>Field bike,crosser,off road</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25246391-267-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25246393-267-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25246394-267-640x478.jpg|</imageSourceUrl>
-        <productPrice>550.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Flintshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786529/field-bikecrosseroff-road.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>Off road crosser for sale. It's a Loncin Bushman 150. I bought the bike about 2 years ago to go green laneing with a mate who then split up with his Mrs then moved away so I never did get to go Green laneing so the bike has sat in my garage ever since. I don't know anybody else into green laneing and don't fancy going off somewere&amp;something going wrong and having no fone signal to call for help so I have decided to sell it. I also have all the lights and number plate brackets to make the bike road legal if you wanted to register it for road use,these are all brand new&amp; never been fitted to the bike but came with it when the bike was new. All the switches&amp; electrics are all fitted to the bike so it's just a matter of blogging the lights in and jobs done. The bike has covered less than 200 miles from new by the guy I bought the bike from,he bought it new for his son.</description>
-    </product>
-    <product productId="20" categoryId="1">
-        <productName>1998 Cafe Racer/ Honda CB750 RC42</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247166-303-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247167-303-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247168-303-640x480.jpg|</imageSourceUrl>
-        <productPrice>2950.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Swindon, Wiltshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786835/1998-cafe-racer-honda-cb750-rc42.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
-        <description>1998 Honda CB 750 RC 42 Café Racer. MOT . Very Good Condition. Handles very well. Hand made replica Honda racing tank. [would cost £800 to buy] /Hand made racing seat./ Clip on's /Racing megaphones...[makes a great sound!! ] /uprated carburettor jets. /New chain/New braided brake hoses/ New Pirelli ' DIABLO' sticky racing tyres /etc. ...........ready to ride away for the summer!</description>
-    </product>
-    <product productId="21" categoryId="1">
-        <productName>Chopper Suzuki LS650 Savage, Petrol, 650 CC, 33kWh</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247213-570-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247224-316-640x679.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247225-178-640x480.jpg|</imageSourceUrl>
-        <productPrice>2200.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>London</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786852/chopper-suzuki-ls650-savage-petrol-650-cc-33kwh.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>I have owned, enjoyed and taken good care of this bike for the last 6 years but sadly my circumstances have changed and no time to ride it. A very comfortable and easy ride (low seat), perfect for a beginner biker (great vehicle for everyone and for shorter riders in particular), sounds and looks the part. Owned by a lady rider and has had regular full-on services (stamped service book provided), no problems at all – runs great. MORE DETAILS: • Service book – regular servicing • MOT/servicing done 2nd April 2016 and both valid for another year till end of April 2017 • Tax disc expires end Jul 2016 • MOT passed without any advisories • Odometer reading at April 2016 - 17,660 km (around 11,000 miles done in total) • 3rd owner, bike well-taken care of and always garaged • Black metallic, chrome parts in good condition • White-walled tyres • Saddle bags included • New battery and brake pads fitted, up to date with all fluids, ready to be ridden immediately</description>
-    </product>
-    <product productId="22" categoryId="1">
-        <productName>Honda CB600SA 2009</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247503-144-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247504-144-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25247505-144-640x480.jpg|</imageSourceUrl>
-        <productPrice>2495.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Chorley, Lancashire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114786961/honda-cb600sa-2009.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Much loved bike in Red, Used in summers for commuting, Very reliable, MOT till end of June, Serviced every year, 32,800 miles, New Chain 6,000 miles ago, Pilot 4 Tyres 3,000 miles ago, Heated Grips, Givi 45Ltr Top Box, Chrome radiator Grill, Colour matched rear hugger included, this bike has been well looked after and protected in winters, Never let me down, Relaxed riding position for long or short journeys. Reluctant to sell really. Thanks for looking</description>
-    </product>
-    <product productId="23" categoryId="1">
-        <productName>BSA Bantam 175 D10 1968 for restoration</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25248937-634-640x434.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25248159-340-640x388.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25248160-340-640x404.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25248161-340-640x475.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25248936-634-640x473.jpg|</imageSourceUrl>
-        <productPrice>800.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Llandeilo, Carmarthenshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114787196/bsa-bantam-175-d10-1968-for-restoration.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Bsa Bantam D10 175 for restoration. 10217 recorded miles. Historic vehicle taxation class. V5C Present. Starts and runs.</description>
-    </product>
-    <product productId="24" categoryId="1">
-        <productName>Motorcycle Helmets</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25248941-831-640x360.jpg|</imageSourceUrl>
-        <productPrice>50.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Tarporley, Cheshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114787498/motorcycle-helmets.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>1 Adult and 1 Junior for sale, price is for both helmets</description>
-    </product>
-    <product productId="25" categoryId="1">
-        <productName>KTM200 EXC Road Legal Enduro 2001</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25249104-175-639x359.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25249105-175-639x359.jpg|</imageSourceUrl>
-        <productPrice>1595.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Lincoln, Lincolnshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114787552/ktm200-exc-road-legal-enduro-2001.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>KTM200 EXC Road Legal Enduro 2001 MOT until Feb 2017, great condition for age, very strong engine. Over £500 spend recently – new Michelin tyres, Chain &amp; Sprockets, brakes, plastic &amp; Graphics, clocks/computer, rebuilt suspension. This bike has a ProCircuit full race exhaust system. Any questions please call. Lincoln</description>
-    </product>
-    <product productId="26" categoryId="1">
-        <productName>64 plate 1 owner full service history</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25249603-240-640x360.jpg|</imageSourceUrl>
-        <productPrice>900.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Watford, Hertfordshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114787738/64-plate-1-owner-full-service-history.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>A 19 mouth old fantastic commuter 125cc with just 12,600 km on the clock. I have own from new and is about to have its mid-year service (13th of April) and no mot needed until Sep 2017. Comes with top box and winter riding mittens (these can be taken off). I am only selling as need a car for my job. This bike is in good condition and have tried to show any cosmetic marks in the photos. There is plenty of life left on the change and tyres. Key points This is my kymco 125 cc pulsar s. (does not require a MOT until august 2017 ) Reason for selling the bike (I need a car for work) Looked after bike that has been serviced every 6 mouths First registered September 2014 It has the v5 document, manuals and 2 keys It is both electric &amp; kick start. It also has gear selector view. This shows what gear you are in when riding. A very nice easy to ride and economical machine. It also has a petrol gauge. All paperwork and service history plus owner’s manual.</description>
-    </product>
-    <product productId="27" categoryId="1">
-        <productName>KTM 125 EXC</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25231673-424-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25231674-424-480x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25231675-424-640x480.jpg|</imageSourceUrl>
+    <product productId="9" categoryId="1">
+        <productName>Aprilia RS4 125 - Showroom Condition - High Spec</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25272125-507-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25272126-507-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25272127-507-640x480.jpg</imageSourceUrl>
         <productPrice>2500.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Chesterfield, Derbyshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114781116/ktm-125-exc.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>KTM 125 EXC FOR SALE! Registered in 2012 Road legal Can ride on a CBT Very powerful bike Few scuffs hear and there what you would expect from an enduro bike Brilliant bike runs very good! Just had full service and MOT.</description>
+        <customerAddress>Dudley, West Midlands</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114795299/aprilia-rs4-125-showroom-condition-high-spec.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Aprilia RS4 125 - Showroom Condition Serviced 200 miles ago. (Including oil change). High Spec - 2011 - 9000 Miles - Scorpion Exhaust - Aprilia Factory Quick-shift (Up &amp; Down) - DID Heavy Duty Gold Chain - 2 New Pirelli Diablo II Tyres - Puig Race Dark Smoke Screen - Domino Race Grips - RS4 Tank Pad Always garaged and cleaned after every use. Bike was bought last year for £2850 and was completely standard. Spent at least £650 on parts. Only looking for £2500.</description>
+        <addingInformation>Era 2011|Engine Size 125 cc|Type Supersport|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="28" categoryId="1">
-        <productName>Yamaha fzs600 fazer</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25243611-900-640x361.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0407/25243612-900-640x361.jpg|</imageSourceUrl>
-        <productPrice>1400.0</productPrice>
+    <product productId="10" categoryId="1">
+        <productName>BMW F800GS - F800 GS - HIGH SPEC - SHOWROOM CONDITION</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25272132-759-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25272133-759-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25272134-759-640x853.jpg</imageSourceUrl>
+        <productPrice>5000.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Porth, R.c.t</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784702/yamaha-fzs600-fazer.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Yamaha fzs600 fazer 2001. Vgc for age. New chain and sprockets under 100 miles ago. Good tyres front and rear. Low miles 15492 may rise slightly. New MOT any viewing welcome.</description>
+        <customerAddress>Dudley, West Midlands</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114795302/bmw-f800gs-f800-gs-high-spec-showroom-condition.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>BMW F800 GS - Showroom Condition -2009 -FULL BMW SERVICE HISTORY -32000 Miles -High Spec -Full Engine Bars and Rear rack/Panniers -Reservoir protectors -Front running LED spotlights -Light grill -BMW Comfort Seat (RRP £300) -Garmin SatNav -Handguards -Heated Grips -Upgraded dashboard from factory -Scottoiler -Panniers Exquisite piece of engineering and an excellent example of the BMW GS Series. Not one mark on the bike apart from a 2mm scratch on the extended engine protection bars (being very picky). Has never missed a beat and has always been serviced by BMW Motorrad. Always garaged and cleaned after every use. Runs perfectly, not one problem at all.</description>
+        <addingInformation>Era 2009|Engine Size 800 cc|Type Adventure|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="29" categoryId="1">
-        <productName>YAMAHA XJ 900 F CAFE RACER</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217656-325-640x358.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217658-325-640x358.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25217660-325-640x358.jpg|</imageSourceUrl>
-        <productPrice>1000.0</productPrice>
+    <product productId="11" categoryId="1">
+        <productName>Yamaha R1 Track bike + extras and wows</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25273881-667-640x1136.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25273879-667-640x1136.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25273880-667-640x1136.jpg</imageSourceUrl>
+        <productPrice>2500.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Liskeard, Cornwall</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114775920/yamaha-xj-900-f-cafe-racer.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>HERE FOR RELUCTANT SALE DUE TO ILL HEALTH IS MY YAMAHA XJ900F THAT IS NOW CAFE RACER STYLE THAT HAS 2 BRAND NEW TYRES NEW BRAKE PADS A NEW HEAD LIGHT WHEELS RESPRAYED NEW CHROME HAGON REAR SHOCKS NEW CHROME MINI BAR END MIRROR NEW CHROME MINI INDICATERS NEW POLISHED CLIP ON HANDLE BARS NEW GRIPS POLISHED CASINGS AND FORK LEGS MODIFIED CHROME 4 INTO 1 EXHAUST WITH A RETRO CHROME SILENCER AND K AND N AIR FILTERS WHICH ARE REJETTED IT SOUNDS LOUD I HAVE HAD THIS FOR 1 YEAR NOW IT IS SORNED AND THE MOT HAS JUST RUN OUT BUT IT HAS ONLY DONE ABOUT 60 MILES IN THE LAST YEAR BUT I CANNOT NO LONGER RIDE OR IT WOULD BE MOTED</description>
+        <customerAddress>Newcastle Under Lyme, Staffordshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114795861/yamaha-r1-track-bike-extras-and-wows.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Yamaha R1 Track Race Bike 5jj Model lots of extras and wows. Reason for sale:- I stepped up from an R6 to this tricked up R1 and it's just got too much power for me. So I'm after another R6. I will consider a deal with a smaller cc bike. Ideally track ready. I have the V5 in my name, daytime MOT ready, the buyer would need to put road tyres on before it was used on the road and MOT'ed. I've just changed the oil and filter ready for the new owner. The spec is as follows: - Ohlins steering damper with Harris fitting kit - Acumen gear indicator - Translogic quick shifter - Built in push button lap timer (on left handle bar), - Shift light and display. This is setup to run with the gear box in race shift - Brembo RCS racing front master cylinder - Harris rearsets - SBS carbon race pads in the front - Active quick action throttle - K&amp;N air filter - SSR quick release fuel fuel filler cap - Stomp Grips - Race loom to allow keyless ignition - Harris exhaust hanger - Pirelli Diablo Superbike slicks SC1 front and rear. - Rain light This auction will include all spares and extras seen in the photos, they are: - Wets on wheels with discs - New brake and clutch levers - Rear sets including gear shifter and rod as well as rear brake lever - New spare screen (still in blue packaging) - Spare exhaust - Number plate from when I had this bike on the road The photos show the rear light on and off, this is built into the under tray which can be disconnected and removed, the light is on a separate switchable electric circuit so can be turned on or off with the bike running or not. There is some paperwork with this bike, these include a dyno run, the manual for the quick shifter, receipt for the race loom and partial service history when this was a road bike. Please note this has been a track bike, so there are the track related marks that can be expected from track bikes. Paddock stands not included in sale. Buyer to collect - cash on collection. I can deliver if it's not too far away. However the buyer must have viewed the bike and paid in full before delivery, delivery cost can be discussed. This is a lot of bike for the money. Priced to sell. No offers below asking price for the package with all the extras. If the buyer doesn't want the extras and just the bike I'm happy to discuss dropping the price. Please no time wasters. Any questions please feel free to ask I've probably forgotten to list something. More photos available on request. It won't let me add anymore onto the advert. Thanks for looking.</description>
+        <addingInformation>Era 2000|Engine Size 1000 cc|Type Supersport|Condition Second Hand|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="30" categoryId="1">
-        <productName>Lifan King 125cc cruiser For Sale mot not due until 27/04/2</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25224970-101-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25224971-101-528x960.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0405/25224972-101-600x337.jpg|</imageSourceUrl>
-        <productPrice>895.0</productPrice>
+    <product productId="12" categoryId="1">
+        <productName>suzuki dr250s</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274172-824-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274173-824-640x480.jpg</imageSourceUrl>
+        <productPrice>1250.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Eastleigh, Hampshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114778741/lifan-king-125cc-cruiser-for-sale-mot-not-due-until-27042.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>I HAVE A LIFAN KING 125CC MOTORCYCLE FOR SALE OR SWAP FOR A 125CC SCOOTER. ITS IN EXCELLENT CONDITION AND DOES NOT NEED ITS FIRST MOT UNTIL APRIL 2017. SELLING DUE TO WANTING A SCOOTER INSTEAD. THIS IS A LOVELY CRUISER STYLE MOTORCYCLE AND IS LEARNER LEGAL. IT COMES WITH 2 SETS OF KEY FOR THE BIKE AND TOP BOX, AND ALSO COMES WITH AN OXFORD MOTORCYCLE COVER. COMES WITH ITS V5 LOGBOOK., Next MOT due 27/04/2017, 2 keys, Centre stand, Top box. RED, £1,000ono</description>
+        <customerAddress>Bournemouth, Dorset</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114795972/suzuki-dr250s.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>suzuki dr250s duel sport 1991.electric start.very good condition.mot</description>
+        <addingInformation>Era 1991|Engine Size 250 cc|Type Trails Bike|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="31" categoryId="1">
-        <productName>Triumph Bonneville T100 865cc 4200mls only</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25228879-650-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25228880-650-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25228881-650-640x480.jpg|</imageSourceUrl>
-        <productPrice>4250.0</productPrice>
+    <product productId="13" categoryId="1">
+        <productName>Mini moto</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274763-249-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274764-249-640x478.jpg</imageSourceUrl>
+        <productPrice>50.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Llangeitho, Ceredigion</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114780102/triumph-bonneville-t100-865cc-4200mls-only.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>A beautiful 2005 ( on a 55 plate) Triumph Bonneville T100 865cc carb version (the best) Genuine very low miles and in an exceptional condition, Service history and just had an oil/filter change. New Avon Road Rider tyres. Comes with original pipes and seat plus the after market K&amp;Q seat and up graded, slightly louder Triumph pipes shown in the photos. MOT expires March 2017</description>
+        <customerAddress>Swansea, West Glam</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796190/mini-moto.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Mini moto was running fine until chain snapped Needs a new chain</description>
+        <addingInformation></addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="32" categoryId="1">
-        <productName>125 hyosung xrx</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25229978-647-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25229979-647-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25229980-647-640x960.jpg|</imageSourceUrl>
-        <productPrice>700.0</productPrice>
+    <product productId="14" categoryId="1">
+        <productName>Malaguti Motorik Moped 49cc 1983</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274925-748-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274926-748-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25274927-748-640x480.jpg</imageSourceUrl>
+        <productPrice>595.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Wrexham, Wales</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114780538/125-hyosung-xrx.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Have for sale my hyosung xrx 125. Low mileage and MOT bike is clean for age. Message any questions.</description>
+        <customerAddress>Wickford, Essex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796265/malaguti-motorik-moped-49cc-1983.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>Malaguti Motorik Moped 49cc 1983 Original Old style V5, V5c Present, Starts First Kick, Beautiful Condition, Nice Quiet Engine, No Horrible Noises, Lots Of Paperwork, Delivery Possible, Part Exchange Welcome,</description>
+        <addingInformation>Era 1980s|Engine Size 49 cc|Type Classic|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="33" categoryId="1">
-        <productName>Suzuki Bandit GSF600 X (unfaired) 1999 - priced to sell.</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25230002-844-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25230003-844-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25230004-844-640x360.jpg|</imageSourceUrl>
-        <productPrice>850.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>., South Gloucestershire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114780548/suzuki-bandit-gsf600-x-unfaired-1999-priced-to-sell.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Starts first time &amp; has never let me down in 12 years. It's just that I don't use it so much now I've retired. Not the tidiest bike but is priced to sell. There are no "noises" from the engine. Has good chain &amp; tyres &amp; is fitted with Alpha Dot security. Frame &amp; swingarm could do with touching up. Excellent value. MOT June. View 2 miles from J14 of M5.</description>
-    </product>
-    <product productId="34" categoryId="1">
-        <productName>Kawasaki ZR - 7 X Reg fantastic condition for age</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25230832-222-640x857.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25230833-222-640x857.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25230834-222-640x478.jpg|</imageSourceUrl>
-        <productPrice>1150.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Holbeach, Lincs</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114780836/kawasaki-zr-7-x-reg-fantastic-condition-for-age.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Kawasaki ZR -7 X reg for sale. Very good condition for its age. 42904 genuine miles. MOT till 5 March 2017. Red. £1150 Ono</description>
-    </product>
-    <product productId="35" categoryId="1">
-        <productName>Kymco Zing 125 Cruiser</productName>
-        <imageSourceUrl>http://mp.thcdn.com/f4/e4/f4e44730e4aa474588a0522a74032821.jpg?r=0&amp;h=450|http://mp.thcdn.com/d8/6a/d86a017c6270410abf538844ec24bd38.jpg?r=0&amp;h=450|http://mp.thcdn.com/34/07/34070aac9b6d4ac0a00e24d91aa03d1d.jpg?r=0&amp;h=450|</imageSourceUrl>
-        <productPrice>675.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Keswick, Cumbria</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114781401/kymco-zing-125-cruiser.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>2001 kymco Zing 125 Cruiser learner legal motorbike. I've put a bit of work into this bike. Brand new wiring loom, correctly wired, new cdi box, starter motor, sissy bars, replaced passenger foot rests, re painted frame with anti rust paint, new chain, new handle grips and throttle. Amazing on petrol, looks and sounds like a way bigger bike. Needs a new front tire and fork seals to pass MOT, 50 quid for parts. Selling due to buying a car. May be able to deliver depending on your location</description>
-    </product>
-    <product productId="36" categoryId="1">
-        <productName>MV Agusta BRUTALE "Gladio"</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25232462-653-640x477.jpg|</imageSourceUrl>
-        <productPrice>6000.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>London</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114781409/mv-agusta-brutale-gladio.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Special model of the Brutale (#13 of 300): - 12hp more than the standard "S" one; - alloy forged wheels; - carbon fibre details.</description>
-    </product>
-    <product productId="37" categoryId="1">
-        <productName>Monkey bike</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25232516-350-640x853.jpg|</imageSourceUrl>
-        <productPrice>1200.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Kidderminster, Worcs</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114781429/monkey-bike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Mint condition With mot Twin pipes recently put on Still have old exhaust Sell or swap for another bike or decent moped</description>
-    </product>
-    <product productId="38" categoryId="1">
-        <productName>Honda c50 c70 or c90 wanted willing to travel</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>0.0</productPrice>
-        <currency></currency>
-        <customerAddress>Luton, Beds</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114781795/honda-c50-c70-or-c90-wanted-willing-to-travel.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>Hi i am looking for a Honda motorcycle pref a c50 c70 or c90 i am willing to travel. Please call or email. Thanks Ray</description>
-    </product>
-    <product productId="39" categoryId="1">
-        <productName>honda deauville</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25233885-651-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25233886-651-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25233887-651-640x480.jpg|</imageSourceUrl>
-        <productPrice>750.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Liverpool, Merseyside</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114782013/honda-deauville.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>nt650v. recent new front tyre and battery. MOT nov 16. heated grips. back box. good condition. service history.</description>
-    </product>
-    <product productId="40" categoryId="1">
-        <productName>suzuki intruder 125 VL LC</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25234922-452-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25234923-452-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25234924-452-640x480.jpg|</imageSourceUrl>
-        <productPrice>1400.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Ferndale, Mid Glamorgan</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114782478/suzuki-intruder-125-vl-lc.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
-        <description>125 suzuki intruder with new mot and new chain and sprocket new cdi new battery new brake kit new alternator and oil change.nice to ride.looks bigger than a 125</description>
-    </product>
-    <product productId="41" categoryId="1">
-        <productName>2005 SUZUKI GSXR750 K4. LOTS OF EXTRAS VGC CAN DELIVER IN UK</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236072-149-640x480.jpg|</imageSourceUrl>
-        <productPrice>2995.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Castlerock, Londonderry</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114782897/2005-suzuki-gsxr750-k4-lots-of-extras-vgc-can-deliver-in-uk.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>2005 gsxr 750 in very good condition Motd till end of may 16. New chain and sprocket kit by d.i.d Hel braided brake lines Heated hand grips Carbon exhaust rear hugger and mirrors Fast bike and a joy to ride. Cheap for quick sale. May px for bobber style bike only</description>
-    </product>
-    <product productId="42" categoryId="1">
-        <productName>KAWASAKI EL250 CUSTOM - IMMACULATE</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236404-613-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236405-613-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236406-613-640x480.jpg|</imageSourceUrl>
-        <productPrice>1300.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Scarborough, Northyorks</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114783003/kawasaki-el250-custom-immaculate.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>Selling the mint KAWASAKI EL250, as its just sat there in the garage since i stripped and rebuilt it about 18 months ago. Its done just under 16000 miles, and the engine is ultra quiet, with no smoking! The forks have been stripped and polished, as has the top fork bracket. Any bits that were rusty have been powder coated. It has quality chromed metal grille indicators , and has had the seats professionally recovered. It has a brand new GRIPS, stainless brake hose and pads fitted. The chrome on the wheels is all good too. The tyres and chain are fine too. All chrome on the fittings are spot on. This bike is perfect for the shorter rider as its got a really low seat height, and weighs about the same as a 125cc The bike has an unusual reg plate valued at £250+ I will put a full 12 months MOT on it for buyer.</description>
-    </product>
-    <product productId="43" categoryId="1">
-        <productName>Mint Suzuki RF600</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236646-586-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236647-586-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25236648-586-640x480.jpg|</imageSourceUrl>
-        <productPrice>1450.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Scarborough, North Yorkshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114783095/mint-suzuki-rf600.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>This is my mates abs mint RF600 Its had the swingarm and rear footrests newly powder-coated The fork legs, top bracket and wheels have been stripped, then mirror polished. It has had a new link pipe and silencer fitted - sound lovely! It has only covered just under 16000 miles, which is nothing for the year. These are becoming very collectable, as they produce more power (100 bhp) than the 600 bandit (78 bhp) It will have a years M.O.T on it for buyer. You can reach my mate via email or just give me a ring on the number on the advert....Cheers ......No Numpties, Dreamers or Scammers please.....</description>
-    </product>
-    <product productId="44" categoryId="1">
-        <productName>HONDA MSX 125 INJECTION ONE OWNER ONLY 600 MILES MINT EXTRAS</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25238246-217-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25238247-217-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25238248-217-640x360.jpg|</imageSourceUrl>
-        <productPrice>2395.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>York, North Yorkshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114783672/honda-msx-125-injection-one-owner-only-600-miles-mint-extras.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>GENUINE HONDA MSX 125 INJECTION, ICE WHITE, ONLY 600 MILES FROM NEW, NEVER SEEN RAIN, MINT CONDITION AS NEW, £700 WORTH OF EXTRAS, STAINLESS IXIL RACE EXHAUST &amp; IXIL DE-CAT PIPE, UP GEARED TRANSMISSION FOR MORE TOP END SPEED, TAIL TIDY, LOOKS AND SOUNDS AMAZING!, ALL MANUALS FROM NEW. COST ME £3400.</description>
-    </product>
-    <product productId="45" categoryId="1">
-        <productName>R6 SPECIAL EDITION 2003</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25239192-959-640x559.jpg|</imageSourceUrl>
-        <productPrice>2900.0</productPrice>
-        <currency>£</currency>
-        <customerAddress>Nuneaton, Warwickshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114783967/r6-special-edition-2003.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>HI, HERE IS MY BEAUTIFUL RARE R6, EXCELLENT CONDITION</description>
-    </product>
-    <product productId="46" categoryId="1">
-        <productName>HOT PINK Tango moped</productName>
-        <imageSourceUrl></imageSourceUrl>
+    <product productId="15" categoryId="1">
+        <productName>VELOSOLEX 3800 1966 AUTOCYCLE</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275031-128-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275032-128-640x480.jpg</imageSourceUrl>
         <productPrice>395.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Bristol</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784023/hot-pink-tango-moped.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>limited edition HOT PINK Tango 50cc moped,2010 excellent runner MOTtil Aug 16 mileage 4,000 Only for sale as Daugher has passed driving test so is no longer used.</description>
+        <customerAddress>Wickford, Essex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796300/velosolex-3800-1966-autocycle.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>VELOSOLEX 3800 1966 Rebuilt Engine, Starts And Runs Perfectly, Great Fun! Delivery Possible, Part Exchange Welcome</description>
+        <addingInformation>Era 1960s|Engine Size 50 cc|Type Classic|Condition Second Hand</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="47" categoryId="1">
-        <productName>honda deauville nt650</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25239393-870-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25239394-870-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25239395-870-640x480.jpg|</imageSourceUrl>
-        <productPrice>2400.0</productPrice>
+    <product productId="16" categoryId="1">
+        <productName>MOTOBECANE 1926 B/W BMA TYPE B1 (BANBURY BIKE)</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275183-143-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275184-143-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275185-143-640x480.jpg</imageSourceUrl>
+        <productPrice>1695.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Aberdeen, Aberdeenshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784056/honda-deauville-nt650.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>selling my 2003 deauville with only 6074 genuine miles on the clock, lots of new parts fitted as bike was off road for a lot of years but now looks great and also runs great, wheels powder coated forks rechromed, total strip down and paint, MOT'd nov 2016 currently on sorn</description>
+        <customerAddress>Wickford, Essex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796360/motobecane-1926-bw-bma-type-b1-banbury-bike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>MOTOBECANE 1926 B/W BMA TYPE B1 (BANBURY BIKE) Belt Drive, At The Moment Fitted With Incorrect Rear Wheel. The Original Rear Wheel With Dummy Drive Rim For The Belt And Rear Brake Is Being Sent To Us, Depository Petrol Tank, Girder Fork</description>
+        <addingInformation>Era 1920s|Type Classic|Condition Second Hand</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="48" categoryId="1">
-        <productName>Honda repsol cbr 125</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25239613-912-853x640.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25239664-519-853x640.jpg|</imageSourceUrl>
-        <productPrice>2900.0</productPrice>
+    <product productId="17" categoryId="1">
+        <productName>VELOSOLEX 3800 1974 AUTOCYCLE</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275233-353-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275234-353-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275235-353-640x480.jpg</imageSourceUrl>
+        <productPrice>395.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Carlisle, Cumbria</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784095/honda-repsol-cbr-125.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>2015 Honda repsol cbr 125, 2,328 miles on clock, in excerllent conditon like brand new only selling because i need a car</description>
+        <customerAddress>Wickford, Essex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796379/velosolex-3800-1974-autocycle.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>VELOSOLEX 3800 1974 New Fuel Tank And Carburetor, Starts And Runs Easily, Everybody Should Have One! Delivery Possible, Part Exchange Welcome</description>
+        <addingInformation>Era 1970s|Engine Size 50 cc|Type Classic|Condition Second Hand</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="49" categoryId="1">
-        <productName>bmw r1200rt</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25240187-995-640x427.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25240188-995-640x427.jpg|</imageSourceUrl>
-        <productPrice>5250.0</productPrice>
+    <product productId="18" categoryId="1">
+        <productName>JAMES COMMODORE 250CC 1959 -1961 (PROJECT) Villiers 2 Stro</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275274-983-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275275-983-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275276-983-640x480.jpg</imageSourceUrl>
+        <productPrice>995.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Doncaster, South Yorkshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784340/bmw-r1200rt.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>bmw r1200rt for sale,2006,full luggage,excellent unmarked condition,42,000 miles,mot.</description>
+        <customerAddress>Wickford, Essex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796397/james-commodore-250cc-1959-1961-project-villiers-2-stro.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>JAMES COMMODORE 250CC 1959 -1961 (PROJECT) Villiers 2 Stroke, 4 Speed, Comes With Spare Engine, Has Old Tax Disc</description>
+        <addingInformation></addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="50" categoryId="1">
-        <productName>bmw r75/5</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>4495.0</productPrice>
+    <product productId="19" categoryId="1">
+        <productName>BSA BANTAM 175CC D7 1961</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275371-196-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275372-196-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275373-196-640x480.jpg</imageSourceUrl>
+        <productPrice>1095.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Radcliffe M263ub, Lancashire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784460/bmw-r755.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>1971 bmw r75/5 metallic blue,bike in standard condition,historic tax,krauser panniers,runs well,recent service with new batterymot until july picture to follow</description>
+        <customerAddress>Wickford, Essex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796426/bsa-bantam-175cc-d7-1961.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>BSA BANTAM 175CC D7 1961 Starts And Runs, Been Dried Stored For 30+ Years, Original Unmolested Condition, Delivery Possible, Part Exchange Welcome</description>
+        <addingInformation>Era 1960s|Engine Size 175 cc|Type Classic|Condition Second Hand</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="51" categoryId="1">
-        <productName>motorbike engines, parts, bits etc.</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>0.0</productPrice>
-        <currency></currency>
-        <customerAddress>Wolverhampton, West Midlands</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784581/motorbike-engines-parts-bits-etc.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>I buy ANY old motorbikes, crashed, non runners, part motorbikes engines, parts, frames, wheels W.H.Y. collection arranged CASH paid, no problems.</description>
-    </product>
-    <product productId="52" categoryId="1">
-        <productName>Yamaha raptor 700r 2010 quad</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241255-459-640x857.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241256-459-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241257-459-640x478.jpg|</imageSourceUrl>
-        <productPrice>5500.0</productPrice>
+    <product productId="20" categoryId="1">
+        <productName>Ducati 749 bike</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275912-600-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275910-600-640x853.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25275911-600-640x853.jpg</imageSourceUrl>
+        <productPrice>4200.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Beaminster, Dorset</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784760/yamaha-raptor-700r-2010-quad.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>Yamaha Raptor700r 59plate quad for sale I have for sale my stunning raptor, it has a new mot and has hardly been ridden!! So it's been in the garage a while.It is road registered and drives lovely , great handling and a smooth ride! I have known the bike it bought it from brand new then again back from my mate.i have been on the scene over 10years so the bike is well maintained and kept up together. This bike is top spec: -DMC power core 4 twin exhaust -Power commander -Pro flow air filter induction kit -Lone star racing plus 2 a arms -Excalibur axle plus 2 -M&amp;M sport alloy wheels red and chrome -Graphics kit &amp; New seat cover! -GYTR front bumper Have a lowering kit but not fitted This quad is lush and great fun very reluctant sell but due to health I have no choice. I am not in a hurry to sell so will not be accepting silly offers! No time waster please Cash on collection or PayPal payment Thank you for looking :) ?</description>
+        <customerAddress>Chesterfield, Derbyshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796630/ducati-749-bike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html</productDetailUrl>
+        <description>2006 only 9800 service history All mot s needs new foot pedal but has one for now. Drives like new. New back tyre last week new battery. Not April 2017 any trail lovely bike</description>
+        <addingInformation>Engine Size 749 cc|Type Supersport|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="53" categoryId="1">
-        <productName>Kawasaki zx10r (07) low mileage, alarm, OWNED FOR 5 YEARS</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241663-469-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241664-469-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241665-469-640x480.jpg|</imageSourceUrl>
-        <productPrice>4400.0</productPrice>
+    <product productId="21" categoryId="1">
+        <productName>kids rev n go</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25276389-699-640x1138.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25276392-699-640x1138.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25276394-699-640x1138.jpg</imageSourceUrl>
+        <productPrice>100.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Ilkeston, Derby</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784884/kawasaki-zx10r-07-low-mileage-alarm-owned-for-5-years.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>selling my loved zx10r , it has low mileage 8400, mot til july 31st 2016 datatool alarm/immobiliser, 2 alarm fobs, 3 keys, includes the original red one, kawasaki ninja green, (Torque) twin end cans, i have put akrapovic stickers on, also have original pipes for it, goodridge braided brake pipes, i have owned it for 5 years and not used it much in that time, i have nearly all mots to show how much per year i used it, its in totally original condition genuine artical , looks like its should still be in the shop, never dropped or scratched whilst i have owned it, only selling due to health reasons, there are stickers on it, but they can easily be removed and are not hiding anything, to be honest, the only mark i know of it on the tank name kawasaki, i dropped something on it and it has left a tiny chip which has never bothered me and can be easily covered with a paint chip pen. michelin tyres good, always passed mot only ever needed a rear tyre to pass mot in 5 years, any more question, please contact me through preloved,</description>
+        <customerAddress>Barry, Soth Glamorgan</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796831/kids-rev-n-go.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>kids rev n go .new engine new wheels n tyres.new spare tyre .starts first pull..great first bike for 4 n upwards</description>
+        <addingInformation>Engine Size 50 cc|Type Motocross|Condition Second Hand</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="54" categoryId="1">
-        <productName>Aprillia Tuono RSV</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241862-438-168x126.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241863-438-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25241864-438-360x270.jpg|</imageSourceUrl>
-        <productPrice>2600.0</productPrice>
+    <product productId="22" categoryId="1">
+        <productName>Triumph trophy 4 , 1200cc</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25276479-628-640x466.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25276477-628-640x458.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25276478-628-640x477.jpg</imageSourceUrl>
+        <productPrice>750.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Yelverton, Devon</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114784953/aprillia-tuono-rsv.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>Bike is in nice condition and runs well has low mileage 17000.It has some age related signs but nothing major.The MOT is due in June but would renew if sold.It was seviced last MOT and I have not ridden since due to health problems.Iam a mature rider so it has not been thrashed since I have had it.Well worth a look .</description>
+        <customerAddress>Bilston, West Midlands</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114796862/triumph-trophy-4-1200cc.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Triumph trophy 4 1200cc sports tourer , 1992 J reg , 43k , GOOD BITS - 12 months MOT, , new battery, new chain and sprockets, new fork seals, recon rear shocker, new ht leads and plugs, new coil pack, new cam seal, decent tyres. Complete with hard box panniers and rack BAD BITS - needs screen replacing, seat needs recovering and some general TLC Quick sale needed hence price</description>
+        <addingInformation>Engine Size 1200 cc|Type Sports Tourer|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="55" categoryId="1">
-        <productName>honda</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>1275.0</productPrice>
+    <product productId="23" categoryId="1">
+        <productName>PW80 Yamaha motocross bike</productName>
+        <imageSourceUrl>http://mp.thcdn.com/2f/bb/2fbb1440d3fb4671b96fd0ff69b2eb04.jpg?r=0&amp;h=450|http://mp.thcdn.com/2a/b9/2ab9e1add4d44ef295acc78910b93daf.jpg?r=0&amp;h=450|http://mp.thcdn.com/67/b8/67b8ecf937c440ca94934695b2df96d3.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>330.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Lydney, Gloucestershire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785168/honda.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>Honda CBR 1000FM,1991,37000 miles tested to Sept 2016.carrier and topbox,new tyre,battery,exhaust,rare honda benneton colours,well maintained and in excellent condition for year,superb sports / tourer,ready for the summer £1275</description>
+        <customerAddress>Rushden, Northants</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114797939/pw80-yamaha-motocross-bike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>For sale our Yamaha PW80 Fab fun bike. My son has grown out of this now (17years old) and has been in storage for the passed 18 months. Starts well and runs fine. Had a new inner tube fitted for the front wheel but has not been fitted correctly therefore tyre is flat, but with a little effort to fit it correctly you'll be will be on that dirt track in no time! I have more pictures for you if you want some This is a 2 stroke semi automatic. This will suit any child up to the age of 15 I would say. Any questions welcome Thank you</description>
+        <addingInformation>Engine Size 80 cc|Type Motocross|Condition Second Hand|Road Legal No|V5 Registration Document Not Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="56" categoryId="1">
-        <productName>Honda cbr-r4 125cc motorcyclr</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25242605-478-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25242607-478-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25242608-478-640x360.jpg|</imageSourceUrl>
-        <productPrice>1100.0</productPrice>
+    <product productId="24" categoryId="1">
+        <productName>Kymco Pulsar 125cc Motorbike</productName>
+        <imageSourceUrl>http://mp.thcdn.com/40/94/409456a18cc9418788f77ee12de23125.jpg?r=0&amp;h=450|http://mp.thcdn.com/64/c3/64c3a4bcce6e431e91b10a17d1c244b5.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>650.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Alexandria, West Dunbartonshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785212/honda-cbr-r4-125cc-motorcyclr.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>2004 Honda cbr 125cc ,great learner bike comes with 12 months mot and less than 10 k on the clock.cheap to run and insure. Fairings could do with a tidy up but other than that great bike starts up runs well. £1100 ovno</description>
+        <customerAddress>Eskdale Road, Wakefield</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114798333/kymco-pulsar-125cc-motorbike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Great Bike. Full v5 and service history. £12 per year road tax. No problems at all. 5month MOT. 2 Keys. Will swap for car - Punto, Clio, Saxo (1.6) or Corsa. Make offers or ask for further details.</description>
+        <addingInformation>Era 2011|Engine Size 125 cc|Type Commuter|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="57" categoryId="1">
-        <productName>2 tickets for isle of man</productName>
-        <imageSourceUrl></imageSourceUrl>
+    <product productId="25" categoryId="1">
+        <productName>Crash Helmet</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25280533-808-640x478.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25280534-808-640x478.jpg</imageSourceUrl>
+        <productPrice>20.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Hayle, Cornwall</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114798488/crash-helmet.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Black OSBE crash helmet with visor.</description>
+        <addingInformation></addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="26" categoryId="1">
+        <productName>Yamaha 85</productName>
+        <imageSourceUrl>http://mp.thcdn.com/5b/dd/5bddca57cdf34c2d9060956abaa13257.jpg?r=0&amp;h=450|http://mp.thcdn.com/3b/97/3b979c8402e9412f897e77de49ec13b5.jpg?r=0&amp;h=450|http://mp.thcdn.com/b8/0f/b80fc25a429846cb991d89812dfe1d90.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>725.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Telford, Shropshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114798700/yamaha-85.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Yamaha motor cross bike 85cc new chain good condition our son has out grown it</description>
+        <addingInformation>Engine Size 85 cc|Type Motocross|Condition Second Hand|Road Legal No|V5 Registration Document Not Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="27" categoryId="1">
+        <productName>Peugeot vox</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25281105-672-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25281106-672-640x853.jpg</imageSourceUrl>
         <productPrice>800.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Widnes, Cheshire</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785235/2-tickets-for-isle-of-man.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>2 tickets for isle of man, 2 bikes and 2 riders leaving from liverpool on 6th to 13th june 2016 price is £239 for ferry each and £161 each for apartment in ramsey near parliament square, sharing apartment with 3 of my friends needs to be a couple really as you will have to share a double bed inbox me if interested</description>
+        <customerAddress>Somerton, Somerset</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114798740/peugeot-vox.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>63 plate Peugeot vox, silver 2700kms, 1700miles approx ,excellent condition , puig screen.</description>
+        <addingInformation>Era 2013|Engine Size 110 cc|Type Commuter|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="58" categoryId="1">
-        <productName>Richa ladies motor cycle jkt.</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0406/25242803-346-640x853.jpg|</imageSourceUrl>
-        <productPrice>55.0</productPrice>
+    <product productId="28" categoryId="1">
+        <productName>GY200 Dirt Bike / Off Roader / Road Legal Bike</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282240-366-640x427.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282241-366-640x960.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282242-366-640x427.jpg</imageSourceUrl>
+        <productPrice>650.0</productPrice>
         <currency>£</currency>
-        <customerAddress>Merriott, Somerset</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114785276/richa-ladies-motor-cycle-jkt.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>This jkt is leather and textile has had no accidents, does have removeable inner gilet and lining. Full body armour and Velcro side fastening. Size 12 or D40.</description>
+        <customerAddress>Warwickshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799162/gy200-dirt-bike-off-roader-road-legal-bike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>GY200 Dirt Bike / Off Roader / Road Legal Bike In great condition &amp; full working order Starts &amp; Rides but requires a battery &amp; battery holder The bike can be shown running though with a battery I have here There is no mot on the bike so will require a van or trailer to take the bike away V5 is present along with the key</description>
+        <addingInformation>Era 2006|Engine Size 200 cc|Type Dual Purpose (On/Off Road)|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
-    <product productId="59" categoryId="1">
-        <productName>CLASSIC DUCATI WANTED</productName>
-        <imageSourceUrl></imageSourceUrl>
-        <productPrice>0.0</productPrice>
-        <currency></currency>
-        <customerAddress>Bangor, Gwynedd</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/612770099/classic-ducati-wanted.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>Anything considered, cash waiting. Call Michael for more information. TM Ref: 900501481-01</description>
-    </product>
-    <product productId="60" categoryId="1">
-        <productName>Yamaha Sr 125</productName>
-        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25191171-352-640x1138.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25191173-352-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0403/25191174-352-640x360.jpg|</imageSourceUrl>
-        <productPrice>575.0</productPrice>
+    <product productId="29" categoryId="1">
+        <productName>KTM motocross</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282312-286-640x1139.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282313-286-640x1139.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282314-286-640x360.jpg</imageSourceUrl>
+        <productPrice>950.0</productPrice>
         <currency>£</currency>
-        <customerAddress>York, England</customerAddress>
-        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114766239/yamaha-sr-125.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D3</productDetailUrl>
-        <description>Yamaha Sr 125 Year 2000 14,800 miles Opened for six years Mot till 20th Oct 2016 no recommendations from last cbt. New exhaust fitted for the Mot . Used daily and runs great. Negatives needs left side panel (£15 from eBay but haven't found a blue one!). Small leak of oil from left hand side engine gasket. Tank is scratched from the use of a tank bag and it's been on the floor a few times as it's belonged to a training school. This also means it's been well maintained as it's needed to be reliable. Please phone for more information.</description>
+        <customerAddress>Driffield, East Yorkshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799186/ktm-motocross.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Ktm motocross 50cc Unwanted present 2 stroke engine 5 speed gear box Just had service, have receipt for work done Never used by us but has run on driveway. Great bike for anyone up and ready to go</description>
+        <addingInformation>Engine Size 50 cc|Type Motocross|Condition Second Hand|Road Legal No|V5 Registration Document Not Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="30" categoryId="1">
+        <productName>KTM 400EXF FOUR STROKE</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25282835-770-639x359.jpg</imageSourceUrl>
+        <productPrice>750.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Worthen, Shropshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799351/ktm-400exf-four-stroke.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>BOUGHT BIKE 2 YEARS AGO TO PLAY AROUND ON NOW AGE IS AGAINST ME AND MY LAD IS NOW QUICKER THAN ME DOES WHAT ITS SUPPOSED TO STARTS STOPS GOES THROUGH THE GEARS FINE BRAKES ALL OK HAVE NOT RODE IT FOR AGES GOT OUT OF SHED TODAY HAD NOT BEEN STARTED SINCE LAST JULY FIRED UP SECOND KICK IT JUST NEED A NEW RIDER. (PLEASE NOTE THE BIKE SINCE I HAVE HAD HAS NEVER BEEN ROAD REGISTERED I DO NOT HAVE THE LOG BOOK ) FOR OFF ROAD FUN ONLY</description>
+        <addingInformation>Era 2004|Engine Size 400 cc|Type Motocross|Condition Second Hand|Road Legal No|V5 Registration Document Not Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="31" categoryId="1">
+        <productName>Harley sportster 48 forty eight rough crafts custom bobber</productName>
+        <imageSourceUrl>http://mp.thcdn.com/7f/d9/7fd9bc4c348046c98b3d4aeebe2f381a.jpg?r=0&amp;h=450|http://mp.thcdn.com/19/08/19080091e7b54d6e9488c9867285daaa.jpg?r=0&amp;h=450|http://mp.thcdn.com/12/20/122047c4326f4d1f8c681f45c67ecf54.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>8995.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Lutterworth, Leicestershire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799408/harley-sportster-48-forty-eight-rough-crafts-custom-bobber.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>2011 mint custom bobber a one of build ££££ spent on her to get this look Joker Machine , Roland sands , rough crafts Coker tyres , lowered front &amp; rear Loads more spec ! Show room condition</description>
+        <addingInformation>Era 2011|Engine Size 1200 cc|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="32" categoryId="1">
+        <productName>zx7r</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25283364-179-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25283363-179-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25283365-179-640x480.jpg</imageSourceUrl>
+        <productPrice>2200.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Blackburn, Lancashire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799588/zx7r.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>here's my beloved zx7r with 31k and moted unti feb next year very very clean and well looked after recent oil change iridium spark plus pippercros air filter moto gp pipe along with a short muzzy pipe short leaver wheels sprayed white new single seat pod brake pads back and front double bubble viser along with the standard viser new grips and bar ends renthel chain and sprockets and many more new bits and bobs these bikes in this colour are getting quite rare especially in this condition not in no rush to get rid as I love the 7r just want to see wats on offer for this classic sports bike..</description>
+        <addingInformation>Era 1997|Engine Size 750 cc|Type Sports|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="33" categoryId="1">
+        <productName>HONDA CB125F</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25283631-857-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25283632-857-640x360.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25283633-857-640x360.jpg</imageSourceUrl>
+        <productPrice>2000.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Warrington, Cheshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799669/honda-cb125f.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Registered 2015..mileage ~ 2000...2 owners.Bike in immaculate condition.....Selling due to passing driving test..Any questions please ask..</description>
+        <addingInformation>Era 2015|Engine Size 125 cc|Type Cruiser|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="34" categoryId="1">
+        <productName>yamaha xjr 400</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284286-755-640x1135.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284295-370-640x1136.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284310-894-640x1136.jpg</imageSourceUrl>
+        <productPrice>725.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Glastonbury, Somerset</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799868/yamaha-xjr-400.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Yamaha xjr 400 for sale 1997 import runs but has problem when ridden have put time and effort trying to sort have ran out of patience ,has years mot with 2 advisories headlight bulb and front tyre also has new rear shocks .colour black no rips or tears in seat original toolkit 2 keys</description>
+        <addingInformation>Era 1997|Engine Size 400 cc|Type Naked|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="35" categoryId="1">
+        <productName>RIEJU RS2 125cc with SPORT EXHAUST and YAMAHA engine !</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284271-899-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284272-899-640x762.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0409/25284273-899-640x659.jpg</imageSourceUrl>
+        <productPrice>1450.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Darfield, South Yorkshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114799895/rieju-rs2-125cc-with-sport-exhaust-and-yamaha-engine.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Hi ! I have RIEJU 125cc motorbike with sport exhaust which sounds great. It's good clean bike, been always garaged and look after. I have him for one year and I put a lot of money into that bike. Its ready for MOT, I changed a rear tyre for a new one and I change front and rear wheel bearings, brake pads are changed. MOT till June. Motorbike is in very good condition, great for a first time rider. Drives feel and sound like a full size motorcycle. No OFFERS please..</description>
+        <addingInformation>Era 2010|Engine Size 125 cc|Type Sports|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="36" categoryId="1">
+        <productName>Rieju Marathon Pro</productName>
+        <imageSourceUrl>http://mp.thcdn.com/9e/71/9e7127f9c9de44b79ddf5eedf5b2a1b3.jpg?r=0&amp;h=450|http://mp.thcdn.com/b1/fb/b1fb12d5e63b4cf8837bb7c3dd8be57c.jpg?r=0&amp;h=450|http://mp.thcdn.com/9b/b2/9bb2ea93cd804b689f1f3aa36908d7ca.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>2100.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Tunbury Avenue, Chatham</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114800368/rieju-marathon-pro.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Almost 3100 miles, most miles made by work journey's. Bought in may 2015, same engine as the Yamaha wr125. Nothing wrong with it just selling as I just bought a car , has a DEP3 exhaust on it. It has had its second service done at 2500miles, been looked after with care and stored away at night. Looking for around 2200 but can take lower offer if reasonable.</description>
+        <addingInformation>Era 2015|Engine Size 125 cc|Type Motocross|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="37" categoryId="1">
+        <productName>Kawasaki ZX 10R Motorbike</productName>
+        <imageSourceUrl>http://images.autoexposure.co.uk/AETA20695/AETV51694048_1b.jpg|http://images.autoexposure.co.uk/AETA20695/AETV51694048_2b.jpg|http://images.autoexposure.co.uk/AETA20695/AETV51694048_3b.jpg</imageSourceUrl>
+        <productPrice>7499.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Wellingborough, Northamptonshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/612807240/kawasaki-zx-10r-motorbike.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>2011 reg, 13000 miles, Manual 1000cc Motorbike, Green. Full Service History</description>
+        <addingInformation></addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="38" categoryId="1">
+        <productName>suzuki gsxr 600</productName>
+        <imageSourceUrl>http://mp.thcdn.com/e1/73/e17380deb5984ef1858ee04723713a7e.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>1000.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Stansted, Herfordshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114793003/suzuki-gsxr-600.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>hi I'm selling my srad has I'm wanting zx7r or zx6r or zx9r zx636rr it's had new oil service new tyres 1000miles ago has very fast bike nice and clean for age just not for me please contact for any more information thanks the bike splutters when full thortle but if you half thortle it its fine been told it's carb clean needed but I'm not interested I want zx9r</description>
+        <addingInformation>Era 1999|Engine Size 600 cc|Type Supersport|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="39" categoryId="1">
+        <productName>Honda</productName>
+        <imageSourceUrl>http://mp.thcdn.com/02/93/029335a7b4f14af7acce8e637287454c.jpg?r=0&amp;h=450|http://mp.thcdn.com/42/34/42342d2bbd484baaa1523fc3eb93f6a1.jpg?r=0&amp;h=450|http://mp.thcdn.com/95/ee/95ee45242b3c4975ba4772ab18c7f02d.jpg?r=0&amp;h=450</imageSourceUrl>
+        <productPrice>800.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Walcott, Lincolnshire</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114793258/honda.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>Hi there I am selling my Honda crb 125 with 12 months MOT on it great motor bike I have spent a lot of money on it only down side to my bike that on cold morning I have to try start it a few times to get the revving to sit rite once warmed up she runs perfect will most likely need a choke. And the engine faring is missing people are more than welcome to ask me any questions and are welcome to cum view</description>
+        <addingInformation>Era 2005|Engine Size 125 cc|Type Sports|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
+    </product>
+    <product productId="40" categoryId="1">
+        <productName>KAWASAKI KLX 125</productName>
+        <imageSourceUrl>http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0408/25266645-319-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0408/25266654-875-640x480.jpg|http://da1urhpfd469z.cloudfront.net/uploads/advertphotos/16/0408/25266655-709-640x480.jpg</imageSourceUrl>
+        <productPrice>2200.0</productPrice>
+        <currency>£</currency>
+        <customerAddress>Hastings, East Sussex</customerAddress>
+        <productDetailUrl>http://www.preloved.co.uk/adverts/show/114793431/kawasaki-klx-125.html?link=%2Fadverts%2Flist%2F3316%2Fmotorcycles.html%3Fpage%3D2</productDetailUrl>
+        <description>KAWASAKI KLX125, 2014 MODEL, 10000 MILES, MOT TO JAN 2017. RECENTLY FITTED HANDGUARDS AND RENTHAL HANDLEBARS. BRAND NEW CHAIN, SPROCKETS, REAR DISC, BRAKE PADS, TYRE AND MINI INDICATORS. IN EXCELLENT CONDITION. BOUGHT IN JANUARY FROM A MAIN DEALER BUT SON HAS NOW DECIDED TO LEARN TO DRIVE SO I CAN'T FUND BOTH! NICE, GENUINE BIKE, ANY INSPECTION WELCOME.</description>
+        <addingInformation>Era 2014|Engine Size 125 cc|Type Enduro|Condition Second Hand|Road Legal Yes|V5 Registration Document Present</addingInformation>
+        <productType>For Sale</productType>
     </product>
 </products>

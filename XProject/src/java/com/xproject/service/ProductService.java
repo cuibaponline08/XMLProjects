@@ -19,12 +19,15 @@ public class ProductService {
     
     public List<ProductDTO> getAllProductsWithOnePic(){
         List<ProductDTO> list = productRepository.getAll();
-//        for (ProductDTO productDTO : list) {
-//            if (productDTO.getPicUrl() != null && !productDTO.getPicUrl().equals("")) {
-//                productDTO.setPicUrl(p);
-//            }
-//        }
-        
         return list;
+    }
+    
+    public List<ProductDTO> getProductsWtih1Pic(){
+        List<ProductDTO> list = productRepository.getProductSkipTake();
+        return list;
+    }
+    
+    public ProductDTO getProductById(int productId){
+        return productRepository.getById(productId);
     }
 }

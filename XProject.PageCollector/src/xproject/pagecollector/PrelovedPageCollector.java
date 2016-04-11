@@ -6,6 +6,7 @@
 package xproject.pagecollector;
 
 import com.anc.databaseUtil.DatabaseUtil;
+import com.xproject.data.Enum.ProductTypeEnum;
 import com.xproject.dto.ProductDTO;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,14 +37,14 @@ public class PrelovedPageCollector {
 //    private static String `
 
     public static void main(String[] args) {
-        //getProducts();
+//        getProducts();
         insertProductsToDB();
     }
 
     private static void getProducts() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 3;
+        int totalPage = 2;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
@@ -72,12 +73,25 @@ public class PrelovedPageCollector {
                             productPrice = Float.valueOf(priceWithoutCurrency);
                         }
 
+                        String productType = productElement.getElementsByAttributeValue(
+                                "data-test-element", "advert-type").text().trim();
+
+                        String availability = productElement.getElementsByAttributeValue(
+                                "itemprop", "availability").text().trim();
+                        boolean isFixedPrice = false;
+                        if ("No Offers".equals(availability)) {
+                            isFixedPrice = true;
+                        }
+
                         Product product = new Product();
+                        //TODO: HardCode
                         product.setCategoryId(1);
+
                         product.setCustomerAddress(productElement.select(
                                 "span.is-location").text());
                         product.setImageSourceUrl(productElement.select(
                                 "img.js-defer.media-item.is-media.js-loaded").attr("src"));
+                        product.setProductType(productType);
 
                         product.setProductId(count);
                         String productName = productElement.select(
@@ -96,26 +110,63 @@ public class PrelovedPageCollector {
                             Elements productDetailElements = XMLUtil.getElements(preloved + detailUrl,
                                     "div#classified-p-content");
                             String productDescription = "";
+                            String addingInformation = "";
+                            if (productDetailElements == null) {
+                                continue;
+                            }
+
+                            String imgUrl = "";
                             for (Element productDetailElement : productDetailElements) {
                                 if (productDetailElement != null && !productDetailElement.equals("")) {
                                     productDescription = productDetailElement.
                                             select("#classified-description").text();
 
-                                }
-                            }
-                            Elements imgElements = XMLUtil.getElements(preloved + detailUrl, "li.js-media-carousel-item.classified__media__item");
-                            String imgUrl = "";
-                            int a = imgElements.size();
-                            if (imgElements != null && !imgElements.equals("")) {
-                                for (Element imgElement : imgElements) {
-                                    imgUrl += imgElement.
-                                            select("img").
-                                            attr("data-src") + "|";
+                                    Elements imgElements = productDetailElement.getElementsByTag("li");
+                                    if (imgElements != null && !imgElements.equals("")) {
+                                        int tmpIndex = 0;
+                                        for (Element imgElement : imgElements) {
+                                            String imgText = imgElement.
+                                                    select("img").
+                                                    attr("data-src");
+                                            if (imgText.equals("")) {
+                                                continue;
+                                            }
+
+                                            if (tmpIndex == 0) {
+                                                imgUrl += imgText;
+                                            } else {
+                                                imgUrl += "|" + imgText;
+                                            }
+                                            tmpIndex++;
+                                        }
+                                    }
+
+                                    Elements addingInfoElements = productDetailElement.getElementsByTag(
+                                            "dl");
+                                    if (addingInfoElements != null && !addingInfoElements.equals("")) {
+                                        int tmpIndex = 0;
+                                        for (Element addingInfoElement : addingInfoElements) {
+                                            String addingInfoText = addingInfoElement.
+                                                    select("span.ellipsis").text();
+                                            if (addingInfoText.equals("")) {
+                                                continue;
+                                            }
+
+                                            if (tmpIndex == 0) {
+                                                addingInformation += addingInfoText;
+                                            } else {
+                                                addingInformation += "|" + addingInfoText;
+                                            }
+                                            tmpIndex++;
+                                        }
+                                    }
                                 }
                             }
 
                             product.setImageSourceUrl(imgUrl);
                             product.setDescription(productDescription);
+                            product.setAddingInformation(addingInformation);
+                            product.setIsFixedPrice(isFixedPrice);
                         }
                         product.setProductDetailUrl(preloved + detailUrl);
 
@@ -125,6 +176,7 @@ public class PrelovedPageCollector {
 
                         productList.add(product);
                         count++;
+                        System.out.println(count);
                     } else {
                         continue;
                     }
@@ -135,7 +187,7 @@ public class PrelovedPageCollector {
     }
 
     private static void insertProductsToDB() {
-        String databaseServer = "DUYDTSE61187";
+        String databaseServer = "CUIBAP";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -147,20 +199,25 @@ public class PrelovedPageCollector {
         Products products = XMLUtil.xmlReader(Products.class, productDestinationPath);
         int count = 0;
         for (Product product : products.getProduct()) {
-            ProductDTO productDTO = new ProductDTO();
+            int productType = getProductTypeInt(product.getProductType());
 
-            productDTO.setAddingInformation("");
+            ProductDTO productDTO = new ProductDTO();
+            productDTO.setAddingInformation(product.getAddingInformation());
             productDTO.setCategoryId(product.getCategoryId());
-            productDTO.setCustomerId(1);
             productDTO.setDescription(product.getDescription());
-            productDTO.setIsFixedPrice(true);
             productDTO.setLocation(product.getCustomerAddress());
             productDTO.setPicUrl(product.getImageSourceUrl());
             productDTO.setPrice(product.getProductPrice());
             productDTO.setProductId(product.getProductId());
             productDTO.setProductName(product.getProductName());
+            productDTO.setProductSourceUrl(product.getProductDetailUrl());
+            productDTO.setCurrency(product.getCurrency());
+            productDTO.setProductType(productType);
+            productDTO.setIsFixedPrice(product.isIsFixedPrice());
+
+            //TODO: Hard code
             productDTO.setProductStatus(1);
-            productDTO.setProductType(1);
+            productDTO.setCustomerId(1);
 
             int insertToTable = dbUtil.insertToTable("Product", getNewValues(productDTO));
         }
@@ -168,13 +225,61 @@ public class PrelovedPageCollector {
 
     private static String[] getNewValues(ProductDTO entity) {
         int a = entity.getProductType();
-        String aa = String.valueOf(a);
-        String[] result = {"N'" + entity.productName + "'", String.valueOf(entity.productType),
-            String.valueOf(entity.price), "'" + entity.picUrl + "'", String.valueOf(entity.categoryId),
-            "1", "'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "'" + entity.addingInformation + "'",
-            "'" + entity.location + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId)
+        String[] result = {"N'" + entity.productName.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.productType),
+            String.valueOf(entity.price), "N'" + entity.picUrl.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.categoryId),
+            parseBooleanToString(entity.isFixedPrice), "N'" + entity.description.replaceAll("\"", "\"").replaceAll("'", "''") + "'", "N'"
+            + entity.addingInformation.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
+            "N'" + entity.location.replaceAll("\"", "\"").replaceAll("'", "''")
+            + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId), "N'"
+            + entity.productSourceUrl.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
+            "N'" + entity.currency.replaceAll("\"", "\"").replaceAll("'", "''") + "'"
         };
 
+        return result;
+    }
+    
+    private static String parseBooleanToString(boolean bool){
+        return bool ? "1" : "0";
+    }
+
+    private static int getProductTypeInt(String productType) {
+        int result = ProductTypeEnum.Other.ordinal();
+        switch (productType) {
+            case "For Sale":
+                result = ProductTypeEnum.ForSale.ordinal();
+                break;
+            case "Wanted":
+                result = ProductTypeEnum.Wanted.ordinal();
+                break;
+            case "To Rent":
+                result = ProductTypeEnum.ToRent.ordinal();
+                break;
+            case "For Loan":
+                result = ProductTypeEnum.ForLoan.ordinal();
+                break;
+            case "Swap":
+                result = ProductTypeEnum.Swap.ordinal();
+                break;
+            case "Event":
+                result = ProductTypeEnum.Event.ordinal();
+                break;
+            case "Service":
+                result = ProductTypeEnum.Service.ordinal();
+                break;
+            case "Lost":
+                result = ProductTypeEnum.Lost.ordinal();
+                break;
+            case "Found":
+                result = ProductTypeEnum.Found.ordinal();
+                break;
+            case "For Stud":
+                result = ProductTypeEnum.ForStud.ordinal();
+                break;
+            default:
+                result = ProductTypeEnum.Other.ordinal();
+        }
         return result;
     }
 }

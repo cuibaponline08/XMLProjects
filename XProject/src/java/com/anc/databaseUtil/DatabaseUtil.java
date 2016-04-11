@@ -81,7 +81,7 @@ public class DatabaseUtil {
                 for (int i = 1; i <= rsmd.getColumnCount(); i++) {
                     resultDTO.addValue(rs.getString(i));
                 }
-                
+
                 resultSetDTO.addResult(resultDTO);
             }
         } catch (Exception ex) {
@@ -97,7 +97,7 @@ public class DatabaseUtil {
         }
         return resultSetDTO;
     }
-    
+
     public ResultSetDTO selectFromTable(String tableName) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
 
@@ -130,7 +130,47 @@ public class DatabaseUtil {
 
         return resultSetDTO;
     }
-    
+
+    public ResultSetDTO selectFromTableSkipTake(String tableName, String orderBy, int skip, int take) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            conn = DriverManager.getConnection(connectionString);
+            stm = conn.createStatement();
+
+            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] LIMIT " + 3 + ", " + 5);
+//            rs = stm.executeQuery("SELECT * "
+//                    + "FROM"
+//                    + "("
+//                    + "SELECT tbl.*, ROW_NUMBER() OVER (ORDER BY "+ orderBy +") rownum"
+//                    + "FROM [" + tableName + "] as tbl"
+//                    + ") as seq"
+//                    + " WHERE seq.rownum BETWEEN " + skip + " AND " + take);
+            ResultSetMetaData rsmd = rs.getMetaData();
+
+            while (rs.next()) {
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
+                }
+                resultSetDTO.addResult(resultDTO);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                rs.close();
+                stm.close();
+                conn.close();;
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        return resultSetDTO;
+    }
+
     public ResultSetDTO selectFromTable(String tableName, String condition) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
 
@@ -140,6 +180,45 @@ public class DatabaseUtil {
             stm = conn.createStatement();
 
             rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE " + condition);
+            ResultSetMetaData rsmd = rs.getMetaData();
+
+            while (rs.next()) {
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
+                }
+                resultSetDTO.addResult(resultDTO);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                rs.close();
+                stm.close();
+                conn.close();;
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        return resultSetDTO;
+    }
+
+    public ResultSetDTO selectFromTableSkipTake(String tableName, String condition, String orderBy, int skip, int take) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            conn = DriverManager.getConnection(connectionString);
+            stm = conn.createStatement();
+
+            rs = stm.executeQuery("SELECT * "
+                    + "FROM"
+                    + "("
+                    + "SELECT tbl.*, ROW_NUMBER() OVER (ORDER BY "+ orderBy +") rownum"
+                    + "FROM [" + tableName + "] as tbl WHERE " + condition
+                    + ") seq"
+                    + " WHERE seq.rownum BETWEEN " + skip + " AND " + take);
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next()) {
@@ -239,7 +318,7 @@ public class DatabaseUtil {
         }
         return select;
     }
-    
+
     public int insertToTable(String tableName, String[] newValues) {
         int records = 0;
         try {

@@ -23,14 +23,17 @@ public class ProductDTO {
     public boolean isFixedPrice;
     public String description;
     public String addingInformation;
+    public String[] addingInformationList;
     public String location;
     public int productStatus;
     public int customerId;
+    public String productSourceUrl;
+    public String currency;
 
     public ProductDTO() {
     }
 
-    public ProductDTO(int productId, String productName, int productType, float price, String defaultPic, String[] picUrlList, int categoryId, boolean isFixedPrice, String description, String addingInformation, String location, int productStatus, int customerId) {
+    public ProductDTO(int productId, String productName, int productType, float price, String defaultPic, String[] picUrlList, int categoryId, boolean isFixedPrice, String description, String addingInformation, String[] addingInformationList, String location, int productStatus, int customerId, String productSourceUrl, String currency) {
         this.productId = productId;
         this.productName = productName;
         this.productType = productType;
@@ -41,17 +44,20 @@ public class ProductDTO {
         this.isFixedPrice = isFixedPrice;
         this.description = description;
         this.addingInformation = addingInformation;
+        this.addingInformationList = addingInformationList;
         this.location = location;
         this.productStatus = productStatus;
         this.customerId = customerId;
-    }
-    
-    public String[] getPicUrlList() {
-        return picUrlList;
+        this.productSourceUrl = productSourceUrl;
+        this.currency = currency;
     }
 
-    public void setPicUrlList(String[] picUrlList) {
-        this.picUrlList = picUrlList;
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 
     public int getProductId() {
@@ -94,6 +100,14 @@ public class ProductDTO {
         this.defaultPic = defaultPic;
     }
 
+    public String[] getPicUrlList() {
+        return picUrlList;
+    }
+
+    public void setPicUrlList(String[] picUrlList) {
+        this.picUrlList = picUrlList;
+    }
+
     public int getCategoryId() {
         return categoryId;
     }
@@ -126,6 +140,14 @@ public class ProductDTO {
         this.addingInformation = addingInformation;
     }
 
+    public String[] getAddingInformationList() {
+        return addingInformationList;
+    }
+
+    public void setAddingInformationList(String[] addingInformationList) {
+        this.addingInformationList = addingInformationList;
+    }
+
     public String getLocation() {
         return location;
     }
@@ -149,4 +171,13 @@ public class ProductDTO {
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
     }
+
+    public String getProductSourceUrl() {
+        return productSourceUrl;
+    }
+
+    public void setProductSourceUrl(String productSourceUrl) {
+        this.productSourceUrl = productSourceUrl;
+    }
+
 }
