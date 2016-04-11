@@ -1,4 +1,3 @@
-
 function loadProducts(currentPage) {
     $.ajax({
         type: "POST",
@@ -37,7 +36,8 @@ function loadProductDetail(productId) {
                 loadProducts(1);
                 loadPages();
             } else {
-                document.getElementById('main-content').innerHTML = result.toString();
+                var id = 'product' + productId;
+                document.getElementById(id).innerHTML = result.toString();
                 document.getElementById('footer').innerHTML = "";
             }
         }

@@ -187,7 +187,7 @@ public class PrelovedPageCollector {
     }
 
     private static void insertProductsToDB() {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -197,6 +197,10 @@ public class PrelovedPageCollector {
         dbUtil.createConnection(databaseServer, databaseInstance, databaseName, username, password);
 
         Products products = XMLUtil.xmlReader(Products.class, productDestinationPath);
+        if (products == null) {
+            return;
+        }
+        
         int count = 0;
         for (Product product : products.getProduct()) {
             int productType = getProductTypeInt(product.getProductType());
@@ -280,6 +284,7 @@ public class PrelovedPageCollector {
             default:
                 result = ProductTypeEnum.Other.ordinal();
         }
+        
         return result;
     }
 }

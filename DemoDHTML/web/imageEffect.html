@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+//            filter: blur(2px) grayscale(22 % )
+            var filter = [];
+            function set(type, value) {
+                filter[type] = value;
+                var val = "";
+                for (var key in filter) {
+                    val += key + "(" + filter[key] + ") ";
+                }
+                txtValue.innerText = val;
+                imgTest.style.filter = val;
+                imgTest.style.webkitFilter = val;
+//                if (type == 'blur') {
+//                    imgTest.style.filter = "blur(" + value + "px)";
+//                    imgTest.style.webkitFilter = "blur(" + value + "px)";
+//                } else if (type == 'grayscale') {
+//                    imgTest.style.filter = "grayscale(" + value + "%)";
+//                    imgTest.style.webkitFilter = "grayscale(" + value + "%)";
+//                }
+            }
+        </script>
+    </head>
+    <body>
+        <img id="imgTest" src="images/city.jpg" width="300" height="200"/>
+        <div id='txtValue'></div>
+        <div>
+            Blur: <input type="range" value="0" min="0" max="10" step="0.1" 
+                         oninput="set('blur', this.value + 'px')"/>
+        </div>
+        <div>
+            Gray scale: <input type="range" value="0" min="0" max="100" step="1" 
+                               oninput="set('grayscale', this.value + '%')"/>
+        </div>
+        <div>
+            Drop shadow: <input type="range" value="0" min="0" max="100" step="1" 
+                                oninput="set('drop-shadow', this.value + 'px ' + this.value + 'px 30px black')"/>
+        </div>
+        <div>
+            Hue rotate: <input type="range" value="0" min="0" max="360" step="1" 
+                               oninput="set('hue-rotate', this.value + 'deg')"/>
+        </div>
+        <div>
+            Sepia: <input type="range" value="0" min="0" max="1" step="0.1" 
+                          oninput="set('sepia', this.value)"/>
+        </div>
+        <div>
+            Opacity: <input type="range" value="1" min="0" max="1" step="0.1" 
+                            oninput="set('opacity', this.value)"/>
+        </div>
+        <div>
+            Invert: <input type="range" value="1" min="0" max="1" step="0.1" 
+                           oninput="set('invert', this.value)"/>
+        </div>
+        <div>
+            Brightness: <input type="range" value="1" min="0" max="10" step="0.1" 
+                               oninput="set('brightness', this.value)"/>
+        </div>
+        <div>
+            Contrast <input type="range" value="1" min="0" max="10" step="0.1" 
+                            oninput="set('contrast', this.value)"/>
+        </div>
+    </body>
+</html>

@@ -23,7 +23,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
     private DatabaseUtil dbUtil;
 
     public ProductRepository() {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";

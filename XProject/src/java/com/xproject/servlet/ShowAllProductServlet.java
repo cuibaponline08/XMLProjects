@@ -65,7 +65,8 @@ public class ShowAllProductServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         for (int i = 1; i <= totalPages; i++) {
-            response.getWriter().print("<input type=\"button\" value=\"" + i + "\" onclick=\"loadProducts(" + i + ")\" >");
+            response.getWriter().print("<input type=\"button\" value=\"" + 
+                    i + "\" onclick=\"loadProducts(" + i + ")\" >");
         }
 
         processRequest(request, response);
@@ -96,15 +97,6 @@ public class ShowAllProductServlet extends HttpServlet {
 
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-//        //Search area
-//        response.getWriter().println(
-//                "<section class=\"row\">"
-//                + "                    <input type=\"text\" class=\"textbox-search\"/>"
-//                + "                    <input type=\"button\" class=\"submit-button\" value=\"Search\"/>"
-//                + "                </section>"
-//                + "<section class=\"row\">"
-//                + "                    <div class=\"container-item\">"
-//                + "                        <div class=\"product\" id=\"productList\">");
 
         for (int i = (itemInPage * (pageNumber - 1)); i < totalItems && i <= (itemInPage * (pageNumber)); i++) {
             ProductDTO product = list.get(i);
@@ -153,6 +145,7 @@ public class ShowAllProductServlet extends HttpServlet {
                     + "    </div>"
                     + "</div>"
                     + "                                </div> <!-- end div item -->"
+                            + "<div id='product" + product.getProductId() + "'></div>"
             //</editor-fold>
             );
         }
