@@ -4,12 +4,12 @@
 <html lang="en">
     <head>
         <meta content="charset=UTF-8">
-        <title>Animated hover box text form beneath</title>
+        <title>XProject</title>
         <link rel="stylesheet" href="css/xproject.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <script src="js/xproject.js"></script>
     </head>
-    <body id="body" class="preload">
+    <body id="body">
         <div class="body-main">
             <div class="wrapper" id="search">
                 <section class="row">
@@ -23,12 +23,51 @@
 
             </div>
         </div>
+        <input type="hidden" value='' id='currentProductDetail' />
     </body>
 </html>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function () {
+//    window.readyHandlers = [];
+//    window.ready = function ready(handler) {
+//        window.readyHandlers.push(handler);
+//        handleState();
+//    };
+//
+//    window.handleState = function handleState() {
+//        if (['interactive', 'complete'].indexOf(document.readyState) > -1) {
+//            while (window.readyHandlers.length > 0) {
+//                (window.readyHandlers.shift())();
+//            }
+//        }
+//    };
+//
+//    document.onreadystatechange = window.handleState;
+//
+//    ready(function () {
+//        loadProducts(1);
+//        loadPages();
+//        // your code here
+//    });
+//    document.onreadystatechange = function () {
+//        var state = document.readyState;
+//        if (state == 'interactive') {
+//            init();
+//        } else if (state == 'complete') {
+//            initOnCompleteLoad();
+//        }
+//    }
+
+//    function initOnCompleteLoad() {
+//        loadProducts(1);
+//        loadPages();
+//    }
+//
+//    function init() {
+//
+//    }
+    $('document').ready(function () {
         loadProducts(1);
         loadPages();
     });

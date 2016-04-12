@@ -14,6 +14,9 @@ import java.text.DecimalFormat;
  */
 public class ANCParser {
 
+    public static String GOOGLEMAPS_APIKEY = "AIzaSyB0iJvMLVkPYti5b_GaIPutP5IvRQat6B8";
+    //https://maps.googleapis.com/maps/api/distancematrix/xml?units=imperial&origins=HoChiMinh+VietNam&destinations=TraVinh+VietNam&key=AIzaSyB0iJvMLVkPYti5b_GaIPutP5IvRQat6B8
+    //GOOD//https://maps.googleapis.com/maps/api/distancematrix/xml?units=metric&origins=Ho Chi Minh, Viet Nam&destinations=Vũng Tàu, Bà Rịa&key=AIzaSyB0iJvMLVkPYti5b_GaIPutP5IvRQat6B8
     public static int parseInt(String s) {
         int result = 0;
 
@@ -163,7 +166,7 @@ public class ANCParser {
 
     public static String moneyFormat(float money) {
         DecimalFormat myFormatter = new DecimalFormat("#,###");
-        
+
         return myFormatter.format(money);
     }
 }

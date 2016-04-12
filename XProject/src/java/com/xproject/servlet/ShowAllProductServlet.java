@@ -65,8 +65,8 @@ public class ShowAllProductServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         for (int i = 1; i <= totalPages; i++) {
-            response.getWriter().print("<input type=\"button\" value=\"" + 
-                    i + "\" onclick=\"loadProducts(" + i + ")\" >");
+            response.getWriter().print("<input type=\"button\" value=\""
+                    + i + "\" onclick=\"loadProducts(" + i + ")\" >");
         }
 
         processRequest(request, response);
@@ -96,11 +96,12 @@ public class ShowAllProductServlet extends HttpServlet {
         int totalItems = list.size();
 
         response.setContentType("text/html");
+//        response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
 
         for (int i = (itemInPage * (pageNumber - 1)); i < totalItems && i <= (itemInPage * (pageNumber)); i++) {
             ProductDTO product = list.get(i);
-            
+
             response.getWriter().println(
                     //<editor-fold defaultstate="collapsed" desc="html result">
 
@@ -121,8 +122,8 @@ public class ShowAllProductServlet extends HttpServlet {
                     + "                </div>"
                     + "            </div>"
                     + "            <div class=\"item-product-price\">"
-                    + "                <span class=\"price-num\">" + product.getCurrency() +
-                            ANCParser.moneyFormat(product.getPrice()) + "</span>"
+                    + "                <span class=\"price-num\">" + product.getCurrency()
+                    + ANCParser.moneyFormat(product.getPrice()) + "</span>"
                     + "                    <p class=\"subdescription\">"
                     + "                    " + ANCParser.parseProductType(product.getProductType()) + ""
                     + "                </p>"
@@ -145,7 +146,7 @@ public class ShowAllProductServlet extends HttpServlet {
                     + "    </div>"
                     + "</div>"
                     + "                                </div> <!-- end div item -->"
-                            + "<div id='product" + product.getProductId() + "'></div>"
+                    + "<div id='product" + product.getProductId() + "' class='product-detail-info'></div>"
             //</editor-fold>
             );
         }

@@ -25,7 +25,6 @@ public class CenterServlet extends HttpServlet {
 
     private static String ProductDetailServlet = "ProductDetailServlet";
     private static String ShowAllProductServlet = "ShowAllProductServlet";
-
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
