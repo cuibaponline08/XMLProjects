@@ -65,10 +65,15 @@ public class ShowAllProductServlet extends HttpServlet {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
 
+        response.getWriter().println("<section class='row row-paging'>");
+        response.getWriter().println("<ul class='pagination'>");
         for (int i = 1; i <= totalPages; i++) {
-            response.getWriter().print("<input type=\"button\" value=\""
-                    + i + "\" onclick=\"loadProducts(" + i + ")\" >");
+            response.getWriter().println("<li>");
+            response.getWriter().print("<a onclick='loadProducts(" + i + ")'>" + i + "</a>");
+            response.getWriter().println("</li>");
         }
+        response.getWriter().println("</ul>");
+        response.getWriter().println("</section>");
 
         processRequest(request, response);
     }
@@ -92,13 +97,10 @@ public class ShowAllProductServlet extends HttpServlet {
         if (pageNumber == 0) {
             pageNumber = 1;
         }
-//        String orderBy = "ProductId";
-//        List<ProductDTO> list = productService.getProductsWtih1Pic(itemInPage * (pageNumber - 1), itemInPage);
         List<ProductDTO> list = productService.getAllProductsWithOnePic();
         int totalItems = list.size();
 
         response.setContentType("text/html");
-//        response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
         String xmlString = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
                 + "<products xmlns=\"http://xml.netbeans.org/schema/products\">";
@@ -112,17 +114,18 @@ public class ShowAllProductServlet extends HttpServlet {
                     + "        <defaultPic>" + product.getDefaultPic() + "</defaultPic>"
                     + "        <name>" + product.getProductName() + "</name>"
                     + "        <currency>" + product.getCurrency() + "</currency>"
-                    + "        <price>" + product.getPrice() + "</price>"
+                    + "        <price>" + ANCParser.moneyFormat(product.getPrice()) + "</price>"
                     + "        <productType>" + ANCParser.parseProductType(
                             product.getProductType()) + "</productType>"
                     + "    </product>";
         }
-        
+
         xmlString += "</products>";
         System.out.println(xmlString);
-        request.setAttribute("xmlString", xmlString);
-        RequestDispatcher rd = request.getRequestDispatcher("partialView/_productItemList.jsp");
+        request.setAttribute("xmlString", xmlString.replaceAll("&", "&amp;"));
+        RequestDispatcher rd = request.getRequestDispatcher("_productItemList.jsp");
         rd.forward(request, response);
+//<editor-fold defaultstate="collapsed" desc="unused code">
 
 //        // this method will return  products list in selected page
 //        int itemInPage = 15 - 1;
@@ -141,7 +144,7 @@ public class ShowAllProductServlet extends HttpServlet {
 ////        response.setContentType("text/plain");
 //        response.setCharacterEncoding("UTF-8");
 //
-//        for (int i = (itemInPage * (pageNumber - 1)); i < totalItems && 
+//        for (int i = (itemInPage * (pageNumber - 1)); i < totalItems &&
 //                i <= (itemInPage * (pageNumber)); i++) {
 ////for (int i = 0; i < totalItems; i++){
 //            ProductDTO product = list.get(i);
@@ -206,6 +209,7 @@ public class ShowAllProductServlet extends HttpServlet {
 //                + "                </section>");
 //
 //        processRequest(request, response);
+//</editor-fold>
     }
 
     /**

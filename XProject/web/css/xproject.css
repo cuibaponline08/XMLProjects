@@ -27,12 +27,6 @@ and open the template in the editor.
     /*background-color: rgb(255, 80, 80);*/
 }
 
-/*.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}*/
 html{
     font-size:100%; /*Default 16px/1em */
     line-height:130%;
@@ -42,7 +36,29 @@ body{
     padding: 0 10px 0 10px;
     background-color: rgb(217, 217, 217);
 }
-
+#footer{
+    padding-top: 20px;
+}
+button_active{
+    color: #fff;
+    background-color: #0095ff;
+    border-color: #07c;
+}
+button_center{
+    left: 50%;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
 /* page setup */
 .wrapper{
     width:100%;
@@ -61,7 +77,7 @@ section.product-detail {
     margin-bottom: 10px;
 }
 section.row-paging{
-    margin:0 0 30px 0;
+    padding-top: 20px;
 }
 .row{
     width: 100%;
@@ -98,28 +114,6 @@ section.row-paging{
     top: 20px;
     /*background-color: rgb(255, 255, 255);*/
 }
-/*
-.product .item img {
-    display: table;
-    width: 260px;
-    height: 180px;
-    margin: 20px auto 10px;
-    border-radius: 20px;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
-}*/
-/*
-.item {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    width: 25%;
-    height: 200px;
-    margin: -1px -3px 0 0;
-    float: left;
-}*/
 
 .item{
     margin: 20px 20px 0 0;
@@ -133,7 +127,7 @@ section.row-paging{
     background-size: 367px 260px;
     position: relative;
     top:10px;
-    left:50px;
+    left:10px;
     z-index:5;
     overflow: hidden;
     -webkit-border-radius: 3px;
@@ -423,8 +417,6 @@ h2{
 .item-add-content p{
     font-size:0.8em;
 }
-
-
 /* Item menu */
 .item-menu{
     position: absolute;
@@ -605,4 +597,36 @@ On click the images will be displayed at normal size to complete the effect
     box-shadow: 0 1px 2px rgba(0,0,0,.1);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+input[type=text] {
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+}
+
+input.search {
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
+
+#search {
+    margin-top: 100px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
 }

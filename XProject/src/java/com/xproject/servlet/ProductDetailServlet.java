@@ -63,7 +63,7 @@ public class ProductDetailServlet extends HttpServlet {
         } else {
             response.setContentType("text/html");
             response.setCharacterEncoding("UTF-8");
-            
+
             //<editor-fold defaultstate="collapsed" desc="Generate Header">
             response.getWriter().println("<section class=\"row product-detail\">");
             response.getWriter().println("<div id=\"watch-header\" class=\"yt-card yt-card-has-padding product-detail\">"
@@ -74,15 +74,14 @@ public class ProductDetailServlet extends HttpServlet {
                     + "     </div>"
                     + "<div><h3>" + product.getCurrency()
                     + ANCParser.moneyFormat(product.getPrice()) + "</h3></div>"
-                    + "<div><h3 id='location" + productId + "'>" + product.getLocation() + " </h3><h3 id='distance" + productId +"'></h3></div>"
+                    + "<div><h3 id='location" + productId + "'>" + product.getLocation() + " </h3><h3 id='distance" + productId + "'></h3></div>"
                     + "</div>");
 
 //            response.getWriter().println("</section>");
             //</editor-fold>
-
             //<editor-fold defaultstate="collapsed" desc="Generate Images">
 //            response.getWriter().println("<section class=\"row product-detail\">"
-              response.getWriter().println("<div class=\"slider product-detail\">");
+            response.getWriter().println("<div class=\"slider product-detail\">");
 
             String[] productImages = product.getPicUrlList();
 // render list images
@@ -134,10 +133,9 @@ public class ProductDetailServlet extends HttpServlet {
 
             //<editor-fold defaultstate="collapsed" desc="Generate Adding Info">
 //            response.getWriter().println("<section class=\"row product-detail\">");
-
             response.getWriter().println(
-                    "<input type=\"button\" value='hello' class=\"button_active\" onclick=\"location.href='"
-                    + product.getProductSourceUrl() + "';\" />");
+                    "<button class='button button_active button_center' onclick=\"location.href='"
+                    + product.getProductSourceUrl() + "';\" />Go to source page</button>");
 
             response.getWriter().println("</section>");
 //</editor-fold>

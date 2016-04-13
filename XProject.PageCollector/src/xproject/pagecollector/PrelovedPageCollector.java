@@ -36,15 +36,22 @@ public class PrelovedPageCollector {
             = "span.u-display--b.classified__description.classified__meta.js-toggle-content";
 //    private static String `
 
+    static String databaseServer = "CUIBAP";
+    static String databaseInstance = "DUYDT";
+    static String databaseName = "XProject";
+    static String username = "sa";
+    static String password = "123456";
+
     public static void main(String[] args) {
 //        getProducts();
+        deleteTableContent();
         insertProductsToDB();
     }
 
     private static void getProducts() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 2;
+        int totalPage = 88;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
@@ -163,6 +170,9 @@ public class PrelovedPageCollector {
                                 }
                             }
 
+                            if ("".equals(imgUrl.trim())) {
+                                imgUrl = "http://frankmedilink.com//wp-content/uploads/2013/11/no-preview-big1.jpg";
+                            }
                             product.setImageSourceUrl(imgUrl);
                             product.setDescription(productDescription);
                             product.setAddingInformation(addingInformation);
@@ -187,11 +197,6 @@ public class PrelovedPageCollector {
     }
 
     private static void insertProductsToDB() {
-        String databaseServer = "DUYDTSE61187";
-        String databaseInstance = "DUYDT";
-        String databaseName = "XProject";
-        String username = "sa";
-        String password = "123456";
 
         DatabaseUtil dbUtil = new DatabaseUtil();
         dbUtil.createConnection(databaseServer, databaseInstance, databaseName, username, password);
@@ -200,7 +205,7 @@ public class PrelovedPageCollector {
         if (products == null) {
             return;
         }
-        
+
         int count = 0;
         for (Product product : products.getProduct()) {
             int productType = getProductTypeInt(product.getProductType());
@@ -227,6 +232,13 @@ public class PrelovedPageCollector {
         }
     }
 
+    private static void deleteTableContent() {
+        DatabaseUtil dbUtil = new DatabaseUtil();
+        dbUtil.createConnection(databaseServer, databaseInstance, databaseName, username, password);
+
+        dbUtil.deleteAllTableContent();
+    }
+
     private static String[] getNewValues(ProductDTO entity) {
         int a = entity.getProductType();
         String[] result = {"N'" + entity.productName.replaceAll("\"", "\"").replaceAll("'", "''")
@@ -243,8 +255,8 @@ public class PrelovedPageCollector {
 
         return result;
     }
-    
-    private static String parseBooleanToString(boolean bool){
+
+    private static String parseBooleanToString(boolean bool) {
         return bool ? "1" : "0";
     }
 
@@ -284,7 +296,7 @@ public class PrelovedPageCollector {
             default:
                 result = ProductTypeEnum.Other.ordinal();
         }
-        
+
         return result;
     }
 }

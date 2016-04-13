@@ -1,32 +1,27 @@
 
 function loadProducts(currentPage) {
-//    ancAjax('POST', 'CenterServlet?action=ShowAllProductServlet&currentPage=' + currentPage,
-//            'main-content');
     document.getElementById('currentProductDetail').value = "";
-    $.ajax({
-        type: "POST",
-        url: "CenterServlet?action=ShowAllProductServlet&currentPage=" + currentPage,
-        data: "",
-        contentType: "application/json",
-        async: false,
-        success: function (result) {
-            document.getElementById('main-content').innerHTML = result.toString();
-        }
-    });
+    ancAjax('POST', 'CenterServlet?action=ShowAllProductServlet&currentPage=' + currentPage,
+            'main-content');
+//    $.ajax({
+//        type: "POST",
+//        url: "CenterServlet?action=ShowAllProductServlet&currentPage=" + currentPage,
+//        data: "",
+//        contentType: "application/json",
+//        async: false,
+//        success: function (result) {
+//            document.getElementById('main-content').innerHTML = result.toString();
+//        }
+//    });
 }
 
 function loadPages() {
     ancAjax('GET', 'CenterServlet?action=ShowAllProductServlet', 'footer');
-//    $.ajax({
-//        type: "GET",
-//        url: "CenterServlet?action=ShowAllProductServlet",
-//        data: "",
-//        contentType: "application/json",
-//        async: true,
-//        success: function (result) {
-//            document.getElementById('footer').innerHTML = result.toString();
-//        }
-//    });
+
+}
+
+function searchProduct(){
+    
 }
 
 function loadProductDetail(productId) {
@@ -85,31 +80,20 @@ function getDistance(destinations, outputId) {
 
 function ancAjax(methodType, url, targetElement) {
     var xhttp = new XMLHttpRequest();
-//    var retry = 3;
-//    var timeout = 200;
+    
     if (window.XMLHttpRequest) {
         xhttp = new XMLHttpRequest();
     } else {
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-//    xhttp.timeout = timeout ? timeout : 500; // modify here for default timeout
-//    xhttp.ontimeout = function () {
-//        if (retry > 0) {
-//            retry--;
-//            ancAjax(methodType, url, targetElement);
-//        } else {
-//
-//        }
-//    };
+    
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             document.getElementById(targetElement).innerHTML = xhttp.responseText;
         }
     };
     xhttp.open(methodType, './' + url, true);
-//    xhttp.setRequestHeader("Content-type","application/json");
     xhttp.send();
-
 }
 //
 //window.onload(function () {

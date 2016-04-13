@@ -13,7 +13,7 @@
         <div class="body-main">
             <div class="wrapper" id="search">
                 <section class="row">
-                    <input type="text" />
+                    <input id="txtSearch" onkeypress="searchProduct()" type="text" placeholder="Search..."/>
                 </section>
             </div>
             <div class="wrapper" id="main-content">
@@ -29,44 +29,6 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
-//    window.readyHandlers = [];
-//    window.ready = function ready(handler) {
-//        window.readyHandlers.push(handler);
-//        handleState();
-//    };
-//
-//    window.handleState = function handleState() {
-//        if (['interactive', 'complete'].indexOf(document.readyState) > -1) {
-//            while (window.readyHandlers.length > 0) {
-//                (window.readyHandlers.shift())();
-//            }
-//        }
-//    };
-//
-//    document.onreadystatechange = window.handleState;
-//
-//    ready(function () {
-//        loadProducts(1);
-//        loadPages();
-//        // your code here
-//    });
-//    document.onreadystatechange = function () {
-//        var state = document.readyState;
-//        if (state == 'interactive') {
-//            init();
-//        } else if (state == 'complete') {
-//            initOnCompleteLoad();
-//        }
-//    }
-
-//    function initOnCompleteLoad() {
-//        loadProducts(1);
-//        loadPages();
-//    }
-//
-//    function init() {
-//
-//    }
     $('document').ready(function () {
         loadProducts(1);
         loadPages();
