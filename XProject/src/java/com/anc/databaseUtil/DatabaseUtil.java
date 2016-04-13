@@ -139,7 +139,7 @@ public class DatabaseUtil {
             conn = DriverManager.getConnection(connectionString);
             stm = conn.createStatement();
 
-            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] LIMIT " + 3 + ", " + 5);
+//            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] LIMIT " + 3 + ", " + 5);
 //            rs = stm.executeQuery("SELECT * "
 //                    + "FROM"
 //                    + "("
@@ -204,21 +204,25 @@ public class DatabaseUtil {
         return resultSetDTO;
     }
 
-    public ResultSetDTO selectFromTableSkipTake(String tableName, String condition, String orderBy, int skip, int take) {
+    public ResultSetDTO selectFromTableSkipTake(String tableName, int skip, int take) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
             stm = conn.createStatement();
+            stm.setFetchDirection(skip);
+            stm.setFetchSize(take);
+            
+            rs = stm.executeQuery("SELECT * FROM [" + tableName + "]");
 
-            rs = stm.executeQuery("SELECT * "
-                    + "FROM"
-                    + "("
-                    + "SELECT tbl.*, ROW_NUMBER() OVER (ORDER BY "+ orderBy +") rownum"
-                    + "FROM [" + tableName + "] as tbl WHERE " + condition
-                    + ") seq"
-                    + " WHERE seq.rownum BETWEEN " + skip + " AND " + take);
+//            rs = stm.executeQuery("SELECT * "
+//                    + "FROM"
+//                    + "("
+//                    + "SELECT tbl.*, ROW_NUMBER() OVER (ORDER BY "+ orderBy +") rownum"
+//                    + "FROM [" + tableName + "] as tbl WHERE " + condition
+//                    + ") seq"
+//                    + " WHERE seq.rownum BETWEEN " + skip + " AND " + take);
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next()) {

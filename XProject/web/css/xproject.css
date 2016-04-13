@@ -537,7 +537,6 @@ h2{
 /*Last thing remaining is to add transitions*/
 .slider>img{
     position: absolute;
-    /*left: 25%;*/
     top: 0;
     transition: all 0.5s;
     /*    height: 100%;
@@ -597,6 +596,7 @@ On click the images will be displayed at normal size to complete the effect
 }
 .yt-card.yt-card-has-padding {
     padding: 15px;
+    margin-top: 180px;
 }
 .yt-card {
     margin: 0 0 10px;

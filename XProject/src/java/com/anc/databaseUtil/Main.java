@@ -14,7 +14,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "PointOfSaleDB_TTH";
         String username = "sa";

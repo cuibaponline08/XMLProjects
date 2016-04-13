@@ -23,7 +23,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
     private DatabaseUtil dbUtil;
 
     public ProductRepository() {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -80,8 +80,8 @@ public class ProductRepository implements IRepository<ProductDTO> {
         return list;
     }
 
-    public List<ProductDTO> getProductSkipTake() {
-        ResultSetDTO rs = dbUtil.selectFromTable("Product");
+    public List<ProductDTO> getProductSkipTake(int skip, int take) {
+        ResultSetDTO rs = dbUtil.selectFromTableSkipTake("Product", skip, take);
         List<ProductDTO> list = getProductList(rs);
         return list;
     }

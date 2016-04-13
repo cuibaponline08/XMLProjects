@@ -22,8 +22,8 @@ public class ProductService {
         return list;
     }
     
-    public List<ProductDTO> getProductsWtih1Pic(){
-        List<ProductDTO> list = productRepository.getProductSkipTake();
+    public List<ProductDTO> getProductsWtih1Pic(int skip, int take){
+        List<ProductDTO> list = productRepository.getProductSkipTake(skip, take);
         return list;
     }
     
