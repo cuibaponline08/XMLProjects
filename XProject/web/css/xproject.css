@@ -358,7 +358,7 @@ h2{
 }
 
 .subdescription{
-    font-family: 'helvetica neue';
+    font-family: 'tahoma';
     font-size:0.8em;
     font-weight:400;
     /*color:#0066ff;*/
@@ -368,15 +368,17 @@ h2{
 
 /*product price*/
 .item-product-price{
-    color:#0066ff;
+    color:red;
+    /*color:#0066ff;*/
     font-size:1em;
     font-weight:700;
     position:relative;
-    font-family:'helvetica neue'
+    font-family:'tahoma'
 }
 
 .item-product-price .subdescription{
-    color:#40c781;
+    color:gray;
+    /*color:#40c781;*/
     font-weight:700;
     font-size:0.8em;
 }
@@ -399,7 +401,7 @@ h2{
     background: rgba(255,255,255,.85);
 }
 .item-add-content{
-    font-family: 'Lato', sans-serif;
+    font-family: 'tahoma', sans-serif;
     font-weight:400;
     color:#7d7d7d;
 }
@@ -474,7 +476,7 @@ h2{
     box-shadow: inset 0px 1px rgba(255,255,255,0.1);
     border-bottom:1px solid #434343;
 }
-.popout-menu ul li:first-of-type{
+.popout-menu ul li:first-coof-type{
     -webkit-border-radius: 3px 0;
     border-radius: 3px 0;
 }

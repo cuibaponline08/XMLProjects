@@ -3,16 +3,6 @@ function loadProducts(currentPage) {
     document.getElementById('currentProductDetail').value = "";
     ancAjax('POST', 'CenterServlet?action=ShowAllProductServlet&currentPage=' + currentPage,
             'main-content');
-//    $.ajax({
-//        type: "POST",
-//        url: "CenterServlet?action=ShowAllProductServlet&currentPage=" + currentPage,
-//        data: "",
-//        contentType: "application/json",
-//        async: false,
-//        success: function (result) {
-//            document.getElementById('main-content').innerHTML = result.toString();
-//        }
-//    });
 }
 
 function loadPages() {
