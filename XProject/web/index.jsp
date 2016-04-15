@@ -13,7 +13,7 @@
         <div class="body-main">
             <div class="wrapper" id="search">
                 <section class="row">
-                    <input id="txtSearch" onkeypress="searchProduct()" type="text" placeholder="Search..."/>
+                    <input id="txtSearch" onkeypress="searchProduct(event)" type="text" placeholder="Search..."/>
                 </section>
             </div>
             <div class="wrapper" id="main-content">

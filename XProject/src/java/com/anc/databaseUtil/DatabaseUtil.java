@@ -104,7 +104,7 @@ public class DatabaseUtil {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
-            stm = conn.createStatement();
+            stm = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
             rs = stm.executeQuery("SELECT * FROM [" + tableName + "]");
             ResultSetMetaData rsmd = rs.getMetaData();
@@ -177,9 +177,10 @@ public class DatabaseUtil {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
-            stm = conn.createStatement();
+            stm = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
-            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE " + condition);
+            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE contains([Description], '\"" +
+                    condition.replaceAll(" ", "*\" or \"") + "\"')");
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next()) {
@@ -310,6 +311,8 @@ public class DatabaseUtil {
 
         return records;
     }
+    
+  
 
     private String getSelectColumnQuery(String[] columnNames) {
         String select = "*";

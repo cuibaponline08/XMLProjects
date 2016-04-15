@@ -7,11 +7,16 @@ function loadProducts(currentPage) {
 
 function loadPages() {
     ancAjax('GET', 'CenterServlet?action=ShowAllProductServlet', 'footer');
-
 }
 
-function searchProduct(){
-    
+function searchProduct(event) {
+    if (event.keyCode === 13) {
+        var currentPage = 1;
+        document.getElementById('currentProductDetail').value = "";
+        ancAjax('POST', 'CenterServlet?action=SearchProductServlet&currentPage=' +
+                currentPage + '&keyword=' + document.getElementById('txtSearch').value,
+                'main-content');
+    }
 }
 
 function loadProductDetail(productId) {
@@ -70,13 +75,13 @@ function getDistance(destinations, outputId) {
 
 function ancAjax(methodType, url, targetElement) {
     var xhttp = new XMLHttpRequest();
-    
+
     if (window.XMLHttpRequest) {
         xhttp = new XMLHttpRequest();
     } else {
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    
+
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             document.getElementById(targetElement).innerHTML = xhttp.responseText;

@@ -30,4 +30,8 @@ public class ProductService {
     public ProductDTO getProductById(int productId){
         return productRepository.getById(productId);
     }
+    
+    public List<ProductDTO> searchProductWhere(String condition) {
+        return productRepository.search(condition);
+    }
 }

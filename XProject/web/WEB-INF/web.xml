@@ -12,6 +12,10 @@
         <servlet-name>ShowAllProductServlet</servlet-name>
         <servlet-class>com.xproject.servlet.ShowAllProductServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.SearchProductServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CenterServlet</servlet-name>
         <url-pattern>/CenterServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>ShowAllProductServlet</servlet-name>
         <url-pattern>/ShowAllProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <url-pattern>/SearchProductServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
