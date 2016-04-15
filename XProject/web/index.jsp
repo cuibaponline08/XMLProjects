@@ -32,10 +32,10 @@
 //                        if (document.readyState != 'loading') {
 
 //                        }
-                        $('document').ready(function () {
-                            loadProducts(1);
-                            loadPages();
-                        });
+//                        $('document').ready(function () {
+//                            loadProducts(1);
+//                            loadPages();
+//                        });
 
 </script>
 

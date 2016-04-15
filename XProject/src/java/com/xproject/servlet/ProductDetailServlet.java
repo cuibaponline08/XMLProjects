@@ -79,6 +79,7 @@ public class ProductDetailServlet extends HttpServlet {
 
 //            response.getWriter().println("</section>");
             //</editor-fold>
+            
             //<editor-fold defaultstate="collapsed" desc="Generate Images">
 //            response.getWriter().println("<section class=\"row product-detail\">"
             response.getWriter().println("<div class=\"slider product-detail\">");

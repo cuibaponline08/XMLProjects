@@ -7,11 +7,14 @@ function loadProducts(currentPage) {
 
 function loadPages() {
     ancAjax('GET', 'CenterServlet?action=ShowAllProductServlet', 'footer');
-
 }
 
 function searchProduct(){
-    
+    var currentPage = 1;
+    document.getElementById('currentProductDetail').value = "";
+    ancAjax('POST', 'CenterServlet?action=ShowAllProductServlet&currentPage=' +
+            currentPage + "&condition=" + document.getElementById('txtSearch').value,
+            'main-content');
 }
 
 function loadProductDetail(productId) {
