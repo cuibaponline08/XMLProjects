@@ -19,10 +19,6 @@ public class DatabaseUtil {
 
     private String connectionString = "jdbc:sqlserver://CUIBAP\\DUYDT;databaseName=PointOfSaleDB_TTH;user=sa;password=123456";
 
-    private Connection conn = null;
-    private Statement stm = null;
-    private ResultSet rs = null;
-
     public void createConnection(String databaseServer, String databaseInstance, String databaseName, String username, String password) {
         connectionString = "jdbc:sqlserver://" + databaseServer + "\\"
                 + databaseInstance + ";databaseName=" + databaseName
@@ -31,6 +27,9 @@ public class DatabaseUtil {
 
     public ResultSetDTO selectFromTable(String tableName, String[] columnNames) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -66,7 +65,9 @@ public class DatabaseUtil {
 
     public ResultSetDTO selectFromTable(String tableName, String[] columnNames, String condition) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
-
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -100,7 +101,9 @@ public class DatabaseUtil {
 
     public ResultSetDTO selectFromTable(String tableName) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
-
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -133,7 +136,9 @@ public class DatabaseUtil {
 
     public ResultSetDTO selectFromTableSkipTake(String tableName, String orderBy, int skip, int take) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
-
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -173,14 +178,25 @@ public class DatabaseUtil {
 
     public ResultSetDTO selectFromTable(String tableName, String condition) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
-
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
+<<<<<<< HEAD
             stm = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
             rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE contains([Description], '\"" +
                     condition.replaceAll(" ", "*\" or \"") + "\"')");
+=======
+            stm = conn.createStatement();
+            String conditionString = condition.replaceAll(
+                            " ", "*\" \"") + "*\"')";
+            rs = stm.executeQuery("select * from [" + tableName + "] where "
+                    + "contains(*, '" + conditionString);
+//            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE " + condition);
+>>>>>>> 0534a4bbadeb2a9724c54af46940868678457b8d
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next()) {
@@ -207,14 +223,16 @@ public class DatabaseUtil {
 
     public ResultSetDTO selectFromTableSkipTake(String tableName, int skip, int take) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
-
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
             stm = conn.createStatement();
             stm.setFetchDirection(skip);
             stm.setFetchSize(take);
-            
+
             rs = stm.executeQuery("SELECT * FROM [" + tableName + "]");
 
 //            rs = stm.executeQuery("SELECT * "
@@ -250,6 +268,9 @@ public class DatabaseUtil {
 
     public int updateTable(String tableName, String[] newValues, String condition) {
         int records = 0;
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -282,6 +303,9 @@ public class DatabaseUtil {
 
     public int updateTable(String tableName, String[] newValues) {
         int records = 0;
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
@@ -325,9 +349,13 @@ public class DatabaseUtil {
         }
         return select;
     }
-
+    
     public int insertToTable(String tableName, String[] newValues) {
         int records = 0;
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
+        
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);

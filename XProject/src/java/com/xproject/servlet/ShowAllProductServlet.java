@@ -11,6 +11,7 @@ import com.xproject.service.ProductService;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -54,8 +55,14 @@ public class ShowAllProductServlet extends HttpServlet {
             throws ServletException, IOException {
         // this method will return all pages
         int itemInPage = 15;
+        String condition = request.getParameter("condition");
 
-        List<ProductDTO> list = productService.getAllProductsWithOnePic();
+         List<ProductDTO> list = new ArrayList<ProductDTO>();
+        
+        if (!"".equals(condition)) {
+            productService.getAllProductsWithOnePic(condition.trim());
+        }
+        
         int totalItems = list.size();
         int totalPages = list.size() / itemInPage;
         if ((totalItems % itemInPage) > 0) {
@@ -93,11 +100,17 @@ public class ShowAllProductServlet extends HttpServlet {
         int itemInPage = 15 - 1;
 
         String sCurrentPage = request.getParameter("currentPage");
+        String condition = request.getParameter("condition");
         int pageNumber = ANCParser.parseInt(sCurrentPage);
         if (pageNumber == 0) {
             pageNumber = 1;
         }
-        List<ProductDTO> list = productService.getAllProductsWithOnePic();
+        List<ProductDTO> list = new ArrayList<ProductDTO>();
+        
+        if (!"".equals(condition)) {
+            productService.getAllProductsWithOnePic(condition.trim());
+        }
+        
         int totalItems = list.size();
 
         response.setContentType("text/html");

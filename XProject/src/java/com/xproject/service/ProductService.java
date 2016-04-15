@@ -17,8 +17,8 @@ import java.util.StringTokenizer;
 public class ProductService {
     private ProductRepository productRepository = new ProductRepository();
     
-    public List<ProductDTO> getAllProductsWithOnePic(){
-        List<ProductDTO> list = productRepository.getAll();
+    public List<ProductDTO> getAllProductsWithOnePic(String condition){
+        List<ProductDTO> list = productRepository.search(condition);
         return list;
     }
     
