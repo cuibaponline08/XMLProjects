@@ -176,6 +176,41 @@ public class DatabaseUtil {
         return resultSetDTO;
     }
 
+    public ResultSetDTO getById(String tableName, int id) {
+        ResultSetDTO resultSetDTO = new ResultSetDTO();
+        Connection conn = null;
+        Statement stm = null;
+        ResultSet rs = null;
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            conn = DriverManager.getConnection(connectionString);
+            stm = conn.createStatement();
+
+            rs = stm.executeQuery("select * from [" + tableName + "] where ProductId = " + id);
+            ResultSetMetaData rsmd = rs.getMetaData();
+
+            while (rs.next()) {
+                ResultDTO resultDTO = new ResultDTO();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultDTO.addValue(rs.getString(i));
+                }
+                resultSetDTO.addResult(resultDTO);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                rs.close();
+                stm.close();
+                conn.close();;
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        return resultSetDTO;
+    }
+
     public ResultSetDTO selectFromTable(String tableName, String condition) {
         ResultSetDTO resultSetDTO = new ResultSetDTO();
         Connection conn = null;
@@ -184,19 +219,17 @@ public class DatabaseUtil {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);
-<<<<<<< HEAD
-            stm = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-
-            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE contains([Description], '\"" +
-                    condition.replaceAll(" ", "*\" or \"") + "\"')");
-=======
             stm = conn.createStatement();
+
             String conditionString = condition.replaceAll(
-                            " ", "*\" \"") + "*\"')";
+                    " ", "*\" OR \"");
+
             rs = stm.executeQuery("select * from [" + tableName + "] where "
-                    + "contains(*, '" + conditionString);
-//            rs = stm.executeQuery("SELECT * FROM [" + tableName + "] WHERE " + condition);
->>>>>>> 0534a4bbadeb2a9724c54af46940868678457b8d
+                    + "contains(ProductName, '\"" + conditionString +  "*\"') OR "
+                    + "contains([Description], '\"" + conditionString +  "*\"') OR "
+                    + "contains([AddingInformation], '\"" + conditionString +  "*\"') OR "
+                    + "contains([Location], '\"" + conditionString +  "*\"')");
+            
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next()) {
@@ -335,8 +368,6 @@ public class DatabaseUtil {
 
         return records;
     }
-    
-  
 
     private String getSelectColumnQuery(String[] columnNames) {
         String select = "*";
@@ -349,13 +380,13 @@ public class DatabaseUtil {
         }
         return select;
     }
-    
+
     public int insertToTable(String tableName, String[] newValues) {
         int records = 0;
         Connection conn = null;
         Statement stm = null;
         ResultSet rs = null;
-        
+
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(connectionString);

@@ -23,18 +23,22 @@ import xproject.utils.XMLUtil;
 public class PrelovedPageCollector {
 
     private static String preloved = "http://www.preloved.co.uk";
-    private static String sourceUrl = "http://www.preloved.co.uk/adverts/list/3316/motorcycles.html";
+    private static String sourceUrlPreloved = "http://www.preloved.co.uk/adverts/list/3316/motorcycles.html";
     private static String selectPath = "ul#search-results-list";
-//    private static String selectCategoryPath = "div.menu_block.geosection > ul";
     private static String selectProductPath = "li.search-result";
-//    private static String categoryDestinationPath = "src/xproject/xml/category.xml";
     private static String productDestinationPath = "src/xproject/xml/productPreloved.xml";
-
     private static String gotoPageUrl = "?page=";
-
     private static String productDetailDescriptionPath
             = "span.u-display--b.classified__description.classified__meta.js-toggle-content";
 //    private static String `
+
+    private static String gumTree = "https://www.gumtree.com";
+    private static String sourceUrlGumtree = "https://www.gumtree.com/motorbikes-scooters/uk/page";
+    // private static String sourceUrlGumtreeLink = "https://www.gumtree.com/motorbikes-scooters/uk/page2?search_time=1460741189897";
+    private static String selectPathGumtree1 = "ul#clearfix border-t";
+    private static String selectProductPathGumtree = "ul.clearfix.list-listing-mini  li";
+    private static String productDetailDescriptionPathGumtree = "a.listing-link";
+    private static String productDestinationPathGumtree = "src/xproject/xml/productGumtree.xml";
 
     static String databaseServer = "CUIBAP";
     static String databaseInstance = "DUYDT";
@@ -43,19 +47,21 @@ public class PrelovedPageCollector {
     static String password = "123456";
 
     public static void main(String[] args) {
-//        getProducts();
+    //        getProductFromPreloved();
+    //        getProductFromGumtree();
         deleteTableContent();
-        insertProductsToDB();
+        insertProductsToDB(productDestinationPathGumtree);
+        insertProductsToDB(productDestinationPath);
     }
 
-    private static void getProducts() {
+    private static void getProductFromPreloved() {
         Products products = new Products();
         int count = 1;
-        int totalPage = 88;
+        int totalPage = 89;
 
         List<String> productDetailUrlList = new ArrayList<>();
         for (int i = 1; i <= totalPage; i++) {
-            Elements productElements = XMLUtil.getElements(sourceUrl + gotoPageUrl + i, selectProductPath);
+            Elements productElements = XMLUtil.getElements(sourceUrlPreloved + gotoPageUrl + i, selectProductPath);
 
             if (productElements != null) {
                 List<Product> productList = products.getProduct();
@@ -67,9 +73,11 @@ public class PrelovedPageCollector {
                         String priceString = productElement.getElementsByAttributeValue("itemprop", "price").
                                 text().trim();
                         String priceWithoutCurrency = priceString.
+                                replace(".00", "").
+                                replaceAll(",", "").
                                 replace("£", "").
-                                replace("€", "").
-                                replace(".", "").trim();
+                                replace("€", "")
+                                .trim();
 
                         String currency = "";
                         if (!priceString.equals("")) {
@@ -100,7 +108,6 @@ public class PrelovedPageCollector {
                                 "img.js-defer.media-item.is-media.js-loaded").attr("src"));
                         product.setProductType(productType);
 
-                        product.setProductId(count);
                         String productName = productElement.select(
                                 "a.search-result__title.is-title span").text();
                         if (productName.isEmpty()) {
@@ -153,16 +160,18 @@ public class PrelovedPageCollector {
                                     if (addingInfoElements != null && !addingInfoElements.equals("")) {
                                         int tmpIndex = 0;
                                         for (Element addingInfoElement : addingInfoElements) {
+                                            String addingInfoTitle = addingInfoElement.
+                                                    select("dt span.ellipsis").text();
                                             String addingInfoText = addingInfoElement.
-                                                    select("span.ellipsis").text();
+                                                    select("dd span.ellipsis").text();
                                             if (addingInfoText.equals("")) {
                                                 continue;
                                             }
 
                                             if (tmpIndex == 0) {
-                                                addingInformation += addingInfoText;
+                                                addingInformation += addingInfoTitle + "~" + addingInfoText;
                                             } else {
-                                                addingInformation += "|" + addingInfoText;
+                                                addingInformation += "|" + addingInfoTitle + "~" + addingInfoText;
                                             }
                                             tmpIndex++;
                                         }
@@ -196,18 +205,161 @@ public class PrelovedPageCollector {
         }
     }
 
-    private static void insertProductsToDB() {
+    private static void getProductFromGumtree() {
+        Products products = new Products();
+        int count = 1;
+        int totalPage = 50;
+
+        List<String> productDetailUrlList = new ArrayList<>();
+        for (int i = 1; i <= totalPage; i++) {
+            Elements productElements = XMLUtil.getElements(sourceUrlGumtree + i, selectProductPathGumtree);
+
+            if (productElements != null) {
+                List<Product> productList = products.getProduct();
+
+                for (Element productElement : productElements) {
+                    if (!productElement.equals("")) {
+                        String detailUrl = productElement.select("a.listing-link").attr("href");
+                        Elements productDetailElements = XMLUtil.getElements(gumTree + detailUrl,
+                                "main.grid-row.space-ptm");
+                        if (productDetailElements == null) {
+                            continue;
+                        }
+
+                        for (Element productDetailElement : productDetailElements) {
+                            float productPrice = 0;
+                            String productName = productDetailElement.select("div.grid-col-12.grid-col-l-8 > header > h1").text();
+                            String address = productDetailElement.select("div.grid-col-12.grid-col-l-8 > header > strong").text();
+                            String priceString = productDetailElement.select(""
+                                    + "span.h1.set-right.space-mvn strong").text().trim();
+
+                            String priceWithoutCurrency = priceString.
+                                    replace(".00", "").
+                                    replaceAll(",", "").
+                                    replace("£", "").
+                                    replace("€", "")
+                                    .trim();
+
+                            String currency = "";
+                            if (!priceString.equals("")) {
+                                currency = String.valueOf(priceString.charAt(0));
+                            }
+
+                            if (priceWithoutCurrency != null && !priceWithoutCurrency.equals("")) {
+                                productPrice = Float.valueOf(priceWithoutCurrency);
+                            }
+
+                            Elements imageElements = productDetailElement.select("ul li");
+
+                            String imgUrl = "";
+                            int tmpIndex = 0;
+                            // Get all image
+                            for (Element imgElement : imageElements) {
+                                String imgText = imgElement.
+                                        select("img").
+                                        attr("src");
+
+                                if (imgText.equals("")) {
+                                    continue;
+                                }
+
+                                if (tmpIndex == 0) {
+                                    imgUrl += imgText;
+                                } else {
+                                    imgUrl += "|" + imgText;
+                                }
+                                tmpIndex++;
+                            }
+                            int posted = 0;
+                            String addingInfo = "";
+                            if ("".equals(imgUrl.trim())) {
+                                imgUrl = "http://frankmedilink.com//wp-content/uploads/2013/11/no-preview-big1.jpg";
+                            }
+                            
+                            tmpIndex = 0;
+                            // find all Adding information
+                            Elements infomationElements = productDetailElement.select("div.grid-col-12.grid-col-l-6");
+                            for (Element infomationElement : infomationElements) {
+                                Elements titleElements = infomationElement.getElementsByTag("dt");
+                                Elements textElements = infomationElement.getElementsByTag("dd");
+                                for (int j = 0; j < titleElements.size() && j < textElements.size(); j++) {
+                                    // if not posted time => add to addingInfo
+                                    // else if posted time => parse to seconds and save to posted
+                                    String infoTitle = titleElements.get(j).text();
+                                    String infoText = textElements.get(j).text();
+                                    if (!"Posted".equals(infoTitle)) {
+                                        if (tmpIndex == 0) {
+                                            addingInfo += infoTitle + "~" + infoText;
+                                        } else {
+                                            addingInfo += "|" + infoTitle + "~" + infoText;
+                                        }
+                                        tmpIndex++;
+                                    } else if (!infoText.equals("")) {
+                                        String sTime = infoText.split(" ")[0];
+                                        if (sTime.contains("Just")) {
+                                            posted = 60 * 60 * 24;
+                                        } else {
+                                            int time = Integer.parseInt(sTime);
+                                            if (infoText.contains("sec")) {
+                                                posted = 60 * 60 * 24;
+                                            } else if (infoText.contains("min")) {
+                                                posted = (60 * 60 * 24);
+                                            } else if (infoText.contains("hour")) {
+                                                posted = (60 * 60 * 24);
+                                            } else if (infoText.contains("day")) {
+                                                posted = (time * 60 * 60 * 24);
+                                            } else if (infoText.contains("month")) {
+                                                posted = (time * 60 * 60 * 24 * 30);
+                                            } else if (infoText.contains("year")) {
+                                                posted = (time * 60 * 60 * 24 * 365);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            String productDescription = productDetailElement.select("p.ad-description").text();
+
+                            Product product = new Product();
+                            product.setAddingInformation(addingInfo);
+                            product.setCategoryId(2);
+                            product.setCurrency(currency);
+                            product.setCustomerAddress(address);
+                            product.setDescription(productDescription);
+                            product.setImageSourceUrl(imgUrl);
+                            product.setIsFixedPrice(false);
+                            product.setPostted(posted);
+                            product.setProductDetailUrl(gumTree + detailUrl);
+                            product.setProductName(productName);
+                            product.setProductPrice(productPrice);
+                            product.setProductType("For Sale");
+                            productList.add(product);
+                        }
+                    } else {
+                        continue;
+                    }
+                }
+            }
+            XMLUtil.xmlWriter(products, productDestinationPathGumtree);
+        }
+    }
+
+    private static void insertProductsToDB(String sourcePath) {
 
         DatabaseUtil dbUtil = new DatabaseUtil();
         dbUtil.createConnection(databaseServer, databaseInstance, databaseName, username, password);
 
-        Products products = XMLUtil.xmlReader(Products.class, productDestinationPath);
+        Products products = XMLUtil.xmlReader(Products.class, sourcePath);
         if (products == null) {
             return;
         }
 
         int count = 0;
         for (Product product : products.getProduct()) {
+            boolean isValid = XMLUtil.validateJAXBObject(product, "src/xproject/infrastructure/product.xsd");
+            if (!isValid) {
+                continue;
+            }
             int productType = getProductTypeInt(product.getProductType());
 
             ProductDTO productDTO = new ProductDTO();
@@ -217,12 +369,12 @@ public class PrelovedPageCollector {
             productDTO.setLocation(product.getCustomerAddress());
             productDTO.setPicUrl(product.getImageSourceUrl());
             productDTO.setPrice(product.getProductPrice());
-            productDTO.setProductId(product.getProductId());
             productDTO.setProductName(product.getProductName());
             productDTO.setProductSourceUrl(product.getProductDetailUrl());
             productDTO.setCurrency(product.getCurrency());
             productDTO.setProductType(productType);
             productDTO.setIsFixedPrice(product.isIsFixedPrice());
+            productDTO.setPosted(product.getPostted());
 
             //TODO: Hard code
             productDTO.setProductStatus(1);
@@ -250,8 +402,8 @@ public class PrelovedPageCollector {
             "N'" + entity.location.replaceAll("\"", "\"").replaceAll("'", "''")
             + "'", String.valueOf(entity.productStatus), String.valueOf(entity.customerId), "N'"
             + entity.productSourceUrl.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
-            "N'" + entity.currency.replaceAll("\"", "\"").replaceAll("'", "''") + "'"
-        };
+            "N'" + entity.currency.replaceAll("\"", "\"").replaceAll("'", "''") + "'",
+            String.valueOf(entity.posted)};
 
         return result;
     }
@@ -299,4 +451,11 @@ public class PrelovedPageCollector {
 
         return result;
     }
+
+//    WITH CTE AS(
+//   SELECT ProductName, Price,
+//       RN = ROW_NUMBER()OVER(PARTITION BY ProductName ORDER BY ProductName)
+//   FROM dbo.Product
+//)
+//DELETE FROM CTE WHERE RN > 1
 }

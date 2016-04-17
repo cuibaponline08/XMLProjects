@@ -16,6 +16,10 @@
         <servlet-name>SearchProductServlet</servlet-name>
         <servlet-class>com.xproject.servlet.SearchProductServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GiftServlet</servlet-name>
+        <servlet-class>com.xproject.servlet.GiftServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CenterServlet</servlet-name>
         <url-pattern>/CenterServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>SearchProductServlet</servlet-name>
         <url-pattern>/SearchProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GiftServlet</servlet-name>
+        <url-pattern>/GiftServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

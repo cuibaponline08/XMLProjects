@@ -10,12 +10,15 @@ import com.xproject.infrastructure.ANCParser;
 import com.xproject.service.ProductService;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.xeustechnologies.googleapi.spelling.SpellCorrection;
+import org.xeustechnologies.googleapi.spelling.SpellResponse;
 
 /**
  *
@@ -52,7 +55,48 @@ public class SearchProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+
+        PrintWriter out = response.getWriter();
+        try {
+            int itemInPage = 15 - 1;
+            String condition = request.getParameter("keyword");
+
+            List<ProductDTO> list = new ArrayList<ProductDTO>();
+
+            if (!"".equals(condition)) {
+                list = productService.getAllProductsWithOnePic(condition.trim());
+            }
+
+            int totalItems = list.size();
+            int totalPages = list.size() / itemInPage;
+            if ((totalItems % itemInPage) > 0) {
+                totalPages++;
+            }
+
+            response.setContentType("text/html");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().println("<section class='row row-paging'>");
+            response.getWriter().println("<ul id='pagination-items' class='pagination'>");
+            int i = 1;
+            response.getWriter().println("<li>");
+            response.getWriter().print("<button id='page" + i + "' class='page-number bold' onclick='pageClick(" + i + ")'>" + i + "</button>");
+            response.getWriter().println("</li>");
+            for (i = 2; i <= totalPages && i <= 10; i++) {
+                response.getWriter().println("<li>");
+                response.getWriter().print("<button id='page" + i + "' class='page-number' onclick='pageClick(" + i + ")'>" + i + "</button>");
+                response.getWriter().println("</li>");
+            }
+            response.getWriter().println("</ul>");
+            response.getWriter().println("<input id='totalPages' type='hidden' value='" + totalPages + "'>");
+            response.getWriter().println("<input id='currentPage' type='hidden' value='" + 1 + "'>");
+            response.getWriter().println("<input id='firstPage' type='hidden' value='" + 1 + "'>");
+            response.getWriter().println("<input id='lastPage' type='hidden' value='" + (i - 1) + "'>");
+            response.getWriter().println("</section>");
+
+            processRequest(request, response);
+        } finally {
+            out.close();
+        }
     }
 
     /**
@@ -76,7 +120,7 @@ public class SearchProductServlet extends HttpServlet {
             if (pageNumber == 0) {
                 pageNumber = 1;
             }
-            
+
             String key = request.getParameter("keyword");
             List<ProductDTO> list = productService.searchProductWhere(key);
             int totalItems = list.size();
@@ -87,7 +131,6 @@ public class SearchProductServlet extends HttpServlet {
                     + "<products xmlns=\"http://xml.netbeans.org/schema/products\">";
             for (int i = (itemInPage * (pageNumber - 1)); i < totalItems
                     && i <= (itemInPage * (pageNumber)); i++) {
-//for (int i = 0; i < totalItems; i++){
                 ProductDTO product = list.get(i);
 
                 xmlString += "<product>"
@@ -100,9 +143,7 @@ public class SearchProductServlet extends HttpServlet {
                                 product.getProductType()) + "</productType>"
                         + "    </product>";
             }
-
             xmlString += "</products>";
-            System.out.println(xmlString);
             request.setAttribute("xmlString", xmlString.replaceAll("&", "&amp;"));
             RequestDispatcher rd = request.getRequestDispatcher("_productItemList.jsp");
             rd.forward(request, response);

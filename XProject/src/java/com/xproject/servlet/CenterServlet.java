@@ -22,10 +22,11 @@ import javax.servlet.http.HttpServletResponse;
  * @author cuiba
  */
 public class CenterServlet extends HttpServlet {
-    
+
     private static String ProductDetailServlet = "ProductDetailServlet";
     private static String ShowAllProductServlet = "ShowAllProductServlet";
     private static String SearchProductServlet = "SearchProductServlet";
+    private static String GiftServlet = "GiftServlet";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,7 +41,7 @@ public class CenterServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             String action = request.getParameter("action");
-            
+
             if (action.equals("ProductDetailServlet")) {
                 RequestDispatcher rd = request.getRequestDispatcher(ProductDetailServlet);
                 rd.forward(request, response);
@@ -50,7 +51,11 @@ public class CenterServlet extends HttpServlet {
             } else if (action.equals("SearchProductServlet")) {
                 RequestDispatcher rd = request.getRequestDispatcher(SearchProductServlet);
                 rd.forward(request, response);
+            } else if (action.equals("GiftServlet")) {
+                RequestDispatcher rd = request.getRequestDispatcher(GiftServlet);
+                rd.forward(request, response);
             } else {
+
                 RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
                 rd.forward(request, response);
             }
@@ -70,7 +75,7 @@ public class CenterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         processRequest(request, response);
     }
 
@@ -85,7 +90,7 @@ public class CenterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         processRequest(request, response);
     }
 

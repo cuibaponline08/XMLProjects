@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gifts>
+    <gift>
+        <name>Hien</name>
+        <code>Se61264</code>
+        <description>Hello</description>
+    </gift>
+    <gift>
+        <name>Tung</name>
+        <code>Se61271</code>
+        <description>Hello</description>
+    </gift>
+</gifts>

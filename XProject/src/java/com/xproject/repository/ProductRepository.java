@@ -18,6 +18,7 @@ import java.util.List;
  *
  * @author cuiba
  */
+
 public class ProductRepository implements IRepository<ProductDTO> {
 
     private DatabaseUtil dbUtil;
@@ -63,7 +64,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
 
     @Override
     public ProductDTO getById(int id) {
-        ResultSetDTO rs = dbUtil.selectFromTable("Product", "ProductId = " + id);
+        ResultSetDTO rs = dbUtil.getById("Product", id);
         List<ProductDTO> list = getProductList(rs);
         if (list.size() > 0) {
             return list.get(0);

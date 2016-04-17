@@ -6,15 +6,14 @@
         <meta content="charset=UTF-8">
         <title>XProject</title>
         <link rel="stylesheet" href="css/xproject.css">
-        <!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>-->
         <script src="js/xproject.js"></script>
     </head>
-    <body id="body">
+    <body id="body" onload="getLocation()">
         <div class="body-main">
-            <div class="wrapper" id="search">
-                <section class="row">
-                    <input id="txtSearch" onkeypress="searchProduct(event)" type="text" placeholder="Search..."/>
-                </section>
+            <div class="wrapper" id="logo">
+                <img id="main-logo" class="main-logo" src="http://i.imgur.com/KvxrF5c.png" />
+
+                <input lang="en" spellcheck="true" autocorrect="true" autocomplete="true" class="text-search-empty" id="txtSearch" onkeypress="searchProduct(event)" type="text" placeholder="Search..."/>
             </div>
             <div class="wrapper" id="main-content">
 
@@ -24,19 +23,9 @@
             </div>
         </div>
         <input type="hidden" value='' id='currentProductDetail' />
+        <input type="hidden" value='' id='currentLocation' />
     </body>
 </html>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>
-//                        if (document.readyState != 'loading') {
-
-//                        }
-//                        $('document').ready(function () {
-//                            loadProducts(1);
-//                            loadPages();
-//                        });
-
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0iJvMLVkPYti5b_GaIPutP5IvRQat6B8">
 </script>
-
-<!-- USING XML data from GOOGLE API combine with JSP -->

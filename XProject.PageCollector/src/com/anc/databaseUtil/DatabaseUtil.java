@@ -315,6 +315,7 @@ public class DatabaseUtil {
                 } else {
                     setter += ", " + newValues[i];
                 }
+                
             }
             records = stm.executeUpdate("INSERT INTO [" + tableName + "] VALUES (" + setter + ")");
 

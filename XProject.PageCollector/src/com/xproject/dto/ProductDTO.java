@@ -24,11 +24,12 @@ public class ProductDTO {
     public int customerId;
     public String productSourceUrl;
     public String currency;
+    public int posted;
 
     public ProductDTO() {
     }
 
-    public ProductDTO(int productId, String productName, int productType, float price, String picUrl, int categoryId, boolean isFixedPrice, String description, String addingInformation, String location, int productStatus, int customerId, String productSourceUrl, String currency) {
+    public ProductDTO(int productId, String productName, int productType, float price, String picUrl, int categoryId, boolean isFixedPrice, String description, String addingInformation, String location, int productStatus, int customerId, String productSourceUrl, String currency, int posted) {
         this.productId = productId;
         this.productName = productName;
         this.productType = productType;
@@ -43,7 +44,17 @@ public class ProductDTO {
         this.customerId = customerId;
         this.productSourceUrl = productSourceUrl;
         this.currency = currency;
+        this.posted = posted;
     }
+
+    public int getPosted() {
+        return posted;
+    }
+
+    public void setPosted(int posted) {
+        this.posted = posted;
+    }
+
 
     public String getCurrency() {
         return currency;

@@ -6,25 +6,26 @@ and open the template in the editor.
 -->
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://xml.netbeans.org/schema/products"
-    xmlns="http://xml.netbeans.org/schema/products"
-    elementFormDefault="qualified">
-    <xsd:element name="products">
+            targetNamespace="http://xml.netbeans.org/schema/products"
+            xmlns="http://xml.netbeans.org/schema/products"
+            elementFormDefault="qualified">
+    <xsd:element name="product">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="product" type="Product" maxOccurs="unbounded"/>
+                <xsd:element name="productName" type="xsd:string"/>
+                <xsd:element name="imageSourceUrl" type="xsd:string"/>
+                <xsd:element name="productPrice" type="xsd:float"/>
+                <xsd:element name="currency" type="xsd:string"/>
+                <xsd:element name="customerAddress" type="xsd:string"/>
+                <xsd:element name="productDetailUrl" type="xsd:string"/>
+                <xsd:element name="description" type="xsd:string"/>
+                <xsd:element name="addingInformation" type="xsd:string"/>
+                <xsd:element name="productType" type="xsd:string"/>
+                <xsd:element name="isFixedPrice" type="xsd:boolean"/>
+                <xsd:element name="postted" type="xsd:int"/>
             </xsd:sequence>
+            <xsd:attribute name="categoryId" type="xsd:int" use="required"/>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="Product">
-        <xsd:sequence>
-            <xsd:element name="productName" type="xsd:string"/>
-            <xsd:element name="imageSourceUrl" type="xsd:string"/>
-            <xsd:element name="productPrice" type="xsd:decimal"/>
-            <xsd:element name="shortDescription" type="xsd:string"/>
-            <xsd:element name="productDetailUrl" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="productId" type="xsd:positiveInteger" use="required"/>
-        <xsd:attribute name="categoryId" type="xsd:positiveInteger" use="required"/>
-    </xsd:complexType>
+    
 </xsd:schema>

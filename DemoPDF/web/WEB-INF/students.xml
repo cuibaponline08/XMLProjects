@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <username>khanhkt</username>
+        <password>khanhkieu</password>
+        <image>images/0.gif</image>
+    </student>
+    <student>
+        <username>hutruc</username>
+        <password>123456</password>
+        <image>images/1.gif</image>
+    </student>
+    <student>
+        <username>guest</username>
+        <password>654321</password>
+        <image>images/2.gif</image>
+    </student>
+</students>

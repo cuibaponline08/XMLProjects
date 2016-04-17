@@ -28,8 +28,8 @@ and open the template in the editor.
             <xsd:element name="addingInformation" type="xsd:string"/>
             <xsd:element name="productType" type="xsd:string"/>
             <xsd:element name="isFixedPrice" type="xsd:boolean"/>
+            <xsd:element name="postted" type="xsd:int"/>
         </xsd:sequence>
-        <xsd:attribute name="productId" type="xsd:int" use="required"/>
         <xsd:attribute name="categoryId" type="xsd:int" use="required"/>
     </xsd:complexType>
 </xsd:schema>

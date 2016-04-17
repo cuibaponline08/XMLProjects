@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ProductDetailServlet extends HttpServlet {
 
     private ProductService productService = new ProductService();
+    private static String lazyLoadUrl = "https://sa.gumtree.com/1/resources/assets/rwd/images/orphans/a37b37d99e7cef805f354d47.noimage_thumbnail.png";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -52,6 +53,8 @@ public class ProductDetailServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String sId = request.getParameter("productId");
+        String currentLocation = request.getParameter("currentLocation");
+
         int productId = ANCParser.parseInt(sId);
         ProductDTO product = productService.getProductById(productId);
 
@@ -65,16 +68,17 @@ public class ProductDetailServlet extends HttpServlet {
             response.setCharacterEncoding("UTF-8");
 
             //<editor-fold defaultstate="collapsed" desc="Generate Header">
-            response.getWriter().println("<section class=\"row product-detail\">");
+            response.getWriter().println("<section class=\"row product-detail box-shadow\">");
             response.getWriter().println("<div id=\"watch-header\" class=\"yt-card yt-card-has-padding product-detail\">"
                     + "     <div>"
-                    + "            <h1>"
+                    + "            <h1 class='product-name'>"
                     + product.getProductName()
                     + "           </h1>"
                     + "     </div>"
-                    + "<div><h3>" + product.getCurrency()
+                    + "<div class='location'><h4 class='location' id='location" + productId + "'>" + product.getLocation() + " </h4>"
+                    + "<h4 class='distance' id='distance" + productId + "'></h4></div>"
+                    + "<div><h3 class='money'>" + product.getCurrency()
                     + ANCParser.moneyFormat(product.getPrice()) + "</h3></div>"
-                    + "<div><h3 id='location" + productId + "'>" + product.getLocation() + " </h3><h3 id='distance" + productId + "'></h3></div>"
                     + "</div>");
 
 //            response.getWriter().println("</section>");
@@ -83,10 +87,30 @@ public class ProductDetailServlet extends HttpServlet {
             //<editor-fold defaultstate="collapsed" desc="Generate Images">
 //            response.getWriter().println("<section class=\"row product-detail\">"
             response.getWriter().println("<div class=\"slider product-detail\">");
+            String addingInfomation = "<h3 class='title'>Adding Information</h3>"
+                    + "<table class='table-info'>";
+
+            for (String info : product.getAddingInformationList()) {
+                String[] tmp = info.split("~");
+                String titleInfo = tmp[0];
+                String textInfo = tmp[1];
+                addingInfomation += "<tr class='row-info'>"
+                        + "<td class='title'>"
+                        + titleInfo
+                        + "</td>"
+                        + "<td class='info'>"
+                        + textInfo
+                        + "</td>"
+                        + "</tr>";
+            }
+            addingInfomation += "</table>";
 
             String[] productImages = product.getPicUrlList();
 // render list images
             for (int i = 0; i < productImages.length; i++) {
+                if (productImages[i].equals(lazyLoadUrl)) {
+                    continue;
+                }
                 if (i == 0) {
                     response.getWriter().println("<input type=\"radio\" name=\"slide_switch\" "
                             + "checked=\"checked\" id=\"pic" + i + "\"/>"
@@ -104,39 +128,28 @@ public class ProductDetailServlet extends HttpServlet {
                 }
             }
 
-            response.getWriter().println("</div>");
+            response.getWriter().println(""
+                    + "</div>"
+                    + "     <div class='adding-info-area'>" + addingInfomation + "</div>");
 //            response.getWriter().println("</section>");
 //</editor-fold>
 
             //<editor-fold defaultstate="collapsed" desc="Generate Description">
-            String addingInfomation = "<table>";
-
-            for (String info : product.getAddingInformationList()) {
-                addingInfomation += "<tr>"
-                        + "<td>"
-                        + info
-                        + "</td>"
-                        + "</tr>";
-            }
-            addingInfomation += "</table>";
 //            response.getWriter().println("<section class=\"row product-detail\">");
-
             response.getWriter().println("<div id=\"watch-content\" class=\"yt-card yt-card-has-padding product-detail\">"
                     + "     <div>"
-                    + "            <h3>Description</h3>"
+                    + "            <h3 class='title'>Description</h3>"
                     + "     </div>"
-                    + "     <div><p>" + product.getDescription() + "</p></div>"
-                    + "     <div><h3>Adding Information</h3></div>"
-                    + "     <div>" + addingInfomation + "</div>"
+                    + "     <div><p class='description'>" + product.getDescription() + "</p></div>"
                     + "</div>");
 //            response.getWriter().println("</section>");
 //</editor-fold>
 
-            //<editor-fold defaultstate="collapsed" desc="Generate Adding Info">
+            //<editor-fold defaultstate="collapsed" desc="Generate Source button">
 //            response.getWriter().println("<section class=\"row product-detail\">");
             response.getWriter().println(
-                    "<button class='button button_active button_center' onclick=\"location.href='"
-                    + product.getProductSourceUrl() + "';\" />Go to source page</button>");
+                    "<button class='button button_active button_center' onclick=\"window.open('"
+                    + product.getProductSourceUrl() + "')\" />Go to source page</button>");
 
             response.getWriter().println("</section>");
 //</editor-fold>
