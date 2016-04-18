@@ -17,14 +17,27 @@ function loadProducts(currentPage) {
             document.getElementById('main-content').innerHTML = xhttp.responseText;
         }
     };
-    
+
     var url = './' + 'CenterServlet?action=SearchProductServlet&currentPage=' +
             currentPage + '&keyword=' + document.getElementById('txtSearch').value;
     xhttp.open("POST", url, true);
     xhttp.send();
-    
-//    var stateObj = {foo: "bar"};
-//    history.pushState(stateObj, "page 2", url);
+}
+
+function loadProductSamePrice() {
+    var productPrice = document.getElementById('productPrice').textContent;
+
+    document.getElementById('txtSearch').value = productPrice.substr(1).replace(",", "").replace(",", "").replace(",", "");
+
+    loadProducts(1);
+    loadPages();
+}
+
+function loadProductSameLocation(location) {
+    document.getElementById('txtSearch').value = location.textContent;
+
+    loadProducts(1);
+    loadPages();
 }
 
 function pageClick(currentPage) {
@@ -106,17 +119,13 @@ function searchProduct(event) {
     if (event.keyCode === 13) {
         loadProducts(1);
         loadPages();
-        if (firstimeSearch === true) {
-            giveAGift();
-            firstimeSearch = false;
-        }
     }
 }
 
 function giveAGift() {
-//    var url = './' + "CenterServlet?action=GiftServlet";
-//
-//    window.open(url);
+    var url = './' + "CenterServlet?action=GiftServlet";
+
+    window.open(url);
 }
 
 function loadProductDetail(productId) {
@@ -135,6 +144,11 @@ function loadProductDetail(productId) {
         }
     }
     if (isShowDetail) {
+        if (firstimeSearch === true) {
+            giveAGift();
+            firstimeSearch = false;
+        }
+
         var xhttp = new XMLHttpRequest();
 
         if (window.XMLHttpRequest) {
@@ -151,6 +165,7 @@ function loadProductDetail(productId) {
                     document.getElementById(id).innerHTML = xhttp.responseText;
                     document.getElementById('currentProductDetail').value = id;
                     loadDistance();
+
                 }
             }
         };

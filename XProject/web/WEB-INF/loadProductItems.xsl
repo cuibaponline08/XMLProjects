@@ -38,7 +38,7 @@
                     <div class='item-add-content'>
                         <div class='item-add-content-inner'>
                             <div class='section'>
-                                <a href="watch-header" onclick='loadProductDetail({pro:id})' class='btn buy expand'>
+                                <a onclick='loadProductDetail({pro:id})' class='btn buy expand'>
                                     <xsl:text>View Details</xsl:text>
                                 </a>
                             </div>

@@ -57,8 +57,15 @@ img.main-logo-searched {
     border-color: #07c;
 }
 .button_center{
-    margin-left: 40%;
+    /*margin-left: 15%;*/
 }
+.button_same_location{
+    /*margin-left: 10%*/
+}
+.button_same_price{
+    margin-left: 5%;
+}
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;

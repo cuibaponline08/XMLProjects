@@ -102,9 +102,9 @@ public class GiftServlet extends HttpServlet {
             String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
                     + "<gifts>"
                     + "    <gift>"
-                    + "        <name>Password</name>"
+                    + "        <name>Password Wifi</name>"
                     + "        <code>" + code + "</code>"
-                    + "        <description>Enjoy more 2 hours at Moda House Coffee - Tô Ký!</description>"
+                    + "        <description>Enjoy at Moda House Coffee</description>"
                     + "    </gift>"
                     + "</gifts>";
             Source src = new StreamSource(new java.io.StringReader(xml));

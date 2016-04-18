@@ -77,12 +77,13 @@ public class ProductDetailServlet extends HttpServlet {
                     + "     </div>"
                     + "<div class='location'><h4 class='location' id='location" + productId + "'>" + product.getLocation() + " </h4>"
                     + "<h4 class='distance' id='distance" + productId + "'></h4></div>"
-                    + "<div><h3 class='money'>" + product.getCurrency()
+                    + "<div><h3 id='productPrice' class='money'>" + product.getCurrency()
                     + ANCParser.moneyFormat(product.getPrice()) + "</h3></div>"
                     + "</div>");
 
 //            response.getWriter().println("</section>");
             //</editor-fold>
+            
             //<editor-fold defaultstate="collapsed" desc="Generate Images">
 //            response.getWriter().println("<section class=\"row product-detail\">"
             response.getWriter().println("<div class=\"slider product-detail\">");
@@ -148,6 +149,12 @@ public class ProductDetailServlet extends HttpServlet {
 
             //<editor-fold defaultstate="collapsed" desc="Generate Source button">
 //            response.getWriter().println("<section class=\"row product-detail\">");
+            response.getWriter().println(
+                    "<button class='button button_active button_same_price'"
+                            + " onclick='loadProductSamePrice()' />Same price</button>");
+            response.getWriter().println(
+                    "<button class='button button_active button_same_location'"
+                            + " onclick='loadProductSameLocation(location" + productId + ")' />Same location</button>");
             response.getWriter().println(
                     "<button class='button button_active button_center' onclick=\"window.open('"
                     + product.getProductSourceUrl() + "')\" />Go to source page</button>");
