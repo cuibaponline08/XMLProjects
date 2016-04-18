@@ -23,8 +23,8 @@ function loadProducts(currentPage) {
     xhttp.open("POST", url, true);
     xhttp.send();
     
-    var stateObj = {foo: "bar"};
-    history.pushState(stateObj, "page 2", url);
+//    var stateObj = {foo: "bar"};
+//    history.pushState(stateObj, "page 2", url);
 }
 
 function pageClick(currentPage) {
@@ -109,17 +109,14 @@ function searchProduct(event) {
         if (firstimeSearch === true) {
             giveAGift();
             firstimeSearch = false;
-
         }
     }
-
-
 }
 
 function giveAGift() {
-    var url = './' + "CenterServlet?action=GiftServlet";
-
-    window.open(url);
+//    var url = './' + "CenterServlet?action=GiftServlet";
+//
+//    window.open(url);
 }
 
 function loadProductDetail(productId) {

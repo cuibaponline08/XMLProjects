@@ -83,28 +83,29 @@ public class ProductDetailServlet extends HttpServlet {
 
 //            response.getWriter().println("</section>");
             //</editor-fold>
-            
             //<editor-fold defaultstate="collapsed" desc="Generate Images">
 //            response.getWriter().println("<section class=\"row product-detail\">"
             response.getWriter().println("<div class=\"slider product-detail\">");
-            String addingInfomation = "<h3 class='title'>Adding Information</h3>"
-                    + "<table class='table-info'>";
+            String addingInfomation = "";
+            if (!product.getAddingInformation().equals("")) {
+                addingInfomation = "<h3 class='title'>Adding Information</h3>"
+                        + "<table class='table-info'>";
 
-            for (String info : product.getAddingInformationList()) {
-                String[] tmp = info.split("~");
-                String titleInfo = tmp[0];
-                String textInfo = tmp[1];
-                addingInfomation += "<tr class='row-info'>"
-                        + "<td class='title'>"
-                        + titleInfo
-                        + "</td>"
-                        + "<td class='info'>"
-                        + textInfo
-                        + "</td>"
-                        + "</tr>";
+                for (String info : product.getAddingInformationList()) {
+                    String[] tmp = info.split("~");
+                    String titleInfo = tmp[0];
+                    String textInfo = tmp[1];
+                    addingInfomation += "<tr class='row-info'>"
+                            + "<td class='title'>"
+                            + titleInfo
+                            + "</td>"
+                            + "<td class='info'>"
+                            + textInfo
+                            + "</td>"
+                            + "</tr>";
+                }
+                addingInfomation += "</table>";
             }
-            addingInfomation += "</table>";
-
             String[] productImages = product.getPicUrlList();
 // render list images
             for (int i = 0; i < productImages.length; i++) {

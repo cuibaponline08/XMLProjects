@@ -4,7 +4,7 @@
 <html lang="en">
     <head>
         <meta content="charset=UTF-8">
-        <title>XProject</title>
+        <title>Hunter Motor</title>
         <link rel="stylesheet" href="css/xproject.css">
         <script src="js/xproject.js"></script>
     </head>
@@ -13,7 +13,9 @@
             <div class="wrapper" id="logo">
                 <img id="main-logo" class="main-logo" src="http://i.imgur.com/KvxrF5c.png" />
 
-                <input lang="en" spellcheck="true" autocorrect="true" autocomplete="true" class="text-search-empty" id="txtSearch" onkeypress="searchProduct(event)" type="text" placeholder="Search..."/>
+                <input lang="en" spellcheck="true" autocorrect="true" autocomplete="true" 
+                       class="text-search-empty" id="txtSearch" onkeypress="searchProduct(event)" 
+                       type="text" placeholder="Enter motor name to search..."/>
             </div>
             <div class="wrapper" id="main-content">
 

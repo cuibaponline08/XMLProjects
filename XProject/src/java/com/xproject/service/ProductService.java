@@ -22,16 +22,19 @@ public class ProductService {
         return list;
     }
     
-    public List<ProductDTO> getProductsWtih1Pic(int skip, int take){
-        List<ProductDTO> list = productRepository.getProductSkipTake(skip, take);
-        return list;
-    }
-    
     public ProductDTO getProductById(int productId){
         return productRepository.getById(productId);
     }
     
     public List<ProductDTO> searchProductWhere(String condition) {
         return productRepository.search(condition);
+    }
+    
+    public List<ProductDTO> searchProductBetween(float min, float max){
+        return productRepository.searchBetween(min, max);
+    }
+    
+    public List<ProductDTO> searchProductByPrice(float price){
+        return productRepository.searchPrice(price);
     }
 }

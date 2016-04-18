@@ -40,6 +40,13 @@
                             <xsl:value-of select="description"/>
                         </fo:block>
                     </xsl:for-each>
+                    <fo:block font-size="14pt" font-family="sans-serif"
+                              line-height="24pt" background-color="#9999ff"
+                              space-after.optimum="15pt" text-align="center"
+                              color="#ffffff"
+                              padding-top="3pt">
+                        Thanks for using Hunter Motor!
+                    </fo:block>
                 </fo:flow>
             </fo:page-sequence>
         </fo:root>

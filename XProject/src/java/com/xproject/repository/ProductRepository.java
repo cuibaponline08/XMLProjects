@@ -24,7 +24,7 @@ public class ProductRepository implements IRepository<ProductDTO> {
     private DatabaseUtil dbUtil;
 
     public ProductRepository() {
-        String databaseServer = "CUIBAP";
+        String databaseServer = "DUYDTSE61187";
         String databaseInstance = "DUYDT";
         String databaseName = "XProject";
         String username = "sa";
@@ -81,15 +81,23 @@ public class ProductRepository implements IRepository<ProductDTO> {
         return list;
     }
 
-    public List<ProductDTO> getProductSkipTake(int skip, int take) {
-        ResultSetDTO rs = dbUtil.selectFromTableSkipTake("Product", skip, take);
-        List<ProductDTO> list = getProductList(rs);
-        return list;
-    }
-
     @Override
     public List<ProductDTO> search(String condition) {
         ResultSetDTO rs = dbUtil.selectFromTable("Product", condition);
+        List<ProductDTO> list = getProductList(rs);
+        return list;
+    }
+    
+    public List<ProductDTO> searchBetween(float min, float max) {
+        String condition = "Price >= " + min + " AND Price <= " + max;
+        ResultSetDTO rs = dbUtil.selectFromTableWhere("Product", condition);
+        List<ProductDTO> list = getProductList(rs);
+        return list;
+    }
+    
+    public List<ProductDTO> searchPrice(float price) {
+        String condition = "Price >= " + (price * 0.9) + " AND Price <= " + (price * 1.1);
+        ResultSetDTO rs = dbUtil.selectFromTableWhere("Product", condition);
         List<ProductDTO> list = getProductList(rs);
         return list;
     }

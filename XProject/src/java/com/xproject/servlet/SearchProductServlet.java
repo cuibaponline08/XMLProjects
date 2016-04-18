@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -59,12 +61,31 @@ public class SearchProductServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             int itemInPage = 15 - 1;
-            String condition = request.getParameter("keyword");
+            String key = request.getParameter("keyword");
+            String pattern1 = "(\\d+)-(\\d+)";
+            String pattern2 = "(\\d+)";
 
+            // Create a Pattern object
+            Pattern r = Pattern.compile(pattern1);
+
+            // Now create matcher object.
+            Matcher m = r.matcher(key.replaceAll(" ", ""));
             List<ProductDTO> list = new ArrayList<ProductDTO>();
+            if (m.find()) {
+                String[] tmpArray = key.replaceAll(" ", "").split("-");
 
-            if (!"".equals(condition)) {
-                list = productService.getAllProductsWithOnePic(condition.trim());
+                float min = ANCParser.parseFloat(tmpArray[0]);
+                float max = ANCParser.parseFloat(tmpArray[1]);
+
+                list = productService.searchProductBetween(min, max);
+            } else {
+                Pattern r2 = Pattern.compile(pattern2);
+                Matcher m2 = r2.matcher(key.replaceAll(" ", ""));
+                if (m2.find()) {
+                    list = productService.searchProductByPrice(ANCParser.parseFloat(key));
+                } else {
+                    list = productService.searchProductWhere(key);
+                }
             }
 
             int totalItems = list.size();
@@ -120,9 +141,34 @@ public class SearchProductServlet extends HttpServlet {
             if (pageNumber == 0) {
                 pageNumber = 1;
             }
-
+            
             String key = request.getParameter("keyword");
-            List<ProductDTO> list = productService.searchProductWhere(key);
+            String pattern1 = "(\\d+)-(\\d+)";
+            String pattern2 = "(\\d+)";
+
+            // Create a Pattern object
+            Pattern r = Pattern.compile(pattern1);
+
+            // Now create matcher object.
+            Matcher m = r.matcher(key.replaceAll(" ", ""));
+            List<ProductDTO> list = new ArrayList<ProductDTO>();
+            if (m.find()) {
+                String[] tmpArray = key.replaceAll(" ", "").split("-");
+
+                float min = ANCParser.parseFloat(tmpArray[0]);
+                float max = ANCParser.parseFloat(tmpArray[1]);
+
+                list = productService.searchProductBetween(min, max);
+            } else {
+                Pattern r2 = Pattern.compile(pattern2);
+                Matcher m2 = r2.matcher(key.replaceAll(" ", ""));
+                if (m2.find()) {
+                    list = productService.searchProductByPrice(ANCParser.parseFloat(key));
+                } else {
+                    list = productService.searchProductWhere(key);
+                }
+            }
+
             int totalItems = list.size();
 
             response.setContentType("text/html");

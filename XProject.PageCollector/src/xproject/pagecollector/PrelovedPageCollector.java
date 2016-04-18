@@ -40,7 +40,7 @@ public class PrelovedPageCollector {
     private static String productDetailDescriptionPathGumtree = "a.listing-link";
     private static String productDestinationPathGumtree = "src/xproject/xml/productGumtree.xml";
 
-    static String databaseServer = "CUIBAP";
+    static String databaseServer = "DUYDTSE61187";
     static String databaseInstance = "DUYDT";
     static String databaseName = "XProject";
     static String username = "sa";
